@@ -1,0 +1,14 @@
+% Custom pahge header and footer that places the chater and section names
+% in the header above the page numbers in the footer.
+\fancypagestyle{normal}{
+  \fancyhf{}
+  % FIXME: this presupposes "twoside".
+  % If "oneside" class option, there are warnings in LaTeX log.
+  \fancyfoot[LE,RO]{{\py@HeaderFamily\thepage}}
+  \fancyhead[RO]{{\py@HeaderFamily\nouppercase{\rightmark}}}
+  \fancyhead[LE]{{\py@HeaderFamily\nouppercase{\leftmark}}}
+  \fancyfoot[LO,RE]{{\py@HeaderFamily \@title\sphinxheadercomma\py@release}}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0.4pt}
+}
+
