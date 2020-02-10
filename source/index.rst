@@ -1,20 +1,37 @@
-################################
-Tic Tac Toe Game Design Document
-################################
-
 ..  only:: builder_html and (not singlehtml)
 
-    Welcome to the Tic Tac Toe Game Design Document rev. |release|.
+    ###################################
+    Pound of Rust Project Documentation
+    ###################################
 
-    * `Overview Handout <tic-tac-toe-overview-handout.pdf>`__
-    * `Overview Slides <tic-tac-toe-overview-slides.pdf>`__
+    Welcome to Pound of Rust Project Documentation. This project results in the
+    creation of a Tic Tac Toe game using the Rust programming language.
 
-    This document is also available in other formats:
+    ==================
+    Overview Documents
+    ==================
+    These short overview documents introduce the Tic Tac Toe game and provide
+    the scope of the project.
 
-    * |pdf_download|
-    * `View as single page <singlepage.html>`__
+    * `Handout <tic-tac-toe-overview-handout.pdf>`__ - start here
+    * `Slides <tic-tac-toe-overview-slides.pdf>`__
 
-    Contents:
+
+    ===============
+    Design Document
+    ===============
+    The Tic Tac Toe Design Document describes in detail the design
+    considerations of the game.
+
+    .. warning::  The design document is a work in progress.
+
+
+..  Include top level heading for the single page design document.
+..  only:: singlehtml
+
+    ###########################
+    Tic Tac Toe Design Document
+    ###########################
 
 
 ..  toctree::
@@ -26,6 +43,11 @@ Tic Tac Toe Game Design Document
 
 
 ..  only:: builder_html and (not singlehtml)
+
+    The design document is also available in other formats:
+
+    * |pdf_download|
+    * `View as single page <singlepage.html>`__
 
     Also See:
 

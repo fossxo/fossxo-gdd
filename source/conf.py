@@ -59,11 +59,13 @@ html_title = project + " Rev. " + release
 #
 html_theme = 'alabaster'
 
-# For alabaster optoins see https://alabaster.readthedocs.io/en/latest/customization.html
+# For alabaster options see https://alabaster.readthedocs.io/en/latest/customization.html
 html_theme_options = {
     'sidebar_collapse': True,
     'code_font_size': "0.8em",
     'extra_nav_links': {
+        "Overview Handout": "tic-tac-toe-overview-handout.pdf",
+        "Overview Slides": "tic-tac-toe-overview-slides.pdf",
         "GitHub Source": "https://github.com/j-richey/pound-of-rust-docs",
     },
 }
