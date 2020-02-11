@@ -6,7 +6,7 @@ SOURCEDIR     = source
 BUILDDIR      = build
 PDFOUTPUT	  = $(wildcard $(BUILDDIR)/latex/*design*document*.pdf)
 
-.PHONY: all html singlehtml pdf handout slides linkcheck clean help
+.PHONY: all html singlehtml pdf handout slides linkcheck clean help _convert_svg
 
 
 # All simply builds all the various outputs then ensures a copy of the PDF and
@@ -34,7 +34,7 @@ singlehtml:
 # Note: the -E is used to ensure the LaTeX gets a clean build. Sometimes the
 # HTML builds leave a dirty environment behind that cause the LaTeX builder to fail.
 # TODO: reduce the amount of output from this command.
-pdf:
+pdf: _convert_svg
 	@$(SPHINXBUILD) -M latexpdf "$(SOURCEDIR)" "$(BUILDDIR)" -E
 
 
@@ -44,7 +44,7 @@ handout:
 	@mkdir --parents "${BUILDDIR}/misc"
 	@cd "$(SOURCEDIR)"; lualatex -interaction=nonstopmode -output-directory "../${BUILDDIR}/misc" handout.tex
 
-slides:
+slides: _convert_svg
 	@mkdir --parents "${BUILDDIR}/misc"
 	@cd "$(SOURCEDIR)"; lualatex -interaction=nonstopmode -output-directory "../${BUILDDIR}/misc" slides.tex
 
@@ -72,3 +72,7 @@ help:
 	@echo "  help        Shows this help message."
 	@echo ""
 	@echo "For details on how to build the documentation see the README."
+
+
+_convert_svg:
+	@python3 convert-svg-to-pdf.py "$(SOURCEDIR)"

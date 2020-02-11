@@ -1,4 +1,12 @@
-build/
+# The build directory where the built documentation is placed.
+/build
 
-# IDE cruft
-.idea/
+# Python virtual environment.
+/pyvenv
+
+# PDF files are generated from other sources so they
+# do not need to be tracked by git.
+*.pdf
+
+# IDE cruft.
+/.idea
