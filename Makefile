@@ -5,20 +5,24 @@ SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = build
 PDFOUTPUT	  = $(wildcard $(BUILDDIR)/latex/*design*document*.pdf)
+# The generated zip file is named after the PDF file.
+ZIPNAME 	  = $(notdir $(basename $(PDFOUTPUT))).zip
 
 .PHONY: all html singlehtml pdf handout slides linkcheck clean help _convert_svg
 
 
-# All simply builds all the various outputs then ensures a copy of the PDF and
-# single page HTML is in the HTML output directory so these other varients can
-# be downloaded.
+# All simply builds all the various outputs then ensures a copy of the PDF,
+# single page HTML, and other supporting resources are copied to the HTML output
+# directory so these can be downloaded.
 # sed is used to fix the internal links and copy the single page HTML so
 # they point to the correct location.
+# Finally the resulting files are zipped so they can be eaisly uploaded.
 all: html singlehtml pdf handout slides
 	@sed -r 's/href="index.html/href="singlepage.html/g' "$(BUILDDIR)/singlehtml/index.html" > "$(BUILDDIR)/html/singlepage.html"
 	@cp -v "$(PDFOUTPUT)" "$(BUILDDIR)/html/"
 	@cp -v "$(BUILDDIR)/misc/handout.pdf" "$(BUILDDIR)/html/tic-tac-toe-overview-handout.pdf"
 	@cp -v "$(BUILDDIR)/misc/slides.pdf" "$(BUILDDIR)/html/tic-tac-toe-overview-slides.pdf"
+	@cd "$(BUILDDIR)/html"; zip -r $(ZIPNAME) *
 
 
 html:
