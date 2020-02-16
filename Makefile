@@ -8,7 +8,8 @@ PDFOUTPUT	  = $(wildcard $(BUILDDIR)/latex/*design*document*.pdf)
 # The generated zip file is named after the PDF file.
 ZIPNAME 	  = $(notdir $(basename $(PDFOUTPUT))).zip
 
-.PHONY: all html singlehtml pdf handout slides linkcheck clean help _convert_svg
+# The targets supported by this make file.
+.PHONY: all html singlehtml pdf handout slides linkcheck clean help
 
 
 # All simply builds all the various outputs then ensures a copy of the PDF,
@@ -25,20 +26,20 @@ all: html singlehtml pdf handout slides
 	@cd "$(BUILDDIR)/html"; zip -r $(ZIPNAME) *
 
 
-html:
+html: _render_templates
 	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)"
 
 
 # The single HTML page is copied into the HTML directory and renamed so it can
 # use the same resources. Not how the internal links are fixed up.
-singlehtml:
+singlehtml: _render_templates
 	@$(SPHINXBUILD) -M singlehtml "$(SOURCEDIR)" "$(BUILDDIR)"
 
 
 # Note: the -E is used to ensure the LaTeX gets a clean build. Sometimes the
 # HTML builds leave a dirty environment behind that cause the LaTeX builder to fail.
 # TODO: reduce the amount of output from this command.
-pdf: _convert_svg
+pdf: _convert_svg _render_templates
 	@$(SPHINXBUILD) -M latexpdf "$(SOURCEDIR)" "$(BUILDDIR)" -E
 
 
@@ -53,7 +54,7 @@ slides: _convert_svg
 	@cd "$(SOURCEDIR)"; lualatex -interaction=nonstopmode -output-directory "../${BUILDDIR}/misc" slides.tex
 
 
-linkcheck:
+linkcheck: _render_templates
 	@$(SPHINXBUILD) -M linkcheck "$(SOURCEDIR)" "$(BUILDDIR)"
 
 
@@ -78,5 +79,11 @@ help:
 	@echo "For details on how to build the documentation see the README."
 
 
+# Helper targets for doing file conversions and other work.
+.PHONY: _convert_svg _render_templates
+
 _convert_svg:
-	@python3 convert-svg-to-pdf.py "$(SOURCEDIR)"
+	@python3 build-tools.py convert-svg "$(SOURCEDIR)"
+
+_render_templates:
+	@python3 build-tools.py render-templates "$(SOURCEDIR)"

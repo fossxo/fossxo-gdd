@@ -38,7 +38,7 @@
     :maxdepth: 1
     :numbered:
 
-    environments_g
+    environments
     glossary
     references
 
