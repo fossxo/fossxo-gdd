@@ -7,10 +7,15 @@ import subprocess
 import sys
 import textwrap
 
+import jinja2
+import yaml
+
 
 def main():
     """The main function of the application"""
     try:
+        render_rst_templates()
+
         args = _parse_args()
 
         svg_files = find_svgs(args.source_dir)
@@ -48,6 +53,20 @@ def convert_svg_to_pdf(svg_name):
             '-f', svg_name,
             '--export-pdf={}'.format(pdf_name)]
     subprocess.run(args, check=True)
+
+
+def get_envs():
+    with open("source/environments.yaml") as f:
+        return yaml.safe_load(f)
+
+
+def render_rst_templates():
+    envs = get_envs()
+    with open("source/environments.rst.template") as f:
+
+        template = jinja2.Template(f.read())
+        with open("source/environments_g.rst", mode='w') as out:
+            out.write(template.render(environments=envs))
 
 
 def _parse_args():

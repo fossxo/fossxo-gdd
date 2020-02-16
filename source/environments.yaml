@@ -1,9 +1,67 @@
 # This file provides details about each environment in the game.
+#
+# This is used as to generate the documentation related to environments.
+# This provides a central place for this information allowing us to ensure
+# diversity among the environments.
+#
+# For each environment include the following data:
+#   name: Short but descriptive name of the environment.
+#   color_scheme: Short description of the main colors that appear in the
+#     environment. Use Title Case.
+#   music_theme: The type or genera of music.
+#   description: |
+#     Detailed description that describes the environment. Include information
+#     about how the grid, marks, and background look. Describe sound effects
+#     and animations
+#
+#     This can be multiple lines long and contain reStructuredText markup if
+#     needed.
+#   variants: (optional) List of slight variations of the environment. For
+#     example, alternate background images or mark colors.
+#   concept_art: (optional) Path to the concept art image excluding the file ext.
 
-# For each environment include the following:
-# name
-# description
-# color scheme
-# music theme
-# Possible variants - optional?
-# concept art (optional path to image)
+- name: Notebook Paper and Pencil
+  color_scheme: Dark graphite on white or light yellow paper
+  music_theme: TODO
+  description: TODO
+  variants:
+    - Notebook paper background
+    - Engineering paper background
+  concept_art: img/concept-art/paper
+
+- name: Pen on Scrap Paper
+  color_scheme: Black or dark blue ink on white paper
+  music_theme: Gospel / churchy
+  description: TODO
+  variants:
+    - Blue, black, or red ink for the grid and marks
+    - Bank deposit slip background
+    - Store receipt background
+
+- name: Neon Sign
+  color_scheme: luminescent orange, pink, blue
+  music_theme: 80's electronic
+  description: TODO
+  concept_art: img/concept-art/neon
+
+- name: Early Computer
+  color_scheme: green or amber on black
+  music_theme: 8-bit electronic
+  description: TODO
+  concept_art: img/concept-art/computer
+  variants:
+    - Green marks and grid
+    - Amber marks and grid
+
+- name: Sidewalk
+  color_scheme: pastels including blue, yellow, and orange on gray
+  music_theme: Fun, upbeat
+  description: TODO
+  concept_art: img/concept-art/sidewalk
+  variants:
+    - Grid and mark colors randomly picked from pastel palette
+
+- name: Papyrus Paper and Fancy Calligraphy
+  color_scheme: Black on faded tan
+  music_theme: Something classical
+  description: TODO

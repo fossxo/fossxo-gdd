@@ -15,7 +15,7 @@ The latest version of the documentation is hosted here:
 This documentation is rendered using [Sphinx](https://www.sphinx-doc.org/en/master/).
 The following applications are required to build this documentation:
 
-* Python 3.5 or newer
+* Python 3.6 or newer
 * inkscape
 * plantuml
 * A LaTeX toolchain

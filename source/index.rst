@@ -14,7 +14,7 @@
     the scope of the project.
 
     * `Handout <tic-tac-toe-overview-handout.pdf>`__ - start here
-    * `Slides <tic-tac-toe-overview-slides.pdf>`__
+    * `Slides <tic-tac-toe-overview-slides.pdf>`__ - a short presentation about the game
 
 
     ===============
@@ -35,9 +35,10 @@
 
 
 ..  toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :numbered:
 
+    environments_g
     glossary
     references
 
