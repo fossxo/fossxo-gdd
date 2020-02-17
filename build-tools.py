@@ -142,6 +142,8 @@ class RenderTemplatesBuildTool(BuildTool):
         # For each item load its data and template. Then render the template and
         # write the output.
         for item in self.TEMPLATE_DATA_MAP:
+            print(f"Rendering template '{item.template}' to '{item.output}' "
+                  f"using data from '{item.data_source}'.")
             data = self._load_data(item.data_source)
             template = self._load_template(item.template)
             # TODO: Determine a better way to set the template parameter names.
