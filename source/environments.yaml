@@ -12,7 +12,9 @@
 #   description: |
 #     Detailed description that describes the environment. Include information
 #     about how the grid, marks, and background look. Describe sound effects
-#     and animations
+#     and animations. This includes what happens when a mark is placed, when
+#     the mouse hovers over an open or closed spot, or when the user tries to
+#     select a spot that has already been taken.
 #
 #     This can be multiple lines long and contain reStructuredText markup if
 #     needed.
@@ -38,7 +40,7 @@
     - Bank deposit slip background
     - Store receipt background
 
-- name: Neon Sign
+- name: Neon Lights
   color_scheme: luminescent orange, pink, blue
   music_theme: 80's electronic
   description: TODO
@@ -65,3 +67,36 @@
   color_scheme: Black on faded tan
   music_theme: Something classical
   description: TODO
+
+
+# TODO: here are some more environments to describe
+# * Old Paper / Pencil
+# * Cryon on paper
+# * Cyber punk future thing / Neon
+# * Old school computer
+# * Back of receipt or deposit slip with pen
+# * Actual console version (easter egg / debugging aid / works over ssh)
+# * Shower door / bathroom mirror
+# * iPhone app thing
+# * Beach / sand
+# * Side walk chalk
+# * Chalkboard / black board
+# * bathroom stall / scraped metal
+#   - Every once in a while include some straining sound FX for some good
+#     bathroom humor.
+# * Playground spinney thing
+# * Dirty car back window
+# * Snow / frozen lake?
+# * something to do with food
+# * Light board - like those found in ships
+# * Carved into rock or granet
+# * Led grid / 16x4 LCD display
+# * Microscope / scanning electron microscope
+# * Notebook paper
+# * Oldschool paper / fancy text with ink
+# * Paint / masterpiece on canvas with oil paint
+# * Tron inspired theme
+# * OXO oscilloscope throwback theme
+# * Laser cutter / lasers
+# * metal / glass forge
+# * Empty / test / debug level
