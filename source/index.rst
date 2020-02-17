@@ -16,6 +16,18 @@
     * `Handout <tic-tac-toe-overview-handout.pdf>`__ - start here
     * `Slides <tic-tac-toe-overview-slides.pdf>`__ - a short presentation about the game
 
+    ================
+    Useful Resources
+    ================
+
+    ..  TODO:
+        Place a list of useful resources here so developers can quicky find what they need.
+        - https://opengameart.org/
+        - https://itch.io/game-assets
+        - https://gist.github.com/EndangeredMassa/6b177f36b08a5b0798cf
+        - Piston documentation
+        - Rust documentation
+        - open TTT docs
 
     ===============
     Design Document
@@ -38,7 +50,12 @@
     :maxdepth: 1
     :numbered:
 
+    introduction
+    overview
+    gui
     environments
+    license-compliance
+    technical-design
     glossary
     references
 

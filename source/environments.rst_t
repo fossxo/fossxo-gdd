@@ -20,17 +20,26 @@ This template expects the following values to be in its environment:
 Environments
 ############
 
-Stuff here
+..  TODO:
+    - Randomly go to the next one
+    - shuffle sort, no two in a row and goes through the list
+    - Marks centered on a grid so users can click quickly? Or move to UI section.
+
+
+====================
+List of Environments
+====================
 
 {% for env in environments %}
-{{ '=' * env.name | length }}
+{{ '-' * env.name | length }}
 {{ env.name }}
-{{ '=' * env.name | length }}
+{{ '-' * env.name | length }}
 
 {% if env.concept_art %}
-..  image:: {{ env.concept_art }}.*
+..  figure:: {{ env.concept_art }}.*
     :width: 3in
-    :align: center
+
+    Concept art for the {{ env.name }} environment.
 {%- endif %}
 
 Color Scheme
