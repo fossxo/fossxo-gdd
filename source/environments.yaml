@@ -57,7 +57,7 @@
 
 - name: Sidewalk
   color_scheme: pastels including blue, yellow, and orange on gray
-  music_theme: Fun, upbeat
+  music_theme: Hip Hob / R&B
   description: TODO
   concept_art: img/concept-art/sidewalk
   variants:
@@ -100,3 +100,5 @@
 # * Laser cutter / lasers
 # * metal / glass forge
 # * Empty / test / debug level
+# * Clone of James' 2004 Tic Tac Toe
+

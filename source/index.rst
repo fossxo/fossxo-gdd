@@ -47,11 +47,11 @@
 
 
 ..  toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :numbered:
 
     introduction
-    overview
+    overview/index
     gui
     environments
     license-compliance
