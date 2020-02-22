@@ -17,7 +17,7 @@ ZIPNAME 	  = $(notdir $(basename $(PDFOUTPUT))).zip
 # directory so these can be downloaded.
 # sed is used to fix the internal links and copy the single page HTML so
 # they point to the correct location.
-# Finally the resulting files are zipped so they can be eaisly uploaded.
+# Finally the resulting files are zipped so they can be easily uploaded.
 all: html singlehtml pdf handout slides
 	@sed -r 's/href="index.html/href="singlepage.html/g' "$(BUILDDIR)/singlehtml/index.html" > "$(BUILDDIR)/html/singlepage.html"
 	@cp -v "$(PDFOUTPUT)" "$(BUILDDIR)/html/"
@@ -29,9 +29,6 @@ all: html singlehtml pdf handout slides
 html: _render_templates
 	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)"
 
-
-# The single HTML page is copied into the HTML directory and renamed so it can
-# use the same resources. Not how the internal links are fixed up.
 singlehtml: _render_templates
 	@$(SPHINXBUILD) -M singlehtml "$(SOURCEDIR)" "$(BUILDDIR)"
 

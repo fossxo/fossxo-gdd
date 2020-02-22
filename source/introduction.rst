@@ -17,10 +17,17 @@ document and keep a copy handy.
 =================
 Scope of the Game
 =================
-Tic Tac Toe is a casual game for all ages.
+Tic Tac Toe is a game of strategy where two players, X and O, take turns placing
+their mark in a 3 x 3 gird. The first player to get three marks in a row,
+column, or diagonal wins the game.
 
+This version of Tic Tac Toe is an unique take on the classic game. Players of
+all ages battle the computer or each other in a variety of stunning environments.
+Each environment tells part of the story of Tic Tac Toe from the past, present,
+and future. Each environment has a strong visual theme and complementary
+soundtrack.
 
-.. TODO: Elevator pitch / being developed for Windows / MAC / Linux
+Tic Tac Toe runs on Windows, Mac, and Linux and launches Summer 2020.
 
 =========================
 Overview of this Document

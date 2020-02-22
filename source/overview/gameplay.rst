@@ -10,3 +10,5 @@ Gameplay
         total time of the run is displayed perhaps with splits for the
         previous levels. Note: time it takes the AI to move is not counted
         to remove variances in computers and such.
+        https://en.wikipedia.org/wiki/Speedrun
+
