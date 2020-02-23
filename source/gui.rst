@@ -4,7 +4,8 @@ User Interface and Controls
 
 ..  TODO:
       - Mouse
-      - Numpad
+      - Numpad / keyboard
+      - Both can fully control the game
       - Concept drawing of each menu
         - Main Menu
           - Easy / Medium / Hard difficulty select
@@ -18,5 +19,8 @@ User Interface and Controls
           - Show numpad mapping numbers
         - Credits
         - Main menu music or how in progress game music plays during the menu.
-      - SHow the grid and how clicking / numpad maps to it
+      - Flow chart of screens
+      - Show the grid and how clicking / numpad maps to it
       - Operations more than 1 second are animated
+      - main game board
+        - addidional widigs for speed run mode

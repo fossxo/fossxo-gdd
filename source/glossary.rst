@@ -14,3 +14,5 @@ Glossary
     - Grid
     - Marks
     - Background (image)
+    - Speedrun / Speedrunning   https://en.wikipedia.org/wiki/Speedrun
+
