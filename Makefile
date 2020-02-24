@@ -8,6 +8,8 @@ PDFOUTPUT	  = $(wildcard $(BUILDDIR)/latex/*design*document*.pdf)
 # The generated zip file is named after the PDF file.
 ZIPNAME 	  = $(notdir $(basename $(PDFOUTPUT))).zip
 
+.NOTPARALLEL:  # Force disabling of -j flag
+
 # The targets supported by this make file.
 .PHONY: all html singlehtml pdf handout slides linkcheck clean help
 
@@ -26,17 +28,17 @@ all: html singlehtml pdf handout slides
 	@cd "$(BUILDDIR)/html"; zip -r $(ZIPNAME) *
 
 
-html: _render_templates
+html: _convert_html_files
 	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)"
 
-singlehtml: _render_templates
+singlehtml: _convert_html_files
 	@$(SPHINXBUILD) -M singlehtml "$(SOURCEDIR)" "$(BUILDDIR)"
 
 
 # Note: the -E is used to ensure the LaTeX gets a clean build. Sometimes the
 # HTML builds leave a dirty environment behind that cause the LaTeX builder to fail.
 # TODO: reduce the amount of output from this command.
-pdf: _convert_svg _render_templates
+pdf: _convert_latex_files
 	@$(SPHINXBUILD) -M latexpdf "$(SOURCEDIR)" "$(BUILDDIR)" -E
 
 
@@ -77,10 +79,18 @@ help:
 
 
 # Helper targets for doing file conversions and other work.
-.PHONY: _convert_svg _render_templates
+.PHONY: _convert_html_files _convert_latex_files _convert_ui_mockups _convert_svg _render_templates
 
-_convert_svg:
+# Converters for the various build targets.
+_convert_html_files: _convert_ui_mockups _render_templates
+_convert_latex_files: _convert_ui_mockups _convert_svg _render_templates
+
+# The convert to SVG step needs to run after the UI SVGs have been generated.
+_convert_svg: _convert_ui_mockups
 	@python3 build-tools.py convert-svg "$(SOURCEDIR)"
+
+_convert_ui_mockups:
+	@cd "$(SOURCEDIR)/img/ui"; libreoffice --convert-to svg *.odg
 
 _render_templates:
 	@python3 build-tools.py render-templates "$(SOURCEDIR)"

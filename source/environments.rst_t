@@ -38,7 +38,7 @@ List of Environments
 
 {% if env.concept_art %}
 ..  figure:: {{ env.concept_art }}.*
-    :width: 3in
+    :height: 3in
 
     Concept art for the {{ env.name }} environment.
 {%- endif %}

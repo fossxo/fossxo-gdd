@@ -2,6 +2,14 @@
 Target Audience
 ###############
 
+Tic Tac Toe is targeted at casual gamers.
+
+New PC Gamers
+
+
+
+
+
 ..  TODO:
     - Mostly for Casual players of all ages who want quick games.
     - Non serious

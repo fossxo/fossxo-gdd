@@ -18,6 +18,7 @@ The following applications are required to build this documentation:
 * Python 3.6 or newer
 * inkscape
 * plantuml
+* LibreOffice
 * A LaTeX toolchain
 * Sphinx
 

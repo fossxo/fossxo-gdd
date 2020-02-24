@@ -1,0 +1,4 @@
+# The SVG and PDF files in this directory are automatically generated
+# so they do not need tracked by git.
+/*.pdf
+/*.svg
