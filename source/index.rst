@@ -51,10 +51,10 @@
     :numbered:
 
     introduction
-    overview/index
+    gameplay
     gui
     environments
-    license-compliance
+    misc/index
     technical-design
     glossary
     references

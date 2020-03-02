@@ -23,7 +23,7 @@ are as follows:
     Examples of winning games are shown in :numref:`fig-example-wining-games`.
 
     ..  _fig-example-wining-games:
-    ..  figure:: ../img/example-wining-games.*
+    ..  figure:: img/example-wining-games.*
         :alt: Examples of winning Tic Tac Toe games.
 
         Examples of winning Tic Tac Toe games showing player X winning by getting
@@ -36,7 +36,7 @@ are as follows:
     Examples of cat's games are shown in :numref:`fig-example-cats-games`.
 
     ..  _fig-example-cats-games:
-    ..  figure:: ../img/example-cats-games.*
+    ..  figure:: img/example-cats-games.*
         :alt: Examples of winning Tic Tac Toe games.
 
         Examples of Tic Tac Toe games ending in a cat's game. No player managed
