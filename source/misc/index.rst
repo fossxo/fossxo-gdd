@@ -8,6 +8,8 @@ Additional Considerations
         - Deliverables
       * Engine Overview
         * Rust / Piston / Open TTT Lib
+      * Internationalization and Localization support?
+
 
 The overview chapter provides a high level summary of the game.
 

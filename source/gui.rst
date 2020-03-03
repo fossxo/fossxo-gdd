@@ -103,17 +103,28 @@ allow users to navigate the game's menus.
 Menus
 =====
 The Tic Tac Toe menus allow players to select the various game modes and to
-customize the game.
+customize the game. The :numref:`uml-screen-flowchart` provides details on how
+the menus connect.
 
-See :numref:`uml-game-menus` for details on how the menus connect.
+Each menu is described in the following sections.
+
+-------
+General
+-------
+Unless otherwise noted, the information in this section applies to all menus.
+
+The menus have translucent or blurred background that show the active
+environment. This includes any animations or environment FX. Additionally, the
+environment's sound track continues to play while the menus are open.
+
 
 ..  _ref-ui-main-menu:
 
 ---------
 Main Menu
 ---------
-The main menu
-
+The main menu provides a central point for users to navigate to the game's
+various modes and settings. :numref:`fig-ui-main-menu` shows the main menu.
 
 ..  _fig-ui-main-menu:
 ..  figure:: img/ui/main-menu.*
@@ -121,14 +132,23 @@ The main menu
     Main menu concept drawing.
 
 1.  The title of the game is prominently displayed at the top of the menu.
-2.  Buttons.
+2.  The :guilabel:`Resume Game` button is visible if there is a current game in
+    progress. Selecting it closes the menu and returns the player to the game.
+3.  New game buttons. The :guilabel:`Single-player` button navigates to the
+    while the :ref:`ref-ui-single-player` screen while the
+    :guilabel:`Multiplayer` button immediately starts a new multiplayer game.
+4.  Miscellaneous buttons to open the :ref:`ref-ui-options`,
+    :ref:`ref-ui-credits`, :ref:`ref-ui-help` screens.
+5.  :guilabel:`Exit` closes the game and returns the user to their desktop.
 
-..  TODO: main menu is overlaid on top of the active game board.
 
+..  _ref-ui-single-player:
 
 -------------
 Single-player
 -------------
+The single-player menu, shown in :numref:`fig-ui-single-player`, allows players
+start new single-player games.
 
 ..  _fig-ui-single-player:
 ..  figure:: img/ui/single-player.*
@@ -138,10 +158,13 @@ Single-player
 1.  The :guilabel:`Play as` selector allows players to select the mark they
     wish to use throughout the games.
 2.  The difficulty buttons select the difficulty then start a new single player
-    game.
-3.  :guilabel:`Speedrun` goes to the Speedrun menu.
+    game. Selecting one of these buttons closes the menu and launches a new
+    single-player game with the requested settings.
+3.  The :guilabel:`Speedrun` button navigates to the :ref:`ref-ui-speedrun` menu.
 4.  The :guilabel:`Back` button returns to the main menu.
 
+
+..  _ref-ui-speedrun:
 
 --------
 Speedrun
@@ -166,27 +189,55 @@ Text and lists and such.
 Text and lists and such.
 
 
+..  _ref-ui-options:
+
 -------
 Options
 -------
+The options screen contains all of the game's player configurable options.
+:numref:`fig-ui-options` shows this screen.
 
 ..  _fig-ui-options:
 ..  figure:: img/ui/options.*
 
-    sadfsadfsadf
+    Options screen concept drawing.
 
-Text and lists and such.
+1.  Music and Sound FX sliders to control the volume of these items. This allows
+    players to mute some or all of the in-game sounds.
+2.  :guilabel:`Reset to Defaults` rests all options to their default values.
+3.  The :guilabel:`Back` button returns to the main menu.
+
+
+..  _ref-ui-credits:
 
 -------
 Credits
 -------
+The credits screen displays information the game's developers and helps fulfill
+the :doc:`misc/license-compliance` obligations. The credits screen is shown in
+:numref:`fig-ui-credits`.
 
 ..  _fig-ui-credits:
 ..  figure:: img/ui/credits.*
 
-    sadfsadfsadf
+    Credits screen concept drawing.
 
-Text and lists and such.
+The credits screen contains the following items:
+
+1.  Scrolling list of developer names, third party assets, and other information
+    about the game.
+2.  :guilabel:`Back` returns to the :ref:`ref-ui-main-menu`.
+
+The credits screen uses a different background and soundtrack than the other
+menus. The background consists of one or more Tic Tac Toe games being played
+in a variety of environments. However, the environments are changed several times
+per game. This showcases the many environments of the game.
+
+The credits screen has its own sound track. The music and sound FX of the
+individual environments are not used.
+
+Once all of the credits have played the screen remains open with Tic Tac Toe
+games being played in the background.
 
 
 .. _ref-ui-loading-screen:
@@ -194,21 +245,30 @@ Text and lists and such.
 --------------
 Loading Screen
 --------------
+If necessary for technical reasons, the loading screen provides feedback to the
+player while assets are loaded. This screen is only shown when the game first
+loads.
+
+
+..  _ref-ui-help:
 
 ----
 Help
 ----
+The help screen provides information on how to play Tic Tac Toe, the application
+version, how to report bugs, and other information. All information is hosted
+locally; no internet access is required. [#localhelp]_
 
 
-==============
-Menu Flowchart
-==============
+================
+Screen Flowchart
+================
+The flow chart in :numref:`uml-screen-flowchart` visually shows how the screens
+and menus are connected.
 
-The
-
-..  _uml-game-menus:
+..  _uml-screen-flowchart:
 ..  uml::
-    :caption: Overview.
+    :caption: Connections between Tic Tac Toe's menus and screens.
     :height: 8in
 
     hide empty description
@@ -227,6 +287,7 @@ The
     main_menu --> game_board : Resume Game
     main_menu --> game_board : Multiplayer
     main_menu --> singleplayer : Single-player
+    main_menu --> Help : Help
 
     singleplayer --> game_board : Easy \n Medium \n Hard
     singleplayer --> speedrun : Speedrun
@@ -248,3 +309,6 @@ The
 ..  [#speedrunloss] If the player loses a speedrun game, the board remains
         visible so the player can see where they made mistakes. This allows them
         to adjust their strategy for next time.
+..  [#localhelp] The :ref:`ref-objective-free-of-charge` objective mentions not
+        tracking players. Websites often contain trackers, advertisements, and
+        other items that violate this objective.

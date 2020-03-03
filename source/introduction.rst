@@ -57,6 +57,8 @@ In addition to creating a fun game, the project provides more hand on experience
 using Rust and is a showcase for ``open_ttt_lib``.
 
 
+..  _ref-objective-free-of-charge:
+
 -------------------------------------------------------
 Provide Free of Charge and Under an Open Source License
 -------------------------------------------------------

@@ -16,6 +16,8 @@ Technical Design
     * Engine Overview?
     * File formats?
       * How are options saved and restored?
+      * Speedrun best times stored in a SQLite database.
+      * What happens if the file(s) cannot be loaded or created?
     * How we are going to meet the licence compliance
       * Create YAML file that lists path to each asset, its license (CC-SA, etc),
         author, and URL(if available).
