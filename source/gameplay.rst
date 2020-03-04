@@ -80,7 +80,7 @@ Players battle a flawless computer opponent through 10 environments completing
 the games as fast as possible. At the end of the run the total time is
 displayed along with the previous best times. [#timecalculation]_
 
-The player is disqualified and the run halted if the player looses a game.
+The player is disqualified and the run halted if the player loses a game.
 Since the computer opponent never makes a mistake, each game in the speedrun
 ends in a cat's game. In other words, each speedrun requires the same total
 number of moves to complete.

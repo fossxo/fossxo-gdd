@@ -40,6 +40,8 @@ environments that control how the marks, grid, and background look. Thus, a
 minimalist approach is used for the game board view. The only UI widgets are a
 menu button and some status text.
 
+..  _ref-ui-speedrun-game-board:
+
 --------
 Speedrun
 --------
@@ -103,8 +105,8 @@ allow users to navigate the game's menus.
 Menus
 =====
 The Tic Tac Toe menus allow players to select the various game modes and to
-customize the game. The :numref:`uml-screen-flowchart` provides details on how
-the menus connect.
+customize the game. The :ref:`ref-ui-screen-flowchart` provides details on how
+the menus and views connect.
 
 Each menu is described in the following sections.
 
@@ -169,24 +171,49 @@ start new single-player games.
 --------
 Speedrun
 --------
-
-
+The speedrun menu allows players to start a new speedrun and view best times of
+previous runs. :numref:`fig-ui-speedrun-start` shows the speedrun menu.
 
 ..  _fig-ui-speedrun-start:
 ..  figure:: img/ui/speedrun-start.*
 
-    sadfsadfsadf
+    Speedrun menu concept drawing.
 
-Text and lists and such.
+The speedrun menu contains the following items of interest:
 
+1.  Instructional text that provides a short overview of the speedrun rules.
+    Once the run is completed this text is replaced with the run's result and
+    invites the player to play again.
+2.  :guilabel:`Start` begins the run. This navigates to the
+    :ref:`ref-ui-speedrun-game-board` game board.
+3.  Table of previous best times sorted from fastest to slowest.
+4.  The :guilabel:`Back` button returns to the main menu.
+
+When the speedrun begins, the game board is shown, a prominent three second
+countdown is show, and dramatic music starts to swell. Once the timer elapses
+the run begins.
+
+Once the run is completed the speedrun menu is displayed and shows the result
+of the run.
+
+If the player gets a new best time the dialog shown in
+:numref:`fig-ui-speedrun-best-time` is presented to the user.
 
 
 ..  _fig-ui-speedrun-best-time:
 ..  figure:: img/ui/speedrun-best-time.*
 
-    sadfsadfsadf
+    Speedrun best time dialog concept drawing.
 
-Text and lists and such.
+The best time dialog contains the following items:
+
+1.  The speedrun time time.
+2.  The :guilabel:`Initials` text box allows players to enter their initials
+    so their best time is differentiated from other players that happen to use
+    the same computer. The field remembers the last set of initials entered to
+    save players from having to retype their initials.
+3.  The :guilabel:`Close` button hides the dialog allowing the speedrun menu
+    to be fully visible.
 
 
 ..  _ref-ui-options:
@@ -230,8 +257,9 @@ The credits screen contains the following items:
 
 The credits screen uses a different background and soundtrack than the other
 menus. The background consists of one or more Tic Tac Toe games being played
-in a variety of environments. However, the environments are changed several times
-per game. This showcases the many environments of the game.
+in a variety of environments. Each environment is clearly visible --- blurring
+and other effects are not used on this screen. The environments are changed
+several times per game. This showcases the many environments of the game.
 
 The credits screen has its own sound track. The music and sound FX of the
 individual environments are not used.
@@ -259,6 +287,8 @@ The help screen provides information on how to play Tic Tac Toe, the application
 version, how to report bugs, and other information. All information is hosted
 locally; no internet access is required. [#localhelp]_
 
+
+.. _ref-ui-screen-flowchart:
 
 ================
 Screen Flowchart
