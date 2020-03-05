@@ -1,16 +1,29 @@
 ###############
 Target Audience
 ###############
+Tic Tac Toe is targeted at casual gamers. There are three general groups that
+might find the game interesting: new PC gamers, bored adults and modders.
 
-Tic Tac Toe is targeted at casual gamers.
-
+=============
 New PC Gamers
+=============
+Tic Tac Toe can be played by young or older players that do not have much PC
+gaming experience. The game requires basic strategy and has simple inputs. As
+players become more comfortable with the game mechanics they can try
+:ref:`ref-gameplay-speed-run-mode`.
 
+====================
+Players Filling Time
+====================
+Office workers or people stuck on an airplane can play Tic Tac Toe to make
+the time pass. The regular game modes do not demand much attention so players
+can let their minds wonder while playing. The variety of environments should
+keep players entertained for at least a little while.
 
-
-
-
-..  TODO:
-    - Mostly for Casual players of all ages who want quick games.
-    - Non serious
-    - People looking for a more of a challenge have speed mode
+===================================
+Computer Science Students / Modders
+===================================
+Tic Tac Toe is open source and is developed so that others can add their own
+environments or extend the game. Tic Tac Toe is a simple, but non-trivial
+application where people learning to program might find it an interesting
+codebase to examine.

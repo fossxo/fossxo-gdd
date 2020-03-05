@@ -31,5 +31,16 @@ Technical Design
       - Command line options
         - Option to launch into as specific environment.
       - Open to show the grid for centering purposes.
+      - Can support simple environments via configuration file. E.g. point to
+        background image, marks images, sound, and perhaps mark animation spec.
+        More advanced environments will likely require editing code.
+        This would allow developers to quickly add simple environments and
+        gamers an easy way to mod the app without needing to compile code.
+    * Testability
+      - Use the logging system. Perform a test run where one or more complete
+        games are played on every entrainment. Any warning or error level logs
+        cause the test to fail.
+      - be proactive in checking for problems. E.g. can all of the resources
+        be located, and do other up front checking during the loading process.
     * Packaging
       - Windows Inno setup / Linux app package thing / Mac OS

@@ -7,7 +7,7 @@ video card or fast processor. :numref:`table-min-system-requirements` lists
 the minimum system requirements.
 
 ..  _table-min-system-requirements:
-.. table:: Tic Tac Toe minimum system requirements
+..  table:: Tic Tac Toe minimum system requirements
 
     ==================  ===================================
     OS                  Windows 10, Linux [#linux]_, macOS
@@ -15,6 +15,7 @@ the minimum system requirements.
     RAM                 4GB
     Disk                500 MB available space
     Graphics            OpenGL compatible graphics adapter
+    Display             800 x 600 pixel display or larger
     ==================  ===================================
 
 

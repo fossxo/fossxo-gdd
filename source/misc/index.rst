@@ -10,8 +10,7 @@ Additional Considerations
         * Rust / Piston / Open TTT Lib
       * Internationalization and Localization support?
 
-
-The overview chapter provides a high level summary of the game.
+This chapter contains additional information about Tic Tac Toe.
 
 ..  toctree::
     :maxdepth: 1

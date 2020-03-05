@@ -72,6 +72,8 @@ In two player mode two players take turns placing their marks according to the
 rules described above.
 
 
+.. _ref-gameplay-speed-run-mode:
+
 =============
 Speedrun Mode
 =============
