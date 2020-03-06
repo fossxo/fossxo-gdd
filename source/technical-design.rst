@@ -24,6 +24,8 @@ Technical Design
       * A tool or Rust integration test checks to ensure each asset has an entry
         in the file and the license is acceptable.
       * Part of the credits can be built from information in this file.
+      * Create a "credits" section in the help pages that credit assets per
+        environment.
     * Development Aids
       - Tool that generates code needed for an environment
         - The generated environment should be fully playable so developers can

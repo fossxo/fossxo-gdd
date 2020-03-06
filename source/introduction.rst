@@ -27,7 +27,8 @@ Each environment tells part of the story of Tic Tac Toe from the past, present,
 and future. Each environment has a strong visual theme and complementary
 soundtrack.
 
-Tic Tac Toe runs on Windows, Mac, and Linux and launches Summer 2020.
+Tic Tac Toe is fee, open source, no contains no annoying advertisements. It
+opens runs on Windows, Mac, and Linux. The game launches Summer 2020.
 
 =========================
 Overview of this Document

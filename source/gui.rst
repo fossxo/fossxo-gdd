@@ -241,8 +241,8 @@ The options screen contains all of the game's player configurable options.
 Credits
 -------
 The credits screen displays information the game's developers and helps fulfill
-the :doc:`misc/license-compliance` obligations. The credits screen is shown in
-:numref:`fig-ui-credits`.
+the :ref:`ref-distribution-license-compliance` obligations. The credits screen
+is shown in :numref:`fig-ui-credits`.
 
 ..  _fig-ui-credits:
 ..  figure:: img/ui/credits.*

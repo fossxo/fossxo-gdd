@@ -2,23 +2,14 @@
 Additional Considerations
 #########################
 
-..  TODO: Sections to include here are:
-      * Summary of Tic Tac Toe
-        - Lots of environments
-        - Deliverables
-      * Engine Overview
-        * Rust / Piston / Open TTT Lib
-      * Internationalization and Localization support?
-
 This chapter contains additional information about Tic Tac Toe.
 
 ..  toctree::
     :maxdepth: 1
-    :caption: Overview Topics:
+    :caption: Additional considerations:
 
     audience
     platforms
-    monetization
-    license-compliance
+    distribution
     similar-games
     future-enhancements
