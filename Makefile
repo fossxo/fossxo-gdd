@@ -26,6 +26,7 @@ all: html singlehtml pdf handout slides
 	@cp -v "$(BUILDDIR)/misc/handout.pdf" "$(BUILDDIR)/html/tic-tac-toe-overview-handout.pdf"
 	@cp -v "$(BUILDDIR)/misc/slides.pdf" "$(BUILDDIR)/html/tic-tac-toe-overview-slides.pdf"
 	@cd "$(BUILDDIR)/html"; zip -r $(ZIPNAME) *
+	@mv -v "$(BUILDDIR)/html/$(ZIPNAME)" "$(BUILDDIR)"
 
 
 html: _convert_html_files
