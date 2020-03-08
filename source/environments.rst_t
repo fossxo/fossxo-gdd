@@ -4,10 +4,11 @@ This template expects the following values to be in its environment:
 
   environments: - List of objects describing each environment.
     name - string
-    color_scheme - string
+    marks_and_grid - multi line string
+    background - multi line string
     music_theme - string
     concept_art - optional path to the concept art image.
-    variants - list of strings
+    details - multi line string
 
   tool_info: - information about the tool that rendered this template.
     tool_name - string
@@ -20,41 +21,58 @@ This template expects the following values to be in its environment:
 ############
 Environments
 ############
+One of the main defining features of this take on Tic Tac Toe is the use of
+multiple environments. Each environment has a strong visual theme and
+complementary soundtrack.
 
-..  TODO:
-    - Randomly go to the next one
-    - shuffle sort, no two in a row and goes through the list
-    - Marks centered on a grid so users can click quickly? Or move to UI section.
+
+=====================
+Environment Selection
+=====================
+Each game takes place on a different environment. Environments are selected using
+a shuffling algorithm. [#shuffelalgorithms]_ This ensures players get to
+experience each environment in a random order.
 
 
 ====================
 List of Environments
 ====================
+This section lists each of the games environments.
 
 {% for env in environments %}
 {{ '-' * env.name | length }}
 {{ env.name }}
 {{ '-' * env.name | length }}
 
-{% if env.concept_art %}
+{% if env.concept_art is defined %}
 ..  figure:: {{ env.concept_art }}.*
     :height: 3in
 
     Concept art for the {{ env.name }} environment.
 {%- endif %}
 
-Color Scheme
-    {{ env.color_scheme }}
-Music Theme
-    {{ env.music_theme }}
+..  rubric:: Marks and Grid
 
-{{ env.description }}
+{{ env.marks_and_grid }}
 
-{% if env.variants %}
-..  rubric:: Variants
-{% for variant in env.variants %}
-* {{ variant }}
-{%- endfor -%}
+..  rubric:: Background Scenery
+
+{{ env.background }}
+
+..  rubric:: Music Theme
+
+{{ env.music_theme }}
+
+{% if env.details is defined %}
+..  rubric:: Additional Details
+
+{{ env.details }}
 {% endif %}
 
+
 {% endfor %}
+
+..  rubric:: Footnotes
+
+..  [#shuffelalgorithms] Wikipedia's `Fisher–Yates shuffle <https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle>`__
+        article contains details on various shuffling algorithms.

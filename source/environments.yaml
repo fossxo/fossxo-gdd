@@ -5,76 +5,183 @@
 # diversity among the environments.
 #
 # For each environment include the following data:
-#   name: Short but descriptive name of the environment.
-#   color_scheme: Short description of the main colors that appear in the
-#     environment. Use Title Case.
-#   music_theme: The type or genera of music.
-#   description: |
-#     Detailed description that describes the environment. Include information
-#     about how the grid, marks, and background look. Describe sound effects
-#     and animations. This includes what happens when a mark is placed, when
-#     the mouse hovers over an open or closed spot, or when the user tries to
-#     select a spot that has already been taken.
-#
-#     This can be multiple lines long and contain reStructuredText markup if
-#     needed.
-#   variants: (optional) List of slight variations of the environment. For
-#     example, alternate background images or mark colors.
+#   name: Short but descriptive name of the environment. Use Title Case.
 #   concept_art: (optional) Path to the concept art image excluding the file ext.
+#   marks_and_grid: |
+#     Describe the marks and grid, including colors, textures, animations, and
+#     sound FX. Additionally, describe any mark variations.
+#     Things to consider describing are:
+#     - Mark placement
+#     - How a win is indicated
+#     - Mouse hover over a free square
+#     - Mark / grid idle animations
+#     - Trying to place a mark on an owned square
+#   background: |
+#     Describe the background scenery. This includes any variations.
+#   music_theme: The type or genera of music of the environment.
+#   details: |
+#     (optional) Any additional details that do not fit in the categories
+#     above. For example, include special environment introduction animations,
+#     environment specific sound FX,  or if there are special considerations for
+#     speedrun mode.
+#
+# The marks_and_grid, background, and details can be multiple lines log and can
+# use **bold**, *italic*, and ``mono space``, formatting if needed.
+#
+# Describe each environment in sufficient detail to convey your idea; sometimes
+# a few words and a concept drawing will be sufficient.
+
+
+- name: Tic Tac Toe Blueprint
+  music_theme: Background or thinking music
+  marks_and_grid: |
+    The blueprint uses white text for the marks and white lines for the grid.
+
+    The grid can actually be a series of empty boxes but using thicker interior
+    lines.
+
+    Hovering over an empty square shows a dotted version of what would be drawn
+    there. Clicking places the mark without further animation.
+
+    Winning the game causes a "Winning Marks" label to be placed with arrows
+    pointing to the corresponding marks.
+  background: |
+    The background is predominantly deep blue. Additional, details are included
+    in white.
+
+    There is a title block with the game's name, author, version number, etc.
+
+    Measurement lines indicate the unit less distance between features.
+
+    The grid, squares, marks, etc are pointed to by arrows with labels.
+    Additional notes describe the music being played or point out the key
+    bindings.
+  details: |
+    This environment provides an opportunity to point out features of the game
+    that might be overlooked by players such as keyboard support.
+
+    This environment makes a template when creating new environments. This is
+    due to it literally being a blueprint.
+
 
 - name: Notebook Paper and Pencil
-  color_scheme: Dark graphite on white or light yellow paper
-  music_theme: TODO
-  description: TODO
-  variants:
-    - Notebook paper background
-    - Engineering paper background
   concept_art: img/concept-art/paper
+  music_theme: Mild background music
+  marks_and_grid: |
+    The marks and grid are dark graphite from a \#2 pencil. Each mark is
+    slightly different and the grid lines are not perfectly straight to give
+    it a hand drawn look. Likewise, mark placement is animated like one writing
+    an X or O while a corresponding pencil sound FX is played.
+
+    A line is drawn through the winning marks.
+  background: |
+    The background consists of notebook or engineering paper. Notebook paper is
+    white with gray or blue lines. Often times there also a vertical red margin
+    line.
+
+    Engineering paper us yellow with gray grid lines.
 
 - name: Pen on Scrap Paper
-  color_scheme: Black or dark blue ink on white paper
-  music_theme: Gospel / churchy
-  description: TODO
-  variants:
-    - Blue, black, or red ink for the grid and marks
-    - Bank deposit slip background
-    - Store receipt background
+  music_theme: Something with a gospel / churchy vibe
+  marks_and_grid: |
+    The marks and grid are created from blue or red ink. Like the
+    *Notebook Paper and Pencil* environment, each mark is hand drawn with
+    corresponding animations and sound FX.
+
+    A line is drawn through the winning marks.
+  background: |
+    Various bits of scrap paper are used for the background. This can include
+    but is not limited to bank deposit slip, various store receipts, or any
+    other paper someone might have in their purse.
+
+    Text on the paper should be gray, faded black, or otherwise not interfere
+    with the visibility of the marks.
+  details: |
+    The mark / grid color and the background image is randomly selected each
+    time the environment is played. Blue and red ink is used so the marks stand
+    out from the
+
+    The inspiration from this environment comes from me not paying attention in
+    church and drawing on scrap paper my mom happened to have.
+
 
 - name: Neon Lights
-  color_scheme: luminescent orange, pink, blue
-  music_theme: 80's electronic
-  description: TODO
   concept_art: img/concept-art/neon
+  music_theme: 80's electronic
+  marks_and_grid: |
+    The marks and grid are created from luminescent orange, pink and / or blue
+    neon lights. Selecting a square causes the mark to illuminate with a
+    flickering animation and an electric buzzing sound FX.
+
+    All winning marks flash on and off with a mild electric buzz sound FX.
+
+    When the environment first loads in non-speedrun mode the lights are not
+    illuminated. Then the grid flickers on as if the transformer is starting to
+    fail.
+  background: |
+    The background is a brick wall holding the neon lights. Ideally, the wall is
+    illuminated by the lights. E.g. when a mark is selected the brick wall behind
+    the mark gains some illumination as shown in the concept art.
+  details: |
+    This environment provides an opportunity to show off the game's graphics
+    including lighting FX.
+
 
 - name: Early Computer
-  color_scheme: green or amber on black
-  music_theme: 8-bit electronic
-  description: TODO
   concept_art: img/concept-art/computer
-  variants:
-    - Green marks and grid
-    - Amber marks and grid
+  music_theme: 8-bit electronic
+  marks_and_grid: |
+    The marks and grid are green or amber ASCII characters displayed on a low
+    resolution monochrome computer screen. E.g. individual pixels are
+    distinguishable. The marks in winning squares blink on and off.
+
+    A blinking cursor is shown when players mouse hover over a empty squares.
+    A cliché beeping sound FX is played when squares are placed.
+
+    When the environment loads in non-speedrun mode each line of ASCII text is
+    drawn as if the game was being loaded over a 300 baud modem.
+  background: |
+    The background is a monochrome computer monitor with the an off white bezel
+    and red LED near the power button. The background color is dark green or
+    dark amber with perhaps the dark pixels still visible.
+
 
 - name: Sidewalk
-  color_scheme: pastels including blue, yellow, and orange on gray
-  music_theme: Hip Hob / R&B
-  description: TODO
   concept_art: img/concept-art/sidewalk
-  variants:
-    - Grid and mark colors randomly picked from pastel palette
+  music_theme: Hip Hob / R&B
+  marks_and_grid: |
+    The marks and grid are created from pastel sidewalk chalk. The lines are
+    thick and hand drawn with similar animations as the *Notebook Paper and Pencil*
+    environment.
+
+    Pastel colors include red, blue, yellow, ping, green, and orange. The X, O,
+    and grid use different colors that are randomly selected each game.
+
+    A line is drawn through the winning squares.
+  background: |
+    The background is a gray sidewalk or black asphalt. Imperfections such as
+    cracks and twigs are visible. There might even be bits of other chalk
+    drawings visible.
+
 
 - name: Papyrus Paper and Fancy Calligraphy
-  color_scheme: Black on faded tan
-  music_theme: Something classical
-  description: TODO
+  music_theme: Snooty classical music.
+  marks_and_grid: |
+    The marks and grid are drawn from a quill pen with deliberate, fancy strokes.
+    Thick black ink is used. The grind lines and marks are precise but the
+    stroke pressure varies as the mark is being made, thus the lines are thinner
+    near the starting and ending points.
+
+    Creating of the marks and grid are animated. A line is drawn through the
+    winning squares.
+  background: |
+    The marks and grid are drawn on a faded tan papyrus paper. The paper's rough
+    texture is clearly visible.
 
 
 # TODO: here are some more environments to describe
-# * Old Paper / Pencil
 # * Cryon on paper
 # * Cyber punk future thing / Neon
-# * Old school computer
-# * Back of receipt or deposit slip with pen
 # * Actual console version (easter egg / debugging aid / works over ssh)
 # * Shower door / bathroom mirror
 # * iPhone app thing
@@ -92,14 +199,11 @@
 # * Carved into rock or granet
 # * Led grid / 16x4 LCD display
 # * Microscope / scanning electron microscope
-# * Notebook paper
-# * Oldschool paper / fancy text with ink
 # * Paint / masterpiece on canvas with oil paint
 # * Tron inspired theme
 # * OXO oscilloscope throwback theme
 # * Laser cutter / lasers
 # * metal / glass forge
 # * Empty / test / debug level
-# * Blueprint - this might work well as the theme used when making new environments.
 # * Clone of James' 2004 Tic Tac Toe
 

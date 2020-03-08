@@ -171,7 +171,8 @@ class RenderTemplatesBuildTool(BuildTool):
         """
         template_path = os.path.join(self._source_dir, template)
         with open(template_path) as template_file:
-            return jinja2.Template(template_file.read())
+            return jinja2.Template(template_file.read(),
+                                   undefined=jinja2.StrictUndefined)
 
     def _write_output(self, filename, output):
         """Writes the provided output to the indicated file.
