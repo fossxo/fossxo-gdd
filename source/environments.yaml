@@ -32,7 +32,8 @@
 # a few words and a concept drawing will be sufficient.
 
 
-- name: Tic Tac Toe Blueprint
+- name: Blueprint
+  concept_art: img/concept-art/blueprint
   music_theme: Background or thinking music
   marks_and_grid: |
     The blueprint uses white text for the marks and white lines for the grid.
@@ -178,6 +179,108 @@
     The marks and grid are drawn on a faded tan papyrus paper. The paper's rough
     texture is clearly visible.
 
+    The Tic Tac Toe game could be part of a scroll or book. E.g. there is Latin
+    text and one of those fancy first characters of the paragraph.
+
+
+- name: Bathroom Stall
+  music_theme: Truck stop music; perhaps a country vibe.
+  marks_and_grid: |
+    The marks and grid are scratched into the bathroom stall divider. This
+    reveals the metal underneath the paint. Each scratch is a fairly straight
+    line but it takes several attempts to form a line thus there are "whiskers"
+    hanging off the lines. The O marks are especially problematic resulting in
+    malformed O's.
+
+    A metal scraping sound FX is played when the marks are being created.
+
+    A line is scratched through the winning marks.
+  background: |
+    The background is a pail blue, green, or gray stall divider. There is
+    additional graffiti written in ink or scratched into the paint that one
+    would find in a truck stop bathroom. Nothing inappropriate but adults should
+    find it funny.
+  details: |
+    There is bathroom humor a Easter egg in this environment. A "straining"
+    sound FX is played after a minute or two; past the length of a typical game.
+    Think of that one scene from Austin Powers. The situation becomes more
+    desperate as time goes on. Finally it resolves itself with a large plop /
+    splash sound and a big sigh of relief.
+
+
+- name: Chalkboard
+  music_theme: TODO
+  marks_and_grid: |
+    The marks and grid are created from hand drawn white chalk. A stereotypical
+    chalk sound FX is used when the marks are being drawn.
+
+    A line is drawn through winning marks.
+  background: |
+    A black or dark green chalkboard is used as the background. The chalkboard
+    is well used; there is a lot of chalk dust marks left from the eraser.
+
+    To reinforce the chalkboard theme, the tray containing the eraser and extra
+    chalk is visible.
+
+
+- name: Whiteboard
+  music_theme: TODO
+  marks_and_grid: |
+    The marks and grid are created from various colors of dry erase markers.
+    Typical colors include, blue, green, black, red, and purple. The grid and
+    each mark are hand drawn in different colors.
+
+    A squeaking sound is made when marks are being drawn.
+
+    A line is drawn through winning marks.
+  background: |
+    The background is a white dry erase board. The board does not erase well so
+    faded physics equations is still visible in the background.
+
+    To reinforce the whiteboard theme, the tray containing the eraser and extra
+    markers is visible.
+  details: |
+    Easter egg opportunity: selecting one of the extra markers changes the mark
+    color of the current player.
+
+
+- name: Ancient Alien Ruins
+  music_theme: SciFi
+  marks_and_grid: |
+    The marks and lines are glyphs carved into rock with glowing light coming
+    from the glyphs.
+
+    At first there is a grid, X, and O carvings in the rock. Mouse hovering over
+    a free square causes some mild blue illumination. Placing the mark results
+    in brighter illumination and the surrounding grid to illuminate too.
+
+    When the game ends in a win, the wining marks illuminate very brightly and
+    even change color. The grid takes on a uniform illumination. A cats game or
+    single player loss results in the grid to go dark and all the marks to go
+    back to a mild illumination, as if the power has been cut and they are
+    slowly fading away.
+
+    A strange alien sound FX is used when marks are placed.
+  background: |
+    The background is gray rock that would be found in a cave deep in the jungle.
+    There are various glyphs carved into the rock. There might even be some moss,
+    vines, or other deep green plants on the rock.
+
+
+- name: Dirty Car Window
+  music_theme: Hip Hob with rattling door sounds.
+  marks_and_grid: |
+    The marks and grid are drawn in the window's dust reviling the shiny tinted
+    glass underneath. The marks are fairly fat and despite being hand drawn are
+    mostly straight.
+
+    A mild swooshing sound FX is used when marks are drawn. A line is used to
+    indicate wining marks.
+  background: |
+    The background is a dusty car window. The dust is a brown dirt color.
+    Stickers such as the "my family" are trying to peak out from underneath the
+    dust. The back windshield wiper reinforces the car theme.
+
 
 # TODO: here are some more environments to describe
 # * Cryon on paper
@@ -186,17 +289,11 @@
 # * Shower door / bathroom mirror
 # * iPhone app thing
 # * Beach / sand
-# * Side walk chalk
-# * Chalkboard / black board
-# * bathroom stall / scraped metal
-#   - Every once in a while include some straining sound FX for some good
-#     bathroom humor.
 # * Playground spinney thing
-# * Dirty car back window
 # * Snow / frozen lake?
 # * something to do with food
 # * Light board - like those found in ships
-# * Carved into rock or granet
+# * Carved into limestone / Ancient Egypt with hieroglyphs
 # * Led grid / 16x4 LCD display
 # * Microscope / scanning electron microscope
 # * Paint / masterpiece on canvas with oil paint
@@ -206,4 +303,3 @@
 # * metal / glass forge
 # * Empty / test / debug level
 # * Clone of James' 2004 Tic Tac Toe
-

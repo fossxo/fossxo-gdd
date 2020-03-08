@@ -14,5 +14,6 @@ Glossary
     - Grid
     - Marks
     - Background (image)
+    - hand drawn
     - Speedrun / Speedrunning   https://en.wikipedia.org/wiki/Speedrun
 
