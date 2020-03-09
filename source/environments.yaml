@@ -137,7 +137,8 @@
     distinguishable. The marks in winning squares blink on and off.
 
     A blinking cursor is shown when players mouse hover over a empty squares.
-    A cliché beeping sound FX is played when squares are placed.
+    The cursor is the full width and height of a character, e.g like the modern
+    insert cursor. A cliché beeping sound FX is played when squares are placed.
 
     When the environment loads in non-speedrun mode each line of ASCII text is
     drawn as if the game was being loaded over a 300 baud modem.
@@ -282,24 +283,80 @@
     dust. The back windshield wiper reinforces the car theme.
 
 
-# TODO: here are some more environments to describe
+- name: 16x4 LCD Display
+  music_theme: 8 bit
+  marks_and_grid: |
+    The marks and grid are black or white LCD pixels. Black is used with the
+    green background and white is used with the blue background.
+
+    Mousing over a free location causes a curser, the underscore character (``_``),
+    to blink in that location.
+
+    Asterisk characters are placed next to winning marks.
+  background: |
+    The background is green or blue backlit 16x4 LCD display that is mounted on
+    a green circuit board.
+  details: |
+    Some artistic liberty with regards to the 16x4 LCD display might need to
+    occur to ensure the might need To ensure the mark's center points are in
+    the correct locations.
+
+
+- name: Ancient Egypt Tomb
+  music_theme: Something with an ancient vibe.
+  marks_and_grid: |
+    The marks and grid are carved into the limestone wall background. A
+    chiseling sound FX is played when marks are being carved. The grid and
+    marks are chiseled with skill, that is they are straight and precise.
+
+    A line is chiseled through the winning marks.
+  background: |
+    A limestone wall covered in hieroglyphs is used as the background.
+
+
+- name: Beach
+  music_theme: Tropical / Jamaican / steal drums.
+  marks_and_grid: |
+    The marks and grid are hand drawn into sand at the beach. A light swooshing
+    sound FX is played when marks are created.
+
+    A line is drawn through the winning marks.
+  background: |
+    Wet stand is used as the background. There are seashells and other shore
+    debris.
+
+
+- name: Light Cycles
+  music_theme: Techno
+  marks_and_grid: |
+    The marks and grid are composed of either cyan or orange colored light. X is
+    assigned one color, and O the other. Placing a mark causes the border of the
+    grid to pick up the marks color.
+
+    All of the marks and grid take on the winner's color after a brief flashing
+    transition.
+  background: |
+    Black with a faint cyan grid pattern. Pulses of light could occasionally
+    travel down the grids.
+
+
+# TODO: Describes these environments:
 # * Cryon on paper
+# * Microscope / scanning electron microscope
+# * Paint / masterpiece on canvas with oil paint
+# * Led grid
+# * Laser cutter / lasers
+#
+# Future Ideas:
 # * Cyber punk future thing / Neon
 # * Actual console version (easter egg / debugging aid / works over ssh)
 # * Shower door / bathroom mirror
 # * iPhone app thing
-# * Beach / sand
 # * Playground spinney thing
 # * Snow / frozen lake?
 # * something to do with food
 # * Light board - like those found in ships
-# * Carved into limestone / Ancient Egypt with hieroglyphs
-# * Led grid / 16x4 LCD display
-# * Microscope / scanning electron microscope
-# * Paint / masterpiece on canvas with oil paint
-# * Tron inspired theme
 # * OXO oscilloscope throwback theme
-# * Laser cutter / lasers
 # * metal / glass forge
 # * Empty / test / debug level
 # * Clone of James' 2004 Tic Tac Toe
