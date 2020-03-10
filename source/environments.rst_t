@@ -46,7 +46,7 @@ This section lists each of the games environments.
 
 {% if env.concept_art is defined %}
 ..  figure:: {{ env.concept_art }}.*
-    :height: 3in
+    :height: 288px
 
     Concept art for the {{ env.name }} environment.
 {%- endif %}
