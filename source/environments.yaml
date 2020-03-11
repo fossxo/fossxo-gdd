@@ -210,6 +210,7 @@
 
 
 - name: Chalkboard
+  concept_art: img/concept-art/chalkboard
   music_theme: TODO
   marks_and_grid: |
     The marks and grid are created from hand drawn white chalk. A stereotypical
