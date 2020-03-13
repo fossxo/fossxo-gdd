@@ -47,19 +47,6 @@
     <filter
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
-       id="filter2312-7-6"
-       x="-0.3604292"
-       width="1.7208585"
-       y="-0.3604292"
-       height="1.7208585">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="2.1025037"
-         id="feGaussianBlur2314-3-5" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
        id="filter2312-7-60"
        x="-0.3604292"
        width="1.7208585"
@@ -2380,7 +2367,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.28"
-     inkscape:cx="118.23024"
+     inkscape:cx="-39.58226"
      inkscape:cy="148.47524"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -2400,7 +2387,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

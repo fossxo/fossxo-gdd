@@ -327,12 +327,13 @@
     debris.
 
 
-- name: Light Cycles
+- name: Electroluminescence
+  concept_art: img/concept-art/electroluminescence
   music_theme: Techno
   marks_and_grid: |
-    The marks and grid are composed of either cyan or orange colored light. X is
-    assigned one color, and O the other. Placing a mark causes the border of the
-    grid to pick up the marks color.
+    The marks and grid are composed of either cyan or orange colored
+    electroluminescent wire. X is assigned one color, and O the other. Placing a
+    mark causes the border of the grid to pick up the marks color.
 
     All of the marks and grid take on the winner's color after a brief flashing
     transition.
@@ -344,7 +345,7 @@
 - name: Led Grid
   concept_art: img/concept-art/led-grid
   music_theme: TODO
-  marks_and_grid: TODO
+  marks_and_grid: TODO - 32 x 32 LED grid
   background: TODO
 
 
