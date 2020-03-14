@@ -296,7 +296,8 @@
     Asterisk characters are placed next to winning marks.
   background: |
     The background is green or blue backlit 16x4 LCD display that is mounted on
-    a green circuit board.
+    a green circuit board. There are other electrical components, wires, and
+    even LEDs around.
   details: |
     Some artistic liberty with regards to the 16x4 LCD display might need to
     occur to ensure the might need To ensure the mark's center points are in
@@ -327,6 +328,23 @@
     debris.
 
 
+- name: RGB Led Grid
+  concept_art: img/concept-art/led-grid
+  music_theme: Modern 8 bit or techno
+  marks_and_grid: |
+    The marks and grid are displayed on a 64x32 RGB LED grid. The marks and grid
+    each use their own colors. This includes primary and secondary colors.
+
+    Placing a mark displays an cheesy animation such as stacking up block to
+    form the mark. Winning squares flash between normal and inverted color where
+    the background is illuminated instead of the foreground.
+  background: |
+    The background is the unilluminated LEDs and the plastic material that
+    separates the LEDs. The LEDs are a lighter color than the almost black
+    spacer material. Occasionally there may be various animations or other FXs
+    played on the LEDs outside the play area.
+
+
 - name: Electroluminescence
   concept_art: img/concept-art/electroluminescence
   music_theme: Techno
@@ -338,34 +356,70 @@
     All of the marks and grid take on the winner's color after a brief flashing
     transition.
   background: |
-    Black with a faint cyan grid pattern. Pulses of light could occasionally
-    travel down the grids.
+    Black with a faint blue or cyan grid pattern. Pulses of light could
+    occasionally travel down the grids.
 
 
-- name: Led Grid
-  concept_art: img/concept-art/led-grid
+- name: Crayon
+  music_theme: Background
+  marks_and_grid: |
+    The marks and grid are hand drawn with different colors of crayons.
+
+    A line is drawn through the winning marks.
+  background: |
+    The game is played on drywall. A light switch or electrical outlet is
+    visible to reinforce the location. There are other rudimentary drawings of
+    flowers, houses, or trucks visible.
+
+- name: Oil Painting
+  music_theme: Phone hold music, e.g. light modern classical.
+  marks_and_grid: |
+    Thick oil based paint forms the marks and grid. The brush strokes are
+    clearly visible. Strokes are deliberate resulting in fairly straight lines.
+    Stereotypical paint stroke FXs are used where lines from individual bristles
+    are visible as the stroke is letting up.
+
+    Various vibrant colors are used; the marks and grid each get their own color.
+
+    A line is drawn through the winning squares.
+  background: |
+    The painting is being drawn on white canvas. The texture is clearly visible.
+    Part of the wooden easel is also visible.
+
+
+- name: Bacteria
   music_theme: TODO
-  marks_and_grid: TODO - 32 x 32 LED grid
-  background: TODO
+  marks_and_grid: |
+    The grid is composed of rod bacteria viewed under a microscope. The X and O
+    marks are likewise formed from bacteria of the corresponding shape.
+
+    The bacteria can appear purple in color due to Gram staining or as red.
+
+    The winning squares are marked by the bacteria inside the multiplying rapidly.
+  background: |
+    The background is the fluid the bacteria is living in. There are
+    imperfections in the fluid that seem to wander around, many out of focus.
 
 
-# TODO: Describes these environments:
-# * Cryon on paper
-# * Microscope / scanning electron microscope
-# * Paint / masterpiece on canvas with oil paint
-# * Led grid
-# * Laser cutter / lasers
-#
-# Future Ideas:
-# * Cyber punk future thing / Neon
-# * Actual console version (easter egg / debugging aid / works over ssh)
-# * Shower door / bathroom mirror
-# * iPhone app thing
-# * Playground spinney thing
-# * Snow / frozen lake?
-# * something to do with food
-# * Light board - like those found in ships
-# * OXO oscilloscope throwback theme
-# * metal / glass forge
-# * Empty / test / debug level
-# * Clone of James' 2004 Tic Tac Toe
+- name: App
+  music_theme: Casual
+  marks_and_grid: |
+    The marks and grid are made up of simple clean lines. The marks are solid
+    red or blue. The grid is solid gray in color. Animations are not used or
+    used lightly.
+
+    A line is drawn through the winning marks. The line is the same color as
+    the marks.
+  background: |
+    The game is being played on a smart phone that is rotated 90 degrees. The
+    background of the play area is solid white.
+
+    Additionally. the phone's bezel, speaker, and status bar are all visible.
+    The status bar includes signal level, power level, and time on the right
+    side. The left contains annoying advertisements that advertise fictional
+    products, poke fun at data stealing apps, and promote the other environments
+    in the game. The advertisements are rotated 90 degrees like the phone.
+  details: |
+    There is an Easter egg opportunity with the advertisements where clicking on
+    one advertising a different level switches the environment to that level.
+

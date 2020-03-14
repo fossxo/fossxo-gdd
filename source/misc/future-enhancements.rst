@@ -13,4 +13,14 @@ Future Enhancements
           - Complete a speed run
           - Complete a speed run in less than X seconds
           - Complete a speed run in less than 1 second!!
-
+        * More environments:
+          - Cyber punk future thing
+          - Laser cutter / lasers
+          - Shower door / bathroom mirror
+          - Playground spinney thing
+          - Snow / frozen lake
+          - Food theme
+          - Light board - like those found in ships
+          - OXO oscilloscope throwback theme
+          - metal / glass forge
+          - Clone of James' 2004 Tic Tac Toe
