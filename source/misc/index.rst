@@ -10,6 +10,6 @@ This chapter contains additional information about Tic Tac Toe.
 
     audience
     platforms
-    distribution
+    licensing-and-distribution
     similar-games
     future-enhancements

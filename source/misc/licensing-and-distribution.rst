@@ -3,7 +3,8 @@ Licensing and Distribution
 ##########################
 
 This section describes how the game is licensed, distributed, and other related
-details.
+details of getting the game into player's hands.
+
 
 ==============
 Game's License
