@@ -55,7 +55,7 @@
     gui
     environments
     misc/index
-    technical-design
+    technical-design/index
     glossary
     references
 

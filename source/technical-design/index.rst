@@ -26,6 +26,8 @@ Technical Design
       * Part of the credits can be built from information in this file.
       * Create a "credits" section in the help pages that credit assets per
         environment.
+      * Use `cargo metadata` to get all of the dependencies of the game. This
+        can be used to create a bill of materials.
     * Development Aids
       - Tool that generates code needed for an environment
         - The generated environment should be fully playable so developers can
@@ -46,3 +48,5 @@ Technical Design
         be located, and do other up front checking during the loading process.
     * Packaging
       - Windows Inno setup / Linux app package thing / Mac OS
+      - Talk about branding and such
+      - What about package signing? How do we get and manage our certificates?

@@ -1,49 +1,137 @@
-############
+##########################
+Licensing and Distribution
+##########################
+
+This section describes how the game is licensed, distributed, and other related
+details.
+
+==============
+Game's License
+==============
+The game is dual licensed under the MIT [#mitlicense]_ and
+Apache-2.0 [#apachelicense]_ licenses. This is the same licensing scheme used
+for the Rust language. [#rustlanglicense]_ Under these licenses users are free
+to obtain, modify, and redistribute the source code for both private and
+commercial use.
+
+Any original game's assets are licensed under the CC-BY-4.0 license. [#ccbylicense]_
+
+
+============
 Distribution
-############
+============
+The game is directly distributed to players via the internet. There are two main
+ways to acquire a copy of the game: downloading an platform specific package, or
+building the game from source.
 
-This section
-
-=================
-Build from Source
-=================
-
-..  TODO:
-    * install from https://crates.io/ via cargo with cargo install open_ttt
-    * or clone repo and then use cargo run --release
-
-
-=================
+-----------------
 Platform Packages
-=================
+-----------------
+Platform specific packages can be downloaded from the game's website.
+In particular, Windows users expect an installer to install the game on their
+system. They do not have readily access to compilers or other tools to build
+software from source. Finally, Windows is the most widely used operating system
+so a Windows installer is a requirement for this project to be successful.
 
-..  TODO: Installer for our Windows friends. It would be nice to have a Linux and Mac packages too.
+Linux and Mac users have easier access to compilers but they still appreciate
+packages for their convenience. Packages for these platforms are created on a
+best effort basis.
+
+-----------------
+Build from Source
+-----------------
+Because the game is open source anyone can build the game from source.
+
+There are two main ways to build the game from source:
+
+1.  Clone the game's source code repository and follow the build instructions.
+2.  Use Cargo, the Rust package manager, to download, build, and install the
+    game and its dependencies.
+
 
 ============
 Monetization
 ============
+There is no intention to generate revenue from Tic Tac Toe. The is released
+free of charge. There are no advertisements, micro-transactions, or data
+stealing spyware that is found in other *free* games.
 
-..  TODO: The game is Free, open source, no advertisments.  The game is released
-        under the MIT and Apachie
 
 ..  _ref-distribution-license-compliance:
 
-==================
-License Compliance
-==================
+==============================
+Third Party License Compliance
+==============================
+Tic Tac Toe makes extensive use of third party software libraries and game
+assets to help reduce the development effort. To use these resources, the game
+must comply with their various licensing terms. Additionally, the game can only
+use any third party resources that have licenses that are compatible with the
+game's license.
 
-..  TODO:
-    - The game makes extensive use of third party code and assets.
-    - What licenses can be used for third party code and assets?
-      - Lookup the CC licenses.
-    - How the assets are tracked and credits updated
-      - On or accessable from the credits screen
+------------------
+Software Libraries
+------------------
+Rust libraries that have the following licenses can be used by the game:
+
+* MIT
+* Apache-2.0
+* The Unlicense
+
+Additionally, the game can dynamically link to libraries with the above licenses
+plus libraries that are licensed under the LGPL.
+
+A software bill of materials is included in the game's user documentation. This
+ensures the game complies with the required copyright notices. Also, users can
+see exactly what is included in the software.
+
+The software bill of materials includes the following information about each
+library:
+
+* Name
+* Version number
+* License
+* Link to website or source code repository
+
+
+-----------
+Game Assets
+-----------
+The game can freely use or remix third party music, sound FX, and textures that
+have the following licenses: [#ccbysa]_
+
+* CC0
+* CC-BY
+
+A list of third party assets used is accessible from the game's credits or user
+documentation to fulfill the attribution requirements. The following information
+is included for each asset:
+
+*   Title - title of the work.
+*   Author - name or handle of the author.
+*   License - the specific CC license the work is published under.
+*   Copyright notice - some works include a copyright notice supplied by the
+    author that must be included in the attribution.
+*   Source - link to website the asset was obtained from.
+*   Is derivative - Mention if the work was modified from the original and
+    provide a short summary of changes.
 
 
 =====================================
 Internationalization and Localization
 =====================================
+The game is initially released in American English. However, localizations are
+accepted from contributors to include in future releases. This helps the game be
+more accessible to a wider audience. To make it easy to add various
+localizations, the game is designed with internationalization support.
 
-..  TODO:
-    The game supports internationalization. It is released in English but localizations
-    are accepted from contributors.
+
+..  rubric:: Footnotes
+
+..  [#mitlicense] `Choose an open source license - MIT License <https://choosealicense.com/licenses/mit/>`_
+..  [#apachelicense] `Choose an open source license - Apache License 2.0 <https://choosealicense.com/licenses/apache-2.0/>`_
+..  [#rustlanglicense] See Rust's `README <https://github.com/rust-lang/rust#license>`_
+        for licensing details.
+..  [#ccbylicense] `Choose an open source license - Creative Commons Attribution 4.0 International <https://choosealicense.com/licenses/cc-by-4.0/>`_
+..  [#ccbysa] The CC-BY-SA is incompatible with the the game's licensing terms.
+        It is this author's understanding that a game is considered a derivative
+        work and thus must also be licensed under CC-BY-SA.
