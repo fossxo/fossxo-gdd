@@ -33,10 +33,15 @@ opens runs on Windows, Mac, and Linux. The game launches Summer 2020.
 =========================
 Overview of this Document
 =========================
+This game design document contains chapters covering various aspects of the
+game. [#rogers]_ This includes chapters for the game's :doc:`gameplay`,
+:doc:`gui`, and various :doc:`environments`.
 
-..  TODO:
-    Where to find everything
-    See the glossary
+The :doc:`technical-design/index` chapter provides technical design details of
+the games architecture.
+
+Additionally, the :doc:`glossary` defines terms that are used throughout the
+game design document.
 
 
 ==================
@@ -116,6 +121,7 @@ objective.
 
 ..  rubric:: Footnotes
 
+..  [#rogers] The structure of this document is based on [Rogers-2014]_.
 ..  [#ounceOfRust] For details on the Ounce of Rust project see the
         `Ounce of Rust Project Manual <https://j-richey.github.io/project-documentation/ounce-of-rust/>`__
 ..  [#openTTTlib] ``open_ttt_lib`` is available at https://crates.io/crates/open_ttt_lib

@@ -1,11 +1,19 @@
 ..  only:: builder_html and (not singlehtml)
 
-    ###################################
-    Pound of Rust Project Documentation
-    ###################################
+    ###########################
+    Tic Tac Toe Design Document
+    ###########################
 
-    Welcome to Pound of Rust Project Documentation. This project results in the
+    Welcome to Tic Tac Toe Design Document. This project results in the
     creation of a Tic Tac Toe game using the Rust programming language.
+    This document describes in detail the design considerations of the game.
+
+    This design document is also available in these other formats:
+
+    * |pdf_download|
+    * `View as single page <singlepage.html>`__
+
+    .. warning::  The design document is a work in progress.
 
     ==================
     Overview Documents
@@ -19,23 +27,22 @@
     ================
     Useful Resources
     ================
+    Below are links to resources developers working on the game might find useful.
+
+    * `OpenGameArt.org <https://opengameart.org/>`_
 
     ..  TODO:
         Place a list of useful resources here so developers can quicky find what they need.
-        - https://opengameart.org/
+        consider promoting the following resources.
         - https://itch.io/game-assets
         - https://gist.github.com/EndangeredMassa/6b177f36b08a5b0798cf
         - Piston documentation
         - Rust documentation
         - open TTT docs
 
-    ===============
-    Design Document
-    ===============
-    The Tic Tac Toe Design Document describes in detail the design
-    considerations of the game.
-
-    .. warning::  The design document is a work in progress.
+    =================
+    Table of Contents
+    =================
 
 
 ..  Include top level heading for the single page design document.
@@ -59,13 +66,7 @@
     glossary
     references
 
-
 ..  only:: builder_html and (not singlehtml)
-
-    The design document is also available in other formats:
-
-    * |pdf_download|
-    * `View as single page <singlepage.html>`__
 
     Also See:
 
