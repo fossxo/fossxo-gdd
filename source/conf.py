@@ -56,8 +56,9 @@ html_title = project + " Rev. " + release
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#
 html_theme = 'alabaster'
+# Include our custom CSS options.
+html_static_path = ['_themes/custom.css']
 
 # For alabaster options see https://alabaster.readthedocs.io/en/latest/customization.html
 html_theme_options = {

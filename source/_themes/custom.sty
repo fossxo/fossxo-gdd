@@ -1,4 +1,4 @@
-% Custom pahge header and footer that places the chater and section names
+% Custom page header and footer that places the chapter and section names
 % in the header above the page numbers in the footer.
 \fancypagestyle{normal}{
   \fancyhf{}
@@ -12,3 +12,6 @@
   \renewcommand{\footrulewidth}{0.4pt}
 }
 
+% Overwrite the GUI label menu selection text to be bold per the Windows style guide.
+\renewcommand{\sphinxmenuselection}[1]{\textsf{\textbf{#1}}}
+\renewcommand{\sphinxguilabel}[1]{\textsf{\textbf{#1}}}

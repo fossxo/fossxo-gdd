@@ -231,7 +231,7 @@ The options screen contains all of the game's player configurable options.
 
 1.  Music and Sound FX sliders to control the volume of these items. This allows
     players to mute some or all of the in-game sounds.
-2.  :guilabel:`Reset to Defaults` rests all options to their default values.
+2.  :guilabel:`Reset to Defaults` resets all options to their default values.
 3.  The :guilabel:`Back` button returns to the main menu.
 
 
