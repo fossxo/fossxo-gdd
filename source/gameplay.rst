@@ -65,6 +65,8 @@ capitalize on rare mistakes made by the computer to win. This is the recommended
 difficulty for experienced Tic Tac Toe players.
 
 
+.. _ref-gameplay-two-player-mode:
+
 ===============
 Two Player Mode
 ===============

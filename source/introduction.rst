@@ -37,8 +37,8 @@ This game design document contains chapters covering various aspects of the
 game. [#rogers]_ This includes chapters for the game's :doc:`gameplay`,
 :doc:`gui`, and various :doc:`environments`.
 
-The :doc:`technical-design/index` chapter provides technical design details of
-the games architecture.
+The :doc:`technical-design/index` chapter describe how the game is created.
+This includes details of the games architecture and design.
 
 Additionally, the :doc:`glossary` defines terms that are used throughout the
 game design document.
@@ -47,8 +47,7 @@ game design document.
 ==================
 Project Objectives
 ==================
-Creation of the Tic Tac Toe game described in this document is part of the
-Pound of Rust project. This section describes the project's objectives.
+This section describes the project's primary objectives.
 
 
 ---------------------------------
@@ -105,6 +104,8 @@ Finally, this allows quick turnaround of future releases of the game.
 Automated tools, guides, checklists, and detailed documentation are some ways
 that can help development speed.
 
+
+.. _ref-objective-build-risk-reduction-prototype:
 
 ------------------------------
 Build Risk Reduction Prototype

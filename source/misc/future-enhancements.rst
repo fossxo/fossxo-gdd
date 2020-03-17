@@ -5,6 +5,41 @@ Future Enhancements
 There are some additional features that can be considered for future versions of
 the game. These are described below.
 
+
+===================
+Network Multiplayer
+===================
+Network based multiplayer allows players to remotely battle each other. Network
+based multiplayer is preferable to local multiplayer in many situations such as
+friends who live in different states, office environments, or players trying to
+avoid a zombie apocalypse. [#covid19]_
+
+There are different network multiplayer modes.
+
+Normal
+    The normal mode is :ref:`ref-gameplay-two-player-mode` but played over the
+    network instead of locally.
+
+Speedrun
+    Speedrun multiplayer is a two player version of :ref:`ref-gameplay-speed-run-mode`
+    where the players compete to see who can play 10 games the fastest without
+    loosing. If a player wins one of the games, the speed run is over and that
+    player is the winner. If all ten games are cat games, then the player with
+    the fastest overall time wins.
+
+King of the Hill
+    King of the hill allows more than two people to battle. From the pool of
+    available players two are chosen to battle. The round consists of playing
+    two games. The player first to win any game, or in the case of all cat's
+    games has the fastest overall time, wins the round. They stay in the game
+    and another challenger is selected from the pool of players. This continues
+    until a victory condition is met, such as the first player to win X number
+    of rounds.
+
+Regardless of the mode, the players always see the same environment to ensure
+a consistent play experience.
+
+
 ============
 Achievements
 ============
@@ -42,3 +77,8 @@ environments. Some environments to consider are listed below.
 * OXO oscilloscope throwback theme.
 * Metal or glass forge with lots of glowing hot liquids.
 * Clone of James' 2004 Tic Tac Toe.
+
+
+..  rubric:: Footnotes
+
+..  [#covid19] `2019–20 coronavirus pandemic <https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic>`__

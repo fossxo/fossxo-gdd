@@ -17,7 +17,7 @@ _pdf_base_name = "{project} Rev {release}".format(
 
 # Create a reStructuredText macro for downloading the PDF that includes the
 # correct filename based on revision.
-rst_epilog = '.. |pdf_download| replace:: `Download PDF <{}.pdf>`__'.format(_pdf_base_name)
+rst_epilog = '.. |pdf_download| replace:: `Printable PDF <{}.pdf>`__'.format(_pdf_base_name)
 
 # -- General configuration ---------------------------------------------------
 
@@ -65,8 +65,6 @@ html_theme_options = {
     'sidebar_collapse': True,
     'code_font_size': "0.8em",
     'extra_nav_links': {
-        "Overview Handout": "tic-tac-toe-overview-handout.pdf",
-        "Overview Slides": "tic-tac-toe-overview-slides.pdf",
         "GitHub Source": "https://github.com/j-richey/pound-of-rust-docs",
     },
 }

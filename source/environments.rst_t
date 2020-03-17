@@ -13,6 +13,9 @@ This template expects the following values to be in its environment:
   tool_info: - information about the tool that rendered this template.
     tool_name - string
     render_time - datetime or string
+
+Note: you can reference each each environment with :ref:`ref-environment-name`
+where 'name' is the lowercase version of the name with spaces converted to hyphens.
 -#}
 
 {#- Show a warning in the generated file so others know not to directly edit it. -#}
@@ -40,6 +43,9 @@ List of Environments
 This section lists each of the games environments.
 
 {% for env in environments %}
+
+..  _ref-environment-{{ env.name | lower | replace(' ', '-') }}:
+
 {{ '-' * env.name | length }}
 {{ env.name }}
 {{ '-' * env.name | length }}

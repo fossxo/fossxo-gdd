@@ -11,7 +11,7 @@
     This design document is also available in these other formats:
 
     * |pdf_download|
-    * `View as single page <singlepage.html>`__
+    * `Single HTML page <singlepage.html>`__
 
     .. warning::  The design document is a work in progress.
 
@@ -31,9 +31,9 @@
 
     * `OpenGameArt.org <https://opengameart.org/>`_
 
-    ..  TODO:
-        Place a list of useful resources here so developers can quicky find what they need.
-        consider promoting the following resources.
+    ..  Place a list of frequently used external resources here so developers
+        can quickly find what they need.
+        Note: the list below might be worth adding.
         - https://itch.io/game-assets
         - https://gist.github.com/EndangeredMassa/6b177f36b08a5b0798cf
         - Piston documentation
