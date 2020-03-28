@@ -53,7 +53,7 @@ There are two main ways to build the game from source:
 ============
 Monetization
 ============
-There is no intention to generate revenue from Tic Tac Toe. The is released
+There is no intention to generate revenue from FoxXO. The is released
 free of charge. There are no advertisements, micro-transactions, or data
 stealing spyware that is found in other *free* games.
 
@@ -63,7 +63,7 @@ stealing spyware that is found in other *free* games.
 ==============================
 Third Party License Compliance
 ==============================
-Tic Tac Toe makes extensive use of third party software libraries and game
+FoxXO makes extensive use of third party software libraries and game
 assets to help reduce the development effort. To use these resources, the game
 must comply with their various licensing terms. Additionally, the game can only
 use any third party resources that have licenses that are compatible with the

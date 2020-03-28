@@ -1,14 +1,14 @@
 ..  only:: builder_html and (not singlehtml)
 
-    ###########################
-    Tic Tac Toe Design Document
-    ###########################
+    ##########################
+    FoxXO Game Design Document
+    ##########################
 
-    Welcome to Tic Tac Toe Design Document. This project results in the
-    creation of a Tic Tac Toe game using the Rust programming language.
-    This document describes in detail the design considerations of the game.
+    Welcome to FoxXO game design document. FoxXO is a free and open example of
+    tic-tac-toe created using the Rust programming language. This document
+    describes in detail the design considerations of the game.
 
-    This design document is also available in these other formats:
+    The FoxXO game design document is also available in these other formats:
 
     * |pdf_download|
     * `Single HTML page <singlepage.html>`__
@@ -18,11 +18,11 @@
     ==================
     Overview Documents
     ==================
-    These short overview documents introduce the Tic Tac Toe game and provide
-    the scope of the project.
+    These short overview documents introduce the FoxXO game and provide the
+    scope of the project.
 
-    * `Handout <tic-tac-toe-overview-handout.pdf>`__ - start here
-    * `Slides <tic-tac-toe-overview-slides.pdf>`__ - a short presentation about the game
+    * `Handout <foxxo-overview-handout.pdf>`__ - start here
+    * `Slides <foxxo-overview-slides.pdf>`__ - a short presentation about the game
 
     ================
     Useful Resources
@@ -48,9 +48,9 @@
 ..  Include top level heading for the single page design document.
 ..  only:: singlehtml
 
-    ###########################
-    Tic Tac Toe Design Document
-    ###########################
+    ##########################
+    FoxXO Game Design Document
+    ##########################
 
 
 ..  toctree::

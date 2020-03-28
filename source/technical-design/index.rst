@@ -1,7 +1,7 @@
 ################
 Technical Design
 ################
-The technical design of Tic Tac Toe is described in this chapter.
+The technical design of FoxXO is described in this chapter.
 
 ..  Note::
     The Technical Design chapter is intentionally incomplete in this version

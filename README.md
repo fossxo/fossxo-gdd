@@ -1,14 +1,13 @@
-Pound of Rust Project Documentation
-===================================
+FoxXO Game Design Document
+==========================
 
 :warning: This documentation is a work in progress.
 
-This repository contains documentation for the Pound of Rust project ---
-the creation of a Tic Tac Toe game in Rust. This project is the successor of
-the [Ounce of Rust Project](https://github.com/j-richey/ounce-of-rust-manual).
+This repository contains the FoxXO game design document. FoxXO is a free and
+open example of tic-tac-toe.
 
-The latest version of the documentation is hosted here:
-[Pound of Rust Project Documentation](https://j-richey.github.io/project-documentation/pound-of-rust/)
+The latest version of the game design document is hosted here:
+[FoxXO Game Design Document](https://j-richey.github.io/project-documentation/foxxo-gdd/)
 
 
 ## Building
@@ -26,7 +25,7 @@ On Ununtu / Debian system the required packages can be installed and
 documentation built with:
 
 ```
-$ sudo apt install texlive-full inkscape plantuml
+$ sudo apt install texlive-full inkscape plantuml libreoffice
 $ python3 -m venv pyvenv
 $ source pyvenv/bin/activate
 $ pip install -r requirements.txt
@@ -56,5 +55,5 @@ for a complete list of output types.
 
 
 ## License
-The project documentation is licensed under the
-[CC-BY-SA-4.0 license](https://github.com/j-richey/pound-of-rust-docs/blob/master/LICENSE.txt).
+The FoxXO game design document is licensed under the
+[CC-BY-SA-4.0 license](https://github.com/j-richey/foxxo-gdd/blob/master/LICENSE.txt).

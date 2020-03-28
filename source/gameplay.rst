@@ -4,10 +4,10 @@ Gameplay
 
 
 ====================
-Rules of Tic Tac Toe
+Rules of Tic-tac-toe
 ====================
-Tic Tac Toe is a game of strategy where two players, X and O, take turns placing
-their mark in a 3 x 3 gird. The rules for Tic Tac Toe used for each game mode
+Tic-tac-toe is a game of strategy where two players, X and O, take turns placing
+their mark in a 3 x 3 gird. The rules for tic-tac-toe used for each game mode
 are as follows:
 
 1.  Play occurs on a board composed of a 3 x 3 grid of squares. The board starts
@@ -24,9 +24,9 @@ are as follows:
 
     ..  _fig-example-wining-games:
     ..  figure:: img/example-wining-games.*
-        :alt: Examples of winning Tic Tac Toe games.
+        :alt: Examples of winning tic-tac-toe games.
 
-        Examples of winning Tic Tac Toe games showing player X winning by getting
+        Examples of winning tic-tac-toe games showing player X winning by getting
         three marks a row, diagonal, and column. The red line shows the squares
         that contributed to the win. Notice that it is possible to get multiple
         sets of three marks in a row.
@@ -37,9 +37,9 @@ are as follows:
 
     ..  _fig-example-cats-games:
     ..  figure:: img/example-cats-games.*
-        :alt: Examples of winning Tic Tac Toe games.
+        :alt: Examples of tic-tac-toe cat's games.
 
-        Examples of Tic Tac Toe games ending in a cat's game. No player managed
+        Examples of tic-tac-toe games ending in a cat's game. No player managed
         to get three marks in a line.
 
 #.  The steps above are repeated for a series of games. The starting player
@@ -53,16 +53,16 @@ One Player Mode
 In one player mode the player battles a computer controlled opponent. There are
 three difficulty settings: **easy**, **medium**, and **hard**.
 
-Easy difficulty is targeted at players who are new to Tic Tac Toe and/or
+Easy difficulty is targeted at players who are new to tic-tac-toe and/or
 computer games. The computer picks random squares allowing players to learn the
 game's controls and rules.
 
-Medium difficulty is for players who have some experience with Tic Tac Toe. The
+Medium difficulty is for players who have some experience with tic-tac-toe. The
 computer provides a challenge to the player but games are still winnable.
 
 At hard difficulty the computer plays almost perfect games. The player must
 capitalize on rare mistakes made by the computer to win. This is the recommended
-difficulty for experienced Tic Tac Toe players.
+difficulty for experienced tic-tac-toe players.
 
 
 .. _ref-gameplay-two-player-mode:

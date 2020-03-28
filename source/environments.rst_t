@@ -24,8 +24,8 @@ where 'name' is the lowercase version of the name with spaces converted to hyphe
 ############
 Environments
 ############
-One of the main defining features of this take on Tic Tac Toe is the use of
-multiple environments. Each environment has a strong visual theme and
+One of the main defining features of FoxXO over other tic-tac-toe games is the
+use of multiple environments. Each environment has a strong visual theme and
 complementary soundtrack.
 
 

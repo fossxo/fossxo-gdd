@@ -5,7 +5,7 @@ User Interface
 ..  TODO:
       - Operations more than 1 second are animated
 
-This chapter describes the user interface of Tic Tac Toe. This includes the main
+This chapter describes the user interface of FoxXO. This includes the main
 game board, controls, and all game menus.
 
 
@@ -35,7 +35,7 @@ The game board contains the following items of interest:
     the menu also appear in this area. The text is outlined or shaded such that
     it is visible over any possible background.
 
-A major focus of the game is playing Tic Tac Toe in variety of stunning
+A major focus of the game is playing tic-tac-toe in variety of stunning
 environments that control how the marks, grid, and background look. Thus, a
 minimalist approach is used for the game board view. The only UI widgets are a
 menu button and some status text.
@@ -104,7 +104,7 @@ allow users to navigate the game's menus.
 =====
 Menus
 =====
-The Tic Tac Toe menus allow players to select the various game modes and to
+The game's menus allow players to select the various game modes and to
 customize the game. The :ref:`ref-ui-screen-flowchart` provides details on how
 the menus and views connect.
 
@@ -256,7 +256,7 @@ The credits screen contains the following items:
 2.  :guilabel:`Back` returns to the :ref:`ref-ui-main-menu`.
 
 The credits screen uses a different background and soundtrack than the other
-menus. The background consists of one or more Tic Tac Toe games being played
+menus. The background consists of one or more tic-tac-toe games being played
 in a variety of environments. Each environment is clearly visible --- blurring
 and other effects are not used on this screen. The environments are changed
 several times per game. This showcases the many environments of the game.
@@ -264,7 +264,7 @@ several times per game. This showcases the many environments of the game.
 The credits screen has its own sound track. The music and sound FX of the
 individual environments are not used.
 
-Once all of the credits have played the screen remains open with Tic Tac Toe
+Once all of the credits have played the screen remains open with tic-tac-toe
 games being played in the background.
 
 
@@ -283,9 +283,9 @@ loads.
 ----
 Help
 ----
-The help screen provides information on how to play Tic Tac Toe, the application
-version, how to report bugs, and other information. All information is hosted
-locally; no internet access is required. [#localhelp]_
+The help screen provides information on how to play tic-tac-toe, the different
+game modes, the application version, how to report bugs, and other information.
+All information is hosted locally; no internet access is required. [#localhelp]_
 
 
 .. _ref-ui-screen-flowchart:
@@ -298,13 +298,13 @@ and menus are connected.
 
 ..  _uml-screen-flowchart:
 ..  uml::
-    :caption: Connections between Tic Tac Toe's menus and screens.
+    :caption: Connections between FoxXO's menus and screens.
     :height: 8in
 
     hide empty description
 
     ' Create aliases for state names with spaces
-    state "Tic Tac Toe Board" as game_board
+    state "Tic-tac-toe Board" as game_board
     state "Main Menu" as main_menu
     state "Single-player" as singleplayer
     state "Speedrun" as speedrun

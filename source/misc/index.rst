@@ -2,7 +2,7 @@
 Additional Considerations
 #########################
 
-This chapter contains additional information about Tic Tac Toe.
+This chapter contains additional information about FoxXO.
 
 ..  toctree::
     :maxdepth: 1

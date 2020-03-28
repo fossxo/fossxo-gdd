@@ -1,13 +1,13 @@
 ###############
 Target Audience
 ###############
-Tic Tac Toe is targeted at casual gamers. There are three general groups that
+FoxXO is targeted at casual gamers. There are three general groups that
 might find the game interesting: new PC gamers, bored adults and modders.
 
 =============
 New PC Gamers
 =============
-Tic Tac Toe can be played by young or older players that do not have much PC
+FoxXO can be played by young or older players that do not have much PC
 gaming experience. The game requires basic strategy and has simple inputs. As
 players become more comfortable with the game mechanics they can try
 :ref:`ref-gameplay-speed-run-mode`.
@@ -15,7 +15,7 @@ players become more comfortable with the game mechanics they can try
 ====================
 Players Filling Time
 ====================
-Office workers or people stuck on an airplane can play Tic Tac Toe to make
+Office workers or people stuck on an airplane can play FoxXO to make
 the time pass. The regular game modes do not demand much attention so players
 can let their minds wonder while playing. The variety of environments should
 keep players entertained for at least a little while.
@@ -23,7 +23,7 @@ keep players entertained for at least a little while.
 ===================================
 Computer Science Students / Modders
 ===================================
-Tic Tac Toe is open source and is developed so that others can add their own
-environments or extend the game. Tic Tac Toe is a simple, but non-trivial
+FoxXO is open source and is developed so that others can add their own
+environments or extend the game. FoxXO is a simple, but non-trivial
 application where people learning to program might find it an interesting
 codebase to examine.

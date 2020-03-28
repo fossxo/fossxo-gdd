@@ -17,10 +17,10 @@ Glossary
         TODO
 
     cat's game
-        Term used when a game of Tic Tac Toe ends in a draw where there is no winner.
+        Term used when a game of tic-tac-toe ends in a draw where there is no winner.
 
     environment
-        An environment is a unique setting or location where Tic Tac Toe is
+        An environment is a unique setting or location where tic-tac-toe is
         played.
 
     grid

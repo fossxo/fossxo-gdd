@@ -63,14 +63,14 @@ include the following.
 =======================
 Additional Environments
 =======================
-A major focus of this version of Tic Tac Toe is the ability to play on a variety
+A major focus of FoxXO is the ability to play tic-tac-toe in a variety
 of :doc:`../environments`. Future versions of the game can add even more
 environments. Some environments to consider are listed below.
 
 * Lasers. Perhaps a laser cutter or some other use of lasers.
 * Shower door or bathroom mirror.
 * Futuristic dystopian or cyber punk theme.
-* Some playgrounds have a 3x3 grid of squares for playing Tic Tac Toe.
+* Some playgrounds have a 3x3 grid of squares for playing tic-tac-toe.
 * Winter / snow / frozen lake theme.
 * Food theme.
 * Light board, like those found in ships or submarines.
