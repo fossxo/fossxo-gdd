@@ -101,9 +101,6 @@ their time and efforts creating stunning environments. Additionally, this
 lowers the barrier of entry for users who are interested in modifying the game.
 Finally, this allows quick turnaround of future releases of the game.
 
-Automated tools, guides, checklists, and detailed documentation are some ways
-that can help development speed.
-
 
 .. _ref-objective-build-risk-reduction-prototype:
 

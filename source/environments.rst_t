@@ -26,7 +26,7 @@ Environments
 ############
 One of the main defining features of FoxXO over other tic-tac-toe games is the
 use of multiple environments. Each environment has a strong visual theme and
-complementary soundtrack.
+complementary soundtrack. [#hiddenfox]_
 
 
 =====================
@@ -80,5 +80,7 @@ This section lists each of the games environments.
 
 ..  rubric:: Footnotes
 
+..  [#hiddenfox] To play off of the game's name, FoxXO, environment artists are
+        encouraged to hid a reference to a fox in the environment.
 ..  [#shuffelalgorithms] Wikipedia's `Fisher–Yates shuffle <https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle>`__
         article contains details on various shuffling algorithms.

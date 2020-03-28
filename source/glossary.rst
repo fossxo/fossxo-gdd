@@ -13,9 +13,6 @@ Glossary
         :term:`environment`, it indicates the environment's music is not a main
         focus of the environment.
 
-    background scenery
-        TODO
-
     cat's game
         Term used when a game of tic-tac-toe ends in a draw where there is no winner.
 
@@ -23,17 +20,12 @@ Glossary
         An environment is a unique setting or location where tic-tac-toe is
         played.
 
-    grid
-        TODO
-
     hand drawn
         Hand drawn is a style of line that is wavy and imprecise.
 
-    mark
-        TODO
-
     open source software
-        TODO
+        Open source software is software whose source code is available for others
+        to study, modify, and redistribute.
 
     Rust programming language
         Rust is a systems programming language with a focus on safety and speed.
@@ -47,4 +39,7 @@ Glossary
         the game as fast as possible.
 
     throwaway prototype
-        TODO
+        A prototype is a version of software that is created to demonstrate core
+        features or techniques of a software application. A throwaway prototype
+        is discarded once the features or techniques have been demonstrated.
+        Throwaway prototypes allow for rapid experimentation with low risk.

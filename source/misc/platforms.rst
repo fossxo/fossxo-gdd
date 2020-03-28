@@ -18,6 +18,9 @@ the minimum system requirements.
     Display             800 x 600 pixel display or larger
     ==================  ===================================
 
+A system with the above requirements listed in
+:numref:`table-min-system-requirements` can render the game at an average of at
+least 30 frames per second.
 
 ..  rubric:: Footnotes
 

@@ -34,7 +34,7 @@
 
 - name: Blueprint
   concept_art: img/concept-art/blueprint
-  music_theme: Background or thinking music
+  music_theme: Background or thinking music.
   marks_and_grid: |
     The blueprint uses white text for the marks and white lines for the grid.
 
@@ -67,7 +67,7 @@
 
 - name: Notebook Paper and Pencil
   concept_art: img/concept-art/paper
-  music_theme: Mild background music
+  music_theme: Mild background music.
   marks_and_grid: |
     The marks and grid are dark graphite from a \#2 pencil. Each mark is
     slightly different and the grid lines are not perfectly straight to give
@@ -211,7 +211,7 @@
 
 - name: Chalkboard
   concept_art: img/concept-art/chalkboard
-  music_theme: TODO
+  music_theme: To be determined later by the environment artist.
   marks_and_grid: |
     The marks and grid are created from hand drawn white chalk. A stereotypical
     chalk sound FX is used when the marks are being drawn.
@@ -226,7 +226,7 @@
 
 
 - name: Whiteboard
-  music_theme: TODO
+  music_theme: To be determined later by the environment artist.
   marks_and_grid: |
     The marks and grid are created from various colors of dry erase markers.
     Typical colors include, blue, green, black, red, and purple. The grid and
@@ -330,7 +330,7 @@
 
 - name: RGB Led Grid
   concept_art: img/concept-art/led-grid
-  music_theme: Modern 8 bit or techno
+  music_theme: Modern 8 bit or techno.
   marks_and_grid: |
     The marks and grid are displayed on a 64x32 RGB LED grid. The marks and grid
     each use their own colors. This includes primary and secondary colors.
@@ -361,7 +361,7 @@
 
 
 - name: Crayon
-  music_theme: Background
+  music_theme: To be determined later by the environment artist.
   marks_and_grid: |
     The marks and grid are hand drawn with different colors of crayons.
 
@@ -388,7 +388,7 @@
 
 
 - name: Bacteria
-  music_theme: TODO
+  music_theme: To be determined later by the environment artist.
   marks_and_grid: |
     The grid is composed of rod bacteria viewed under a microscope. The X and O
     marks are likewise formed from bacteria of the corresponding shape.

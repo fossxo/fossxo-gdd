@@ -76,6 +76,8 @@ application can be built.
       - Tool that generates code needed for an environment
         - The generated environment should be fully playable so developers can
           test out the new code right away before they start making modifications.
+        - Automated tools, guides, checklists, and detailed documentation are
+          some ways that can help development speed.
       - Command line options
         - Option to launch into as specific environment.
       - Open to show the grid for centering purposes.

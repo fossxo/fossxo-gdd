@@ -2,9 +2,6 @@
 User Interface
 ##############
 
-..  TODO:
-      - Operations more than 1 second are animated
-
 This chapter describes the user interface of FoxXO. This includes the main
 game board, controls, and all game menus.
 
@@ -274,8 +271,8 @@ games being played in the background.
 Loading Screen
 --------------
 If necessary for technical reasons, the loading screen provides feedback to the
-player while assets are loaded. This screen is only shown when the game first
-loads.
+player while assets are loaded. [#loadtime]_ This screen is only shown when the
+game first loads.
 
 
 ..  _ref-ui-help:
@@ -339,6 +336,9 @@ and menus are connected.
 ..  [#speedrunloss] If the player loses a speedrun game, the board remains
         visible so the player can see where they made mistakes. This allows them
         to adjust their strategy for next time.
+..  [#loadtime] The loading screen is needed if the load time exceeds one second
+        on the minimum supported system listed in
+        :numref:`table-min-system-requirements`.
 ..  [#localhelp] The :ref:`ref-objective-free-of-charge` objective mentions not
         tracking players. Websites often contain trackers, advertisements, and
         other items that violate this objective.
