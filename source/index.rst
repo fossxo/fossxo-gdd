@@ -13,8 +13,6 @@
     * |pdf_download|
     * `Single HTML page <singlepage.html>`__
 
-    .. warning::  The design document is a work in progress.
-
     ==================
     Overview Documents
     ==================

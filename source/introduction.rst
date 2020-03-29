@@ -6,7 +6,7 @@ Introduction
 Purpose of this Document
 ========================
 This is the FoxXO game design document. This document describes in
-detail the he objectives, requirements, and design considerations of the game
+detail the objectives, requirements, and design considerations of the game
 providing a central location for this information. This is invaluable for
 understanding the game's scope, planning the project milestones, and creating
 the games assets.
@@ -21,7 +21,7 @@ Tic-tac-toe is a game of strategy where two players, X and O, take turns placing
 their mark in a 3 x 3 gird. The first player to get three marks in a row,
 column, or diagonal wins the game.
 
-FoxXO is an unique take on the classic game of tic-tac-toe. Players of
+FoxXO is a unique take on the classic game of tic-tac-toe. Players of
 all ages battle the computer or each other in a variety of stunning environments.
 Each environment tells part of the story of tic-tac-toe from the past, present,
 and future. Each environment has a strong visual theme and complementary
@@ -34,11 +34,11 @@ opens runs on Windows, Mac, and Linux. The game launches Summer 2020.
 Overview of this Document
 =========================
 This game design document contains chapters covering various aspects of the
-game. [#rogers]_ This includes chapters for the game's :doc:`gameplay`,
+game. [#rogers]_ This includes chapters for the :doc:`gameplay`,
 :doc:`gui`, and various :doc:`environments`.
 
 The :doc:`technical-design/index` chapter describe how the game is created.
-This includes details of the games architecture and design.
+This includes details of the game's architecture and design.
 
 Additionally, the :doc:`glossary` defines terms that are used throughout the
 game design document.
@@ -58,7 +58,7 @@ and Linux. This project is the follow-up to the Ounce of Rust project [#ounceOfR
 that resulted in the creation of a Rust based tic-tac-toe logic library,
 ``open_ttt_lib``. [#openTTTlib]_
 
-In addition to creating a fun game, the project provides more hand on experience
+In addition to creating a fun game, the project provides more hands on experience
 using Rust and is a showcase for ``open_ttt_lib``.
 
 
@@ -67,10 +67,9 @@ using Rust and is a showcase for ``open_ttt_lib``.
 -------------------------------------------------------
 Provide Free of Charge and Under an Open Source License
 -------------------------------------------------------
-FoxXO and all future releases of the game are free, open source, and
-contain no advertisements or trackers. The game is released under a permissive
-open source license and its code is available from a public repository
-such as `<https://github.com/>`__.
+FoxXO is and will always be free, open source, and contain no advertisements or
+trackers. The game is released under a permissive open source license and its
+code is available from a public repository such as `<https://github.com/>`__.
 
 Many of today's games casual games are released for free, but include
 questionable monetization models such as microtransactions, pay-to-win schemes,
@@ -83,12 +82,9 @@ playing the game.
 Release by RustConf 2020
 ------------------------
 FoxXO's initial release is scheduled to coincide with RustConf 2020
-on August 21, 2020. RustConf is the annual Rust developers conference; since
+on August 21, 2020. [#rustconf]_ RustConf is the annual Rust developers conference; since
 FoxXO is developed in Rust this makes an excellent time to launch a Rust
-based game. [#rustconf]_
-
-To help meet the target release date, the initial release of the game might
-contain a subset of the environments described in this document.
+based game. [#limitedscope]_
 
 
 --------------------------------
@@ -97,9 +93,10 @@ Easily Expandable and Modifiable
 Playing tic-tac-toe in a variety of environments is a large part of what sets
 FoxXO apart from other tic-tac-toe games. The game is designed such that
 developers can easily add new environments. This allows developers to focus
-their time and efforts creating stunning environments. Additionally, this
+their time and effort creating stunning environments. Additionally, this
 lowers the barrier of entry for users who are interested in modifying the game.
-Finally, this allows quick turnaround of future releases of the game.
+Finally, an easily modifiable code base allows quick turnaround of future
+releases of the game.
 
 
 .. _ref-objective-build-risk-reduction-prototype:
@@ -125,3 +122,6 @@ objective.
 ..  [#openTTTlib] ``open_ttt_lib`` is available at https://crates.io/crates/open_ttt_lib
         and source code is hosted at https://github.com/j-richey/open_ttt_lib
 ..  [#rustconf] For details on RustConf see their website: https://rustconf.com/
+..  [#limitedscope] To help meet the target release date, the initial release of
+        the game might contain a subset of the environments described in this
+        document.

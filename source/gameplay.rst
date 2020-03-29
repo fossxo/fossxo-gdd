@@ -71,7 +71,7 @@ difficulty for experienced tic-tac-toe players.
 Two Player Mode
 ===============
 In two player mode two players take turns placing their marks according to the
-rules described above.
+rules of tic-tac-toe previously described.
 
 
 .. _ref-gameplay-speed-run-mode:
@@ -80,7 +80,7 @@ rules described above.
 Speedrun Mode
 =============
 A speedrun mode provides an additional challenge for experienced players.
-Players battle a flawless computer opponent through 10 environments completing
+Players battle a flawless computer opponent through ten environments completing
 the games as fast as possible. At the end of the run the total time is
 displayed along with the previous best times. [#timecalculation]_
 

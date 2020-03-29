@@ -2,7 +2,7 @@
 Target Audience
 ###############
 FoxXO is targeted at casual gamers. There are three general groups that
-might find the game interesting: new PC gamers, bored adults and modders.
+might find the game interesting: new PC gamers, bored adults, and modders.
 
 =============
 New PC Gamers
@@ -26,4 +26,4 @@ Computer Science Students / Modders
 FoxXO is open source and is developed so that others can add their own
 environments or extend the game. FoxXO is a simple, but non-trivial
 application where people learning to program might find it an interesting
-codebase to examine.
+code base to examine.

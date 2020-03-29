@@ -1,10 +1,9 @@
 FoxXO Game Design Document
 ==========================
 
-:warning: This documentation is a work in progress.
-
 This repository contains the FoxXO game design document. FoxXO is a free and
-open example of tic-tac-toe.
+open example of tic-tac-toe. The game design document describes in detail the 
+design considerations of the game.
 
 The latest version of the game design document is hosted here:
 [FoxXO Game Design Document](https://j-richey.github.io/project-documentation/foxxo-gdd/)

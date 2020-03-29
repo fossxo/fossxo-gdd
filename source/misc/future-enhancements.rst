@@ -23,7 +23,7 @@ Normal
 Speedrun
     Speedrun multiplayer is a two player version of :ref:`ref-gameplay-speed-run-mode`
     where the players compete to see who can play 10 games the fastest without
-    loosing. If a player wins one of the games, the speed run is over and that
+    loosing. If a player wins one of the games, the speedrun is over and that
     player is the winner. If all ten games are cat games, then the player with
     the fastest overall time wins.
 

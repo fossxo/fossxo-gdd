@@ -38,8 +38,8 @@
   marks_and_grid: |
     The blueprint uses white text for the marks and white lines for the grid.
 
-    The grid can actually be a series of empty boxes but using thicker interior
-    lines.
+    The grid is a series of empty boxes. The interior lines are more prominent
+    than the exterior lines.
 
     Hovering over an empty square shows a dotted version of what would be drawn
     there. Clicking places the mark without further animation.
@@ -83,7 +83,7 @@
     Engineering paper us yellow with gray grid lines.
 
 - name: Pen on Scrap Paper
-  music_theme: Something with a gospel / churchy vibe
+  music_theme: Something with a gospel / church vibe
   marks_and_grid: |
     The marks and grid are created from blue or red ink. Like the
     *Notebook Paper and Pencil* environment, each mark is hand drawn with
@@ -100,7 +100,7 @@
   details: |
     The mark / grid color and the background image is randomly selected each
     time the environment is played. Blue and red ink is used so the marks stand
-    out from the
+    out from the background.
 
     The inspiration from this environment comes from me not paying attention in
     church and drawing on scrap paper my mom happened to have.
@@ -146,6 +146,9 @@
     The background is a monochrome computer monitor with the an off white bezel
     and red LED near the power button. The background color is dark green or
     dark amber with perhaps the dark pixels still visible.
+  details: |
+    Additional FX include animated scan lines due to a poor connection between
+    the monitor and computer.
 
 
 - name: Sidewalk
@@ -290,7 +293,7 @@
     The marks and grid are black or white LCD pixels. Black is used with the
     green background and white is used with the blue background.
 
-    Mousing over a free location causes a curser, the underscore character (``_``),
+    Mousing over a free location causes a cursor, the underscore character (``_``),
     to blink in that location.
 
     Asterisk characters are placed next to winning marks.

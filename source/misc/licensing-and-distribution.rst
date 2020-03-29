@@ -15,14 +15,14 @@ for the Rust language. [#rustlanglicense]_ Under these licenses users are free
 to obtain, modify, and redistribute the source code for both private and
 commercial use.
 
-Any original game's assets are licensed under the CC-BY-4.0 license. [#ccbylicense]_
+Any original game assets are licensed under the CC-BY-4.0 license. [#ccbylicense]_
 
 
 ============
 Distribution
 ============
 The game is directly distributed to players via the internet. There are two main
-ways to acquire a copy of the game: downloading an platform specific package, or
+ways to acquire a copy of the game: downloading a platform specific package, or
 building the game from source.
 
 -----------------
@@ -54,7 +54,7 @@ There are two main ways to build the game from source:
 Monetization
 ============
 There is no intention to generate revenue from FoxXO. The is released
-free of charge. There are no advertisements, micro-transactions, or data
+free of charge. There are no advertisements, microtransactions, or data
 stealing spyware that is found in other *free* games.
 
 
@@ -102,6 +102,7 @@ have the following licenses: [#ccbysa]_
 
 * CC0
 * CC-BY
+* CC-BY-NC [#ccbync]_
 
 A list of third party assets used is accessible from the game's credits or user
 documentation to fulfill the attribution requirements. The following information
@@ -136,3 +137,5 @@ localizations, the game is designed with internationalization support.
 ..  [#ccbysa] The CC-BY-SA is incompatible with the the game's licensing terms.
         It is this author's understanding that a game is considered a derivative
         work and thus must also be licensed under CC-BY-SA.
+..  [#ccbync] Per the monetization section, the game is being released for free
+        and is not intended to produce a revenue stream.

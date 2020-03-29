@@ -23,7 +23,7 @@ The game board contains the following items of interest:
 
 1.  The marks and grid. The appearance of these depend on the current environment
     being played. However, the marks for all environments use the same center
-    point and have the same selectable hotspot. This ensures consistency between
+    point and have the same selectable hot spot. This ensures consistency between
     environments when using the mouse.
 2.  The background of the game board depends on the current environment.
 3.  The hamburger button opens the :ref:`ref-ui-main-menu`.
@@ -43,7 +43,7 @@ menu button and some status text.
 Speedrun
 --------
 Additional UI widgets are added to the game board to facilitate speedrun mode.
-:numref:`fig-ui-speedrun-game-board` shows the speedrun gameboard.
+:numref:`fig-ui-speedrun-game-board` shows the speedrun game board.
 
 ..  _fig-ui-speedrun-game-board:
 ..  figure:: img/ui/speedrun-game-board.*
@@ -184,7 +184,7 @@ The speedrun menu contains the following items of interest:
 2.  :guilabel:`Start` begins the run. This navigates to the
     :ref:`ref-ui-speedrun-game-board` game board.
 3.  Table of previous best times sorted from fastest to slowest.
-4.  The :guilabel:`Back` button returns to the main menu.
+4.  The :guilabel:`Back` button returns to the single-player menu.
 
 When the speedrun begins, the game board is shown, a prominent three second
 countdown is show, and dramatic music starts to swell. Once the timer elapses
