@@ -9,7 +9,7 @@ copyright = '2020, James Richey'
 author = 'James Richey'
 
 # The full version, including alpha/beta/rc tags
-release = 'A draft 1'
+release = 'A'
 
 # Base name (with out the extension) of the PDF file.
 _pdf_base_name = "{project} Rev {release}".format(
@@ -69,8 +69,7 @@ html_theme_options = {
     },
 }
 
-# TODO: make a fav icon!
-# html_favicon = "favicon.ico"
+html_favicon = "favicon.ico"
 
 
 # -- Options for LaTeX output -------------------------------------------------
