@@ -76,6 +76,8 @@ application can be built.
       - Tool that generates code needed for an environment
         - The generated environment should be fully playable so developers can
           test out the new code right away before they start making modifications.
+          Perhaps we use a version of the blueprint environment for this since
+          it is literally a blueprint!
         - Automated tools, guides, checklists, and detailed documentation are
           some ways that can help development speed.
       - Command line options

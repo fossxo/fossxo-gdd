@@ -16,6 +16,7 @@ the minimum system requirements.
     Disk                500 MB available space
     Graphics            OpenGL compatible graphics adapter
     Display             800 x 600 pixel display or larger
+    Network             The game is played fully offline
     ==================  ===================================
 
 A system with the above requirements listed in

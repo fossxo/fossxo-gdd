@@ -27,8 +27,8 @@ Each environment tells part of the story of tic-tac-toe from the past, present,
 and future. Each environment has a strong visual theme and complementary
 soundtrack.
 
-FoxXO is fee, open source, no contains no annoying advertisements. It
-opens runs on Windows, Mac, and Linux. The game launches Summer 2020.
+FoxXO is free, open source, and no contains no annoying advertisements. It
+runs on Windows, Mac, and Linux. The game launches Summer 2020.
 
 =========================
 Overview of this Document
@@ -38,7 +38,7 @@ game. [#rogers]_ This includes chapters for the :doc:`gameplay`,
 :doc:`gui`, and various :doc:`environments`.
 
 The :doc:`technical-design/index` chapter describe how the game is created.
-This includes details of the game's architecture and design.
+This includes details of the game's software architecture and design.
 
 Additionally, the :doc:`glossary` defines terms that are used throughout the
 game design document.
@@ -74,7 +74,7 @@ code is available from a public repository such as `<https://github.com/>`__.
 Many of today's games casual games are released for free, but include
 questionable monetization models such as microtransactions, pay-to-win schemes,
 advertisements, and personal data harvesters. FoxXO stands apart from
-these games by respecting player's who choose to spend their valuable time
+these games by respecting players who choose to spend their valuable time
 playing the game.
 
 

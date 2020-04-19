@@ -41,8 +41,8 @@
     The grid is a series of empty boxes. The interior lines are more prominent
     than the exterior lines.
 
-    Hovering over an empty square shows a dotted version of what would be drawn
-    there. Clicking places the mark without further animation.
+    Hovering over an empty square shows a dotted version of the mark that would
+    be drawn. Clicking places the mark without further animation.
 
     Winning the game causes a "Winning Marks" label to be placed with arrows
     pointing to the corresponding marks.
@@ -61,9 +61,6 @@
     This environment provides an opportunity to point out features of the game
     that might be overlooked by players such as keyboard support.
 
-    This environment makes a template when creating new environments. This is
-    due to it literally being a blueprint.
-
 
 - name: Notebook Paper and Pencil
   concept_art: img/concept-art/paper
@@ -78,9 +75,10 @@
   background: |
     The background consists of notebook or engineering paper. Notebook paper is
     white with gray or blue lines. Often times there also a vertical red margin
-    line.
+    line. Engineering paper is yellow with gray grid lines.
 
-    Engineering paper us yellow with gray grid lines.
+    There are doodles, text, or other drawings to give the environment character.
+    The engineering paper is more likely to have nerdy drawings.
 
 - name: Pen on Scrap Paper
   music_theme: Something with a gospel / church vibe
@@ -120,9 +118,9 @@
     illuminated. Then the grid flickers on as if the transformer is starting to
     fail.
   background: |
-    The background is a brick wall holding the neon lights. Ideally, the wall is
-    illuminated by the lights. E.g. when a mark is selected the brick wall behind
-    the mark gains some illumination as shown in the concept art.
+    The background is a brick wall holding the neon lights. The wall is
+    illuminated by the lights. E.g. when a mark is selected the brick wall
+    behind the mark gains some illumination as shown in the concept art.
   details: |
     This environment provides an opportunity to show off the game's graphics
     including lighting FX.
@@ -159,7 +157,7 @@
     thick and hand drawn with similar animations as the *Notebook Paper and Pencil*
     environment.
 
-    Pastel colors include red, blue, yellow, ping, green, and orange. The X, O,
+    Pastel colors include red, blue, yellow, pink, green, and orange. The X, O,
     and grid use different colors that are randomly selected each game.
 
     A line is drawn through the winning squares.
@@ -237,7 +235,9 @@
 
     A squeaking sound is made when marks are being drawn.
 
-    A line is drawn through winning marks.
+    Winning marks are circled to both give a more professional look to the
+    environment and differentiate it from the chalkboard environment.
+
   background: |
     The background is a white dry erase board. The board does not erase well so
     faded physics equations is still visible in the background.
@@ -273,7 +273,7 @@
 
 
 - name: Dirty Car Window
-  music_theme: Hip Hob with rattling door sounds.
+  music_theme: Hip Hop with rattling door sounds.
   marks_and_grid: |
     The marks and grid are drawn in the window's dust reviling the shiny tinted
     glass underneath. The marks are fairly fat and despite being hand drawn are
@@ -303,8 +303,7 @@
     even LEDs around.
   details: |
     Some artistic liberty with regards to the 16x4 LCD display might need to
-    occur to ensure the might need To ensure the mark's center points are in
-    the correct locations.
+    occur to ensure the mark's center points are in the correct locations.
 
 
 - name: Ancient Egypt Tomb

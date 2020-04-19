@@ -24,7 +24,7 @@ Speedrun
     Speedrun multiplayer is a two player version of :ref:`ref-gameplay-speed-run-mode`
     where the players compete to see who can play 10 games the fastest without
     loosing. If a player wins one of the games, the speedrun is over and that
-    player is the winner. If all ten games are cat games, then the player with
+    player is the winner. If all ten games are cat's games, then the player with
     the fastest overall time wins.
 
 King of the Hill

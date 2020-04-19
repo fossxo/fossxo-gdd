@@ -70,15 +70,21 @@ players to go as fast as possible through the games.
 ========
 Controls
 ========
-The game can fully played with either a mouse or keyboard. New or casual players
-may prefer to use a mouse where as speedrun players may prefer to use the
-keyboard.
+The game can be fully played with either a mouse or keyboard. New or casual
+players may prefer to use a mouse whereas speedrun players may prefer to use
+the keyboard.
+
+
+.. index:: mouse
 
 -----
 Mouse
 -----
-Mouse left click is used to select free squares and menu press buttons. Right
+Mouse left click is used to select free squares and press menu buttons. Right
 click and other mouse buttons are unused.
+
+
+.. index:: keyboard, numpad
 
 ------------
 Key Bindings
@@ -112,11 +118,11 @@ General
 -------
 Unless otherwise noted, the information in this section applies to all menus.
 
-The menus have translucent or blurred background that show the active
-environment. This includes any animations or environment FX. Additionally, the
-environment's sound track continues to play while the menus are open.
+A dedicated music track is played while the game menus are open. The menus share
+a stylized background that fits in with the game's theme.
 
 
+.. index:: main menu
 ..  _ref-ui-main-menu:
 
 ---------
@@ -131,16 +137,16 @@ various modes and settings. :numref:`fig-ui-main-menu` shows the main menu.
     Main menu concept drawing.
 
 1.  The title of the game is prominently displayed at the top of the menu.
-2.  The :guilabel:`Resume Game` button is visible if there is a current game in
-    progress. Selecting it closes the menu and returns the player to the game.
-3.  New game buttons. The :guilabel:`Single-player` button navigates to the
+2.  New game buttons. The :guilabel:`Single-player` button navigates to the
     while the :ref:`ref-ui-single-player` screen while the
     :guilabel:`Multiplayer` button immediately starts a new multiplayer game.
-4.  Miscellaneous buttons to open the :ref:`ref-ui-options`,
+    [#resumegame]_
+3.  Miscellaneous buttons to open the :ref:`ref-ui-options`,
     :ref:`ref-ui-credits`, :ref:`ref-ui-help` screens.
-5.  :guilabel:`Exit` closes the game and returns the user to their desktop.
+4.  :guilabel:`Exit` closes the game and returns the user to their desktop.
 
 
+.. index:: single-player; menu
 ..  _ref-ui-single-player:
 
 -------------
@@ -163,6 +169,7 @@ start new single-player games.
 4.  The :guilabel:`Back` button returns to the main menu.
 
 
+.. index:: speedrun; menu
 ..  _ref-ui-speedrun:
 
 --------
@@ -186,9 +193,9 @@ The speedrun menu contains the following items of interest:
 3.  Table of previous best times sorted from fastest to slowest.
 4.  The :guilabel:`Back` button returns to the single-player menu.
 
-When the speedrun begins, the game board is shown, a prominent three second
-countdown is show, and dramatic music starts to swell. Once the timer elapses
-the run begins.
+When the speedrun starts, the game board is shown, a prominent three second
+countdown begins, and dramatic music starts to swell. Once the timer elapses
+the speed run begins.
 
 Once the run is completed the speedrun menu is displayed and shows the result
 of the run.
@@ -207,12 +214,13 @@ The best time dialog contains the following items:
 1.  The speedrun time time.
 2.  The :guilabel:`Initials` text box allows players to enter their initials
     so their best time is differentiated from other players that happen to use
-    the same computer. The field remembers the last set of initials entered to
-    save players from having to retype their initials.
+    the same computer. The field remembers the last set of initials entered so
+    players do not have to retype their initials.
 3.  The :guilabel:`Close` button hides the dialog allowing the speedrun menu
     to be fully visible.
 
 
+.. index:: options menu
 ..  _ref-ui-options:
 
 -------
@@ -226,12 +234,14 @@ The options screen contains all of the game's player configurable options.
 
     Options screen concept drawing.
 
-1.  Music and Sound FX sliders to control the volume of these items. This allows
-    players to mute some or all of the in-game sounds.
+1.  :guilabel:`Music Volume` and :guilabel:`Sound FX Volume` sliders to control
+    the volume of these items. This allows players to mute some or all of the
+    in-game sounds.
 2.  :guilabel:`Reset to Defaults` resets all options to their default values.
 3.  The :guilabel:`Back` button returns to the main menu.
 
 
+.. index:: credits
 ..  _ref-ui-credits:
 
 -------
@@ -265,6 +275,7 @@ Once all of the credits have played the screen remains open with tic-tac-toe
 games being played in the background.
 
 
+.. index:: loading screen
 .. _ref-ui-loading-screen:
 
 --------------
@@ -275,14 +286,17 @@ player while assets are loaded. [#loadtime]_ This screen is only shown when the
 game first loads.
 
 
+.. index:: help menu
 ..  _ref-ui-help:
 
 ----
 Help
 ----
-The help screen provides information on how to play tic-tac-toe, the different
+The game's help provides information on how to play tic-tac-toe, the different
 game modes, the application version, how to report bugs, and other information.
-All information is hosted locally; no internet access is required. [#localhelp]_
+To minimize the complexity of the game's menus, the help is displayed using the
+user's default web browser. All information is hosted locally; no internet
+access is required. [#localhelp]_
 
 
 .. _ref-ui-screen-flowchart:
@@ -311,7 +325,6 @@ and menus are connected.
     Loading --> game_board
     game_board --> main_menu : Menu / ESC
 
-    main_menu --> game_board : Resume Game
     main_menu --> game_board : Multiplayer
     main_menu --> singleplayer : Single-player
     main_menu --> Help : Help
@@ -336,6 +349,10 @@ and menus are connected.
 ..  [#speedrunloss] If the player loses a speedrun game, the board remains
         visible so the player can see where they made mistakes. This allows them
         to adjust their strategy for next time.
+..  [#resumegame] Many games a have a *resume game* button to go back to an
+        progress game. However, tic-tac-toe games are very short and require
+        little pre-game configuration. Therefore, having resume game
+        functionality adds unnecessary complexity for this game.
 ..  [#loadtime] The loading screen is needed if the load time exceeds one second
         on the minimum supported system listed in
         :numref:`table-min-system-requirements`.

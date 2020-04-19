@@ -28,6 +28,7 @@
     Below are links to resources developers working on the game might find useful.
 
     * `OpenGameArt.org <https://opengameart.org/>`_
+    * `Freesound <https://freesound.org/>`_ (requires account)
 
     ..  Place a list of frequently used external resources here so developers
         can quickly find what they need.
@@ -37,6 +38,7 @@
         - Piston documentation
         - Rust documentation
         - open TTT docs
+
 
     =================
     Table of Contents

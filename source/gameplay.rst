@@ -2,6 +2,7 @@
 Gameplay
 ########
 
+.. index:: game rules
 
 ====================
 Rules of Tic-tac-toe
@@ -43,15 +44,17 @@ are as follows:
         to get three marks in a line.
 
 #.  The steps above are repeated for a series of games. The starting player
-    alternates between games, that is the second game player *O* gets to make
-    the first move.
+    alternates between games. For example, the second game player *O* gets to
+    make the first move.
 
 
-===============
-One Player Mode
-===============
-In one player mode the player battles a computer controlled opponent. There are
-three difficulty settings: **easy**, **medium**, and **hard**.
+.. index:: single-player; mode
+
+==================
+Single-player Mode
+==================
+In single-player mode the player battles a computer controlled opponent. There
+are three difficulty settings: **easy**, **medium**, and **hard**.
 
 Easy difficulty is targeted at players who are new to tic-tac-toe and/or
 computer games. The computer picks random squares allowing players to learn the
@@ -74,6 +77,7 @@ In two player mode two players take turns placing their marks according to the
 rules of tic-tac-toe previously described.
 
 
+.. index:: speedrun; mode
 .. _ref-gameplay-speed-run-mode:
 
 =============

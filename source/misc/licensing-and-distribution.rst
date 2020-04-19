@@ -6,6 +6,8 @@ This section describes how the game is licensed, distributed, and other related
 details of getting the game into player's hands.
 
 
+.. index:: MIT license, Apache license
+
 ==============
 Game's License
 ==============
@@ -25,12 +27,14 @@ The game is directly distributed to players via the internet. There are two main
 ways to acquire a copy of the game: downloading a platform specific package, or
 building the game from source.
 
+.. index:: installer, package
+
 -----------------
 Platform Packages
 -----------------
 Platform specific packages can be downloaded from the game's website.
 In particular, Windows users expect an installer to install the game on their
-system. They do not have readily access to compilers or other tools to build
+system. They do not have ready access to compilers or other tools to build
 software from source. Finally, Windows is the most widely used operating system
 so a Windows installer is a requirement for this project to be successful.
 
@@ -41,13 +45,9 @@ best effort basis.
 -----------------
 Build from Source
 -----------------
-Because the game is open source anyone can build the game from source.
-
-There are two main ways to build the game from source:
-
-1.  Clone the game's source code repository and follow the build instructions.
-2.  Use Cargo, the Rust package manager, to download, build, and install the
-    game and its dependencies.
+Because the game is open source anyone can build the game from source. This
+involves cloning the game's source code repository and following the build
+instructions documented in the README file. [#cratessizelimit]_
 
 
 ============
@@ -134,8 +134,12 @@ localizations, the game is designed with internationalization support.
 ..  [#rustlanglicense] See Rust's `README <https://github.com/rust-lang/rust#license>`_
         for licensing details.
 ..  [#ccbylicense] `Choose an open source license - Creative Commons Attribution 4.0 International <https://choosealicense.com/licenses/cc-by-4.0/>`_
+..  [#cratessizelimit] Cargo, the Rust package manager, can download and build
+        applications hosted on crates.io. However, crates.io has a 10MB size
+        limit that is too small to host this game.
 ..  [#ccbysa] The CC-BY-SA is incompatible with the the game's licensing terms.
         It is this author's understanding that a game is considered a derivative
-        work and thus must also be licensed under CC-BY-SA.
+        work and thus must also be licensed under CC-BY-SA if it were to use
+        CC-BY-SA assets.
 ..  [#ccbync] Per the monetization section, the game is being released for free
         and is not intended to produce a revenue stream.
