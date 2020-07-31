@@ -16,6 +16,25 @@ Glossary
     cat's game
         Term used when a game of tic-tac-toe ends in a draw where there is no winner.
 
+    component
+        A component contains the data for one aspect of a game object. Component
+        examples include color, position, or mark type.
+
+    ECS
+        Acronym for :term:`entity component system`.
+
+    entity
+        An entity represents a single object in the game. Entities by themselves
+        do not store data, instead they identify the collection of
+        :term:`components <component>` belonging to the object. Entity examples
+        include the marks on the board or an AI player.
+
+    entity component system
+        An architecture pattern often used in game engines where
+        :term:`entities <entity>` define the game's objects.
+        :term:`Components <component>` store the actual data.
+        :term:`Systems <system>` contain the logic that operates on the data.
+
     environment
         An environment is a unique setting or location where tic-tac-toe is
         played.
@@ -37,6 +56,10 @@ Glossary
     speedrun
         A speed run is a play-though of a video game where the go is to complete
         the game as fast as possible.
+
+    system
+        Systems contain the game's logic. Each system is executed every game
+        loop over a collection of :term:`components <component>`.
 
     throwaway prototype
         A prototype is a version of software that is created to demonstrate core

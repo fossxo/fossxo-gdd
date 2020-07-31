@@ -50,6 +50,8 @@ Project Objectives
 This section describes the project's primary objectives.
 
 
+..  _ref-objective-create-ttt-game-with-rust:
+
 ---------------------------------
 Create Tic-tac-toe Game with Rust
 ---------------------------------
