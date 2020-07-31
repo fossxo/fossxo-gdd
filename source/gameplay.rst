@@ -49,6 +49,7 @@ are as follows:
 
 
 .. index:: single-player; mode
+.. _ref-gameplay-single-player-mode:
 
 ==================
 Single-player Mode

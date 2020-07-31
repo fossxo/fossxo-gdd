@@ -6,6 +6,8 @@ This chapter describes the user interface of FoxXO. This includes the main
 game board, controls, and all game menus.
 
 
+..  _ref-ui-game-board:
+
 ==========
 Game Board
 ==========

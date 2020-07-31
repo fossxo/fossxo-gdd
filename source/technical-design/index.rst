@@ -8,3 +8,5 @@ The technical design of FoxXO is described in this chapter.
     :caption: Technical design topics:
 
     engine-overview
+    game-states
+    core-systems

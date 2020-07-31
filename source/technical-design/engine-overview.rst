@@ -57,6 +57,5 @@ are described in detail in the following sections.
         events, or state machines. Spending time making these items would mean
         less time spent creating the actual game.
 
-..  [#amethystbook] `The Amethyst Engine book <https://book.amethyst.rs/stable/>`__
-        contains detailed information about each of these concepts and how they
-        are used in the Amethyst engine.
+..  [#amethystbook] The Amethyst Engine book contains detailed information about
+        each of these concepts and how they are used in the Amethyst engine. [Amethyst-book]_

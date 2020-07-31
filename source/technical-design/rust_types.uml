@@ -1,0 +1,20 @@
+@startuml
+
+' Rust uses structures and traits instead of classes and interfaces.
+' This file contains custom PlantUML macros so these Rust types can be used in
+' your UML diagrams.
+'
+' To use, first !include this file. Then use struct, trait, etc as defined below.
+'
+' Note: this uses the legacy PlantUML preprocessor syntax as described here:
+'   https://web.archive.org/web/20190914012431/https://plantuml.com/preprocessing-legacy
+' This is due to us wanting to build the documentation with old versions of
+' PlantUML included with Deban. Eventually these can be replaced with the new
+' preprocessor syntax.
+
+!define trait(name) interface name << (T,#a68cff) >>
+!define struct(name) class name << (S,#ff6ad3) >>
+!define enum(name) enum name << (E,#83c98d) >>
+!define functions class Functions << (F,#e0a657) >>
+
+@enduml

@@ -27,6 +27,7 @@
     ================
     Below are links to resources developers working on the game might find useful.
 
+    * `Amethyst engine documentation <https://amethyst.rs/doc>`_
     * `OpenGameArt.org <https://opengameart.org/>`_
     * `Freesound <https://freesound.org/>`_ (requires account)
 
@@ -35,7 +36,6 @@
         Note: the list below might be worth adding.
         - https://itch.io/game-assets
         - https://gist.github.com/EndangeredMassa/6b177f36b08a5b0798cf
-        - Piston documentation
         - Rust documentation
         - open TTT docs
 
