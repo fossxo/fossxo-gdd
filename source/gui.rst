@@ -258,9 +258,12 @@ is shown in :numref:`fig-ui-credits`.
 
 The credits screen contains the following items:
 
-1.  Scrolling list of developer names, third party assets, and other information
-    about the game.
-2.  :guilabel:`Back` returns to the :ref:`ref-ui-main-menu`.
+1.  List of developers and other people directly involved in the creation
+    of the game.
+2.  The open source community is thanked and links are provided to all of the
+    third party libraries and assets used in the game. Selecting one of these
+    links opens corresponding page in the game's :ref:`ref-ui-help`.
+3.  :guilabel:`Back` returns to the :ref:`ref-ui-main-menu`.
 
 The credits screen uses a different background and soundtrack than the other
 menus. The background consists of one or more tic-tac-toe games being played
@@ -270,9 +273,6 @@ several times per game. This showcases the many environments of the game.
 
 The credits screen has its own sound track. The music and sound FX of the
 individual environments are not used.
-
-Once all of the credits have played the screen remains open with tic-tac-toe
-games being played in the background.
 
 
 .. index:: loading screen
@@ -293,7 +293,9 @@ game first loads.
 Help
 ----
 The game's help provides information on how to play tic-tac-toe, the different
-game modes, the application version, how to report bugs, and other information.
+game modes, the application version, how to report bugs, and
+:ref:`ref-distribution-license-compliance` information.
+
 To minimize the complexity of the game's menus, the help is displayed using the
 user's default web browser. All information is hosted locally; no internet
 access is required. [#localhelp]_

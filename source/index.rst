@@ -4,9 +4,9 @@
     FoxXO Game Design Document
     ##########################
 
-    Welcome to FoxXO game design document. FoxXO is a free and open example of
-    tic-tac-toe created using the Rust programming language. This document
-    describes in detail the design considerations of the game.
+    Welcome to FoxXO game design document. FoxXO is a free and open-source
+    example of tic-tac-toe created using the Rust programming language. This
+    document describes in detail the design considerations of the game.
 
     The FoxXO game design document is also available in these other formats:
 

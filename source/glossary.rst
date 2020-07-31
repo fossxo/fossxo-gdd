@@ -7,6 +7,10 @@ Glossary
 ..  glossary::
     :sorted:
 
+    asset
+        A game asset is a sound, texture, font, model, or other data used by
+        the game.
+
     background music
         Background music is a type of music that is not intended to be the
         primary focus of listeners. When described as the type of music for an
