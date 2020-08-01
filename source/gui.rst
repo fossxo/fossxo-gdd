@@ -91,8 +91,8 @@ click and other mouse buttons are unused.
 ------------
 Key Bindings
 ------------
-The game supports being played using the keyboard. :numref:`fig-ui-keybindings`
-shows the game's keybindings for selecting squares.
+The game supports being played using the keyboard. [#keyboardaccessibility]_
+:numref:`fig-ui-keybindings` shows the game's keybindings for selecting squares.
 
 ..  _fig-ui-keybindings:
 ..  figure:: img/ui/keybindings.*
@@ -353,6 +353,9 @@ and menus are connected.
 ..  [#speedrunloss] If the player loses a speedrun game, the board remains
         visible so the player can see where they made mistakes. This allows them
         to adjust their strategy for next time.
+..  [#keyboardaccessibility] Keyboard support helps improve the game's
+        accessibility by allowing custom controllers to emulate to the game's
+        key mapping.
 ..  [#resumegame] Many games a have a *resume game* button to go back to an
         progress game. However, tic-tac-toe games are very short and require
         little pre-game configuration. Therefore, having resume game

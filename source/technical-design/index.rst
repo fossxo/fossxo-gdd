@@ -10,3 +10,9 @@ The technical design of FoxXO is described in this chapter.
     engine-overview
     game-states
     core-systems
+    components-resources-entities
+    file-formats
+    user-manual
+    packaging
+    security
+    maintainability
