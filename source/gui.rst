@@ -68,6 +68,7 @@ Items of interest are:
 When a game is competed successfully the next game starts immediately allowing
 players to go as fast as possible through the games.
 
+.. _ref-ui-controls:
 
 ========
 Controls

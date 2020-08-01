@@ -3,6 +3,7 @@ Gameplay
 ########
 
 .. index:: game rules
+.. _ref-gameplay-rules-of-tic-tac-toe:
 
 ====================
 Rules of Tic-tac-toe
