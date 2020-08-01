@@ -9,6 +9,7 @@ Core Systems
     List the core systems, their responablilites, etc.
     Note that other systems can be added as needed by environments, e.g. particle
     systems or such.
+    See https://github.com/bonsairobo/amethyst-architecture-guidelines
 
 
 ..  _uml-player-event-enum:

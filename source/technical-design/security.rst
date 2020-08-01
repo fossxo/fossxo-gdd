@@ -2,3 +2,95 @@
 System Security
 ###############
 
+Software security is an important consideration of any application, including
+games. This section lists potential security risks the game poses to users'
+systems and the steps taken to minimize those risks.
+
+
+..  index:: supply chain attack
+
+===================
+Supply Chain Attack
+===================
+A supply chain attack is where cyber-attacker compromises part of the supply
+chain to attack downstream systems. The game makes extensive use of third party
+libraries, thus at an elevated risk for this type of attack. It only takes
+one of the dependent libraries being compromised for the user's system to be
+put at risk.
+
+To mitigate this risk several steps are taken including generating a software
+bill of materials and using tools to automate package auditing.
+
+--------------------------
+Software Bill of Materials
+--------------------------
+The :doc:`user-manual` contains a listing of every library used by the game.
+The software BOM is specific for each release of the game. [#offlinebom]_
+
+The software BOM ensures developers and users alike know exactly what version of
+each library is being used. The list can be audited for libraries that have
+known vulnerabilities or other issues.
+
+-------------------------
+RustSec Advisory Database
+-------------------------
+The `RustSec Advisory Database <https://github.com/RustSec/advisory-db/>`_ is a
+repository of security advisories for Rust crates. Tools such as
+`cargo-deny <https://crates.io/crates/cargo-deny>`_ use this repository to
+automatically warn when a Rust application is using problematic version of a
+crate. Ideally, this check is part of the game's build process.
+
+---------------
+Package Sources
+---------------
+FoxXO and its dependent libraries are open source: anyone can send a pull
+request to modify the codes functionality. Unfortunately, even with a careful
+code reviews, it is possible to sneak in alternate versions of libraries. [#trustedsource]_
+
+cargo-deny can also be used to detect when packages are pulled in from sources
+other than crates.io.
+
+
+==============
+Direct Attacks
+==============
+FoxXO does not connect to internet servers for any reason or even have local
+network multiplayer. The game does not allow users to open arbitrary files.
+Finally, once installed, the game does not require any special or elevated
+permissions to run. Therefore, its direct attack surface should be minimal to
+would be attackers.
+
+Regardless, the following steps are taken to help reduce the risk of compromise
+to a user's system.
+
+*   The Amethyst networking functionality is optional and not needed by this game.
+    Therefore, the amethyst_network feature is disabled.
+*   User input is sanitized, in particular the user's initials in the speedrun
+    best times table. :numref:`fig-exploits-of-a_mom` shows a famous example
+    of this type of attack.
+*   Unsafe Rust is used only when needed, in the smallest scope possible, and
+    each unsafe block is thoroughly reviewed.
+*   Standard software best practices are followed to help minimize potential
+    bugs or unexpected software behavior. Lint tools are used to help enforce
+    these best practices. [#codecomplete]_
+
+..  _fig-exploits-of-a_mom:
+..  figure:: ../img/exploits_of_a_mom.png
+
+    XKCD's `Exploits of a Mom <https://xkcd.com/327/>`_ is a famous example of
+    an SQL injection attack.
+    `Comic copyright xkcd.com under the CC BY-NC 2.5 license <https://xkcd.com/license.html>`_.
+
+
+..  rubric:: Footnotes
+
+..  [#offlinebom] Users might have old versions of the game installed on their
+        system. Including an offline software bill of materials in the user
+        manual ensures the BOM is accurate for the version of the game
+        they are actually using.
+..  [#trustedsource] For details on how malicious packages can be injected in
+        pull requests see
+        `Why npm lockfiles can be a security blindspot for injecting malicious modules
+        <https://snyk.io/blog/why-npm-lockfiles-can-be-a-security-blindspot-for-injecting-malicious-modules/>`_
+..  [#codecomplete] McConnell (2004) *Code Complete: A Practical Handbook of Software Construction, Second Edition*
+        provides a detailed guide to software best practices.
