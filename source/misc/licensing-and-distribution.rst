@@ -20,6 +20,8 @@ commercial use.
 Any original game assets are licensed under the CC-BY-4.0 license. [#ccbylicense]_
 
 
+.. _ref-distribution:
+
 ============
 Distribution
 ============
