@@ -129,6 +129,8 @@ The SQLite ``user_version`` value is set to 1 allowing future versions of the
 game to load and migrate existing user data.
 
 
+..  _ref-asset-license-info-files:
+
 ========================
 Asset License Info Files
 ========================

@@ -15,4 +15,4 @@ The technical design of FoxXO is described in this chapter.
     user-manual
     packaging
     security
-    maintainability
+    development-tools
