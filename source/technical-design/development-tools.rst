@@ -5,16 +5,13 @@ This section describes the tools used to help with the development of the game,
 and to ensure future maintainability.
 
 
-..  TODO:
-    command line optoins
-    Logging levels
-
 =================
 Debug Environment
 =================
 The debug environment shows the canonical location of the grid, marks, and hit
 boxes. This can can optionally be overlaid on the current environment allowing
 developers to ensure the positioning of their entities is correct. [#firstenv]_
+
 
 ================================
 Building and Packaging Workflows
@@ -107,10 +104,28 @@ in different configurations without having to recompile.
     Enables development aids including the debug environment, FPS counter, and
     any other utilities that might be useful for debugging.
 
-..  option:: --environment <environment>
+..  option:: --test
 
-    Forces the game to use a specific environment instead of selecting them at
-    random. This is useful when creating new environments.
+    Performs a self-test of the game. The result of the test is printed to the
+    console and the exit code indicates pass or fail. An example of a self-test
+    would be playing a complete game on each environment while monitoring the
+    logs for warning or error messages. [#selftest]_
+
+..  option:: --environment ENVIRONMENT
+
+    Forces the game to use a specific environment instead of selecting
+    environments at random. This is useful when creating new environments.
+
+..  option:: -h, --help
+
+    Shows the command line help. This provides a brief description of the
+    application and lists the available command line options. This also lets
+    users know how to find the user manual in case the user is searching for
+    information on how to play the game.
+
+..  option:: --version
+
+    Prints the application's version number, license, and copyright information.
 
 
 
@@ -119,3 +134,7 @@ in different configurations without having to recompile.
 ..  [#firstenv] The debug environment should be created early in the development
         process as it allows the game to be played without needing additional
         environments.
+..  [#selftest] Developers can use the self-test to exercise functionally that
+        cannot be exercise by unit tests such as loading game assets. This can
+        also be incorporated in a larger functional test suite. Finally, users
+        might consider running a self-test when troubleshooting game issues.
