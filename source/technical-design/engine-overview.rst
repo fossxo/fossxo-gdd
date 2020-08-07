@@ -30,7 +30,7 @@ engine written in Rust. [#otherengines]_ Amethyst uses a entity component system
 (ECS) architecture where entity represents a single object in the game.
 Components store data about one aspect of the object. Systems contain logic that
 is executed on collections of components every loop. Amethyst additionally
-contains support for states, resources, and events. [#amethystbook]_
+contains support for states, resources, and events. [#amethystbook]_ [#amethystguide]_
 
 In addition to the ECS architecture, Amethyst provides a rendering engine that
 supports various backends including Vulkan, a basic UI framework, audio support,
@@ -59,3 +59,8 @@ are described in detail in the following sections.
 
 ..  [#amethystbook] The Amethyst Engine book contains detailed information about
         each of these concepts and how they are used in the Amethyst engine. [Amethyst-book]_
+
+..  [#amethystguide] Readers might find this unofficial
+    `Amethyst Architectural Guidelines <https://github.com/bonsairobo/amethyst-architecture-guidelines>`_
+    `(archive) <https://web.archive.org/web/20200807215439/https://github.com/bonsairobo/amethyst-architecture-guidelines>`_
+    useful, especially when designing game states, systems, components, and resources.
