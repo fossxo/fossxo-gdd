@@ -50,6 +50,21 @@ code reviews, it is possible to sneak in alternate versions of libraries. [#trus
 cargo-deny can also be used to detect when packages are pulled in from sources
 other than crates.io.
 
+-----------
+Game Assets
+-----------
+It is possible a cyber-attacker create a special crafted game asset file that
+exercises a bug in one of the asset loading libraries used by the game. This
+type of attack is less probable than attacking a package source as an attacker
+would have to create an asset where the vulnerable library successfully loads
+its main content yet provides the attacker some benefit such as running
+arbitrary code contained in the asset. [#assetattack]_
+
+Usage of the RustSec Advisory Database should help mitigate this attack by
+identifying bugs in the asset loading libraries. Furthermore, assets provided
+in an untrusted pull request are carefully scrutinized to prevent a targeted
+attack against the game. [#pngcheck]_
+
 
 ==============
 Direct Attacks
@@ -92,5 +107,9 @@ to a user's system.
         pull requests see
         `Why npm lockfiles can be a security blindspot for injecting malicious modules
         <https://snyk.io/blog/why-npm-lockfiles-can-be-a-security-blindspot-for-injecting-malicious-modules/>`_
+..  [#assetattack] If the asset fails to load the main content is very unlikely
+        to still be included in a game. E.g. if the brick texture fails to show
+        up a different brick texture will be used in place of the broken one.
+..  [#pngcheck] Tools such as ``PNGcheck`` can help detect corrupted asset files.
 ..  [#codecomplete] McConnell (2004) *Code Complete: A Practical Handbook of Software Construction, Second Edition*
         provides a detailed guide to software best practices.

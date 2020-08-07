@@ -16,7 +16,8 @@ The list of topics included in user manual are:
 *   The different :doc:`../gameplay` modes of FoxXO.
 *   The :ref:`ref-ui-controls` and key bindings available.
 *   How to get support. [#githubissues]_ To help with support requests the
-    manual includes information such as the game's version number.
+    manual includes information such as the game's version number. This cold
+    also include information on how to resolve common issues.
 *   The game's credits.
 *   Software bill of materials that provides a concise overview of the
     libraries used by the game.

@@ -48,10 +48,10 @@ changes are not breaking existing functionality.
 Automated License Checks
 ========================
 Automated tools are used to quickly and accurately check the
-:ref:`ref-distribution-license-compliance`.
-`cargo-deny <https://crates.io/crates/cargo-deny>` is an existing tool for
-checking library licenses. A similar approach using information in the
-:ref:`ref-asset-license-info-files` is taken for the third party assets.
+:ref:`ref-distribution-license-compliance`. An existing tool for checking
+library licenses is `cargo-deny <https://crates.io/crates/cargo-deny>`_ .
+A similar approach using information in the :ref:`ref-asset-license-info-files`
+is taken for the third party assets.
 
 These tools are part of the development, test, and continuous integration
 workflows.
