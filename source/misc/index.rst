@@ -2,7 +2,7 @@
 Additional Considerations
 #########################
 
-This chapter contains additional information about FoxXO.
+This chapter contains additional information about FossXO.
 
 ..  toctree::
     :maxdepth: 1

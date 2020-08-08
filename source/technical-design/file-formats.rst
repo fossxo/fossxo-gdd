@@ -2,7 +2,7 @@
 File Formats
 ############
 
-This section describes the various types of files used by FoxXO including
+This section describes the various types of files used by FossXO including
 details of the data format and considerations such as what happens if the file
 cannot be loaded.
 
@@ -177,5 +177,5 @@ developer or artist adding the resource to update the license info files.
         developers and artists of thinking assets belong to specific
         environments, an alternate approach is taken of organizing resources by
         asset type.
-..  [#userdata] The user data directory is ``~/.local/share/foxxo/`` on Linux
-        and ``Documents/My Games/FoxXO`` on Windows.
+..  [#userdata] The user data directory is ``~/.local/share/fossxo/`` on Linux
+        and ``Documents/My Games/FossXO`` on Windows.

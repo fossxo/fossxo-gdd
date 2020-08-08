@@ -43,7 +43,7 @@ crate. Ideally, this check is part of the game's build process.
 ---------------
 Package Sources
 ---------------
-FoxXO and its dependent libraries are open source: anyone can send a pull
+FossXO and its dependent libraries are open source: anyone can send a pull
 request to modify the codes functionality. Unfortunately, even with a careful
 code reviews, it is possible to sneak in alternate versions of libraries. [#trustedsource]_
 
@@ -54,7 +54,7 @@ other than crates.io.
 Game Assets
 -----------
 It is possible a cyber-attacker create a special crafted game asset file that
-exercises a bug in one of the asset loading libraries used by the game. This
+FossXOises a bug in one of the asset loading libraries used by the game. This
 type of attack is less probable than attacking a package source as an attacker
 would have to create an asset where the vulnerable library successfully loads
 its main content yet provides the attacker some benefit such as running

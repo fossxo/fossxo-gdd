@@ -1,5 +1,5 @@
 # Change Log
-Significant changes to the FoxXO game design document are described here.
+Significant changes to the FossXO game design document are described here.
 
 
 ## Rev A - 2020-04-19

@@ -4,7 +4,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'FoxXO Game Design Document'
+project = 'FossXO Game Design Document'
 copyright = '2020, James Richey'
 author = 'James Richey'
 
@@ -65,7 +65,7 @@ html_theme_options = {
     'sidebar_collapse': True,
     'code_font_size': "0.8em",
     'extra_nav_links': {
-        "GitHub Source": "https://github.com/j-richey/foxxo-gdd",
+        "GitHub Source": "https://github.com/j-richey/fossxo-gdd",
     },
 }
 

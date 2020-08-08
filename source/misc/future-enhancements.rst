@@ -63,7 +63,7 @@ include the following.
 =======================
 Additional Environments
 =======================
-A major focus of FoxXO is the ability to play tic-tac-toe in a variety
+A major focus of FossXO is the ability to play tic-tac-toe in a variety
 of :doc:`../environments`. Future versions of the game can add even more
 environments. Some environments to consider are listed below.
 

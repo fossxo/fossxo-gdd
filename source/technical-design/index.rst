@@ -1,7 +1,7 @@
 ################
 Technical Design
 ################
-The technical design of FoxXO is described in this chapter.
+The technical design of FossXO is described in this chapter.
 
 ..  toctree::
     :maxdepth: 1

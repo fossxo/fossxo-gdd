@@ -1,12 +1,12 @@
-FoxXO Game Design Document
-==========================
+FossXO Game Design Document
+===========================
 
-This repository contains the FoxXO game design document. FoxXO is a free and
+This repository contains the FossXO game design document. FossXO is a free and
 open-source example of tic-tac-toe. The game design document describes in detail
 the design considerations of the game.
 
 The latest version of the game design document is hosted here:
-[FoxXO Game Design Document](https://j-richey.github.io/project-documentation/foxxo-gdd/)
+[FossXO Game Design Document](https://j-richey.github.io/project-documentation/fossxo-gdd/)
 
 
 ## Building
@@ -54,5 +54,5 @@ for a complete list of output types.
 
 
 ## License
-The FoxXO game design document is licensed under the
-[CC-BY-SA-4.0 license](https://github.com/j-richey/foxxo-gdd/blob/master/LICENSE.txt).
+The FossXO game design document is licensed under the
+[CC-BY-SA-4.0 license](https://github.com/j-richey/fossxo-gdd/blob/master/LICENSE.txt).

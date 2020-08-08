@@ -1,6 +1,6 @@
 UI Concept Drawings
 ===================
-This directory contains the user interface concept drawings for the FoxXO
+This directory contains the user interface concept drawings for the FossXO
 game. These are created by LibreOffice.
 
 These drawings are automatically included in the game design document as part

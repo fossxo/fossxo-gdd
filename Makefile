@@ -23,8 +23,8 @@ ZIPNAME 	  = $(notdir $(basename $(PDFOUTPUT))).zip
 all: html singlehtml pdf handout slides
 	@sed -r 's/href="index.html/href="singlepage.html/g' "$(BUILDDIR)/singlehtml/index.html" > "$(BUILDDIR)/html/singlepage.html"
 	@cp -v "$(PDFOUTPUT)" "$(BUILDDIR)/html/"
-	@cp -v "$(BUILDDIR)/misc/handout.pdf" "$(BUILDDIR)/html/foxxo-overview-handout.pdf"
-	@cp -v "$(BUILDDIR)/misc/slides.pdf" "$(BUILDDIR)/html/foxxo-overview-slides.pdf"
+	@cp -v "$(BUILDDIR)/misc/handout.pdf" "$(BUILDDIR)/html/fossxo-overview-handout.pdf"
+	@cp -v "$(BUILDDIR)/misc/slides.pdf" "$(BUILDDIR)/html/fossxo-overview-slides.pdf"
 	@cd "$(BUILDDIR)/html"; zip -r $(ZIPNAME) *
 	@mv -v "$(BUILDDIR)/html/$(ZIPNAME)" "$(BUILDDIR)"
 

@@ -2,23 +2,23 @@
 Engine Overview
 ###############
 
-FoxXO is developed using the Rust programming language per the
+FossXO is developed using the Rust programming language per the
 :ref:`ref-objective-create-ttt-game-with-rust` objective. To help reduce the
-development effort, FoxXO makes extensive use of existing Rust libraries.
-:numref:`uml-notable-foxxo-libraries` shows notable libraries used by FoxXO.
+development effort, FossXO makes extensive use of existing Rust libraries.
+:numref:`uml-notable-fossxo-libraries` shows notable libraries used by FossXO.
 
-..  _uml-notable-foxxo-libraries:
+..  _uml-notable-fossxo-libraries:
 ..  uml::
-    :caption: Notable libraries used by FoxXO.
+    :caption: Notable libraries used by FossXO.
 
-    [FoxXO] <-- [open_ttt_lib]
-    [FoxXO] <-- [amethyst]
+    [FossXO] <-- [open_ttt_lib]
+    [FossXO] <-- [amethyst]
     [amethyst] <-- [specs]
     [amethyst] <-- [gfx-rs]
     [gfx-rs] <-- [Vulkan]
     [amethyst] <-- [nalgebra]
 
-FoxXO uses the Amethyst engine and makes use of the
+FossXO uses the Amethyst engine and makes use of the
 `open_ttt_lib <https://github.com/j-richey/open_ttt_lib>`__ library that
 provides tic-tac-toe logic and AI algorithms.
 
@@ -36,7 +36,7 @@ In addition to the ECS architecture, Amethyst provides a rendering engine that
 supports various backends including Vulkan, a basic UI framework, audio support,
 and IO utilities.
 
-FoxXO's makes extensive use of the features provided by Amethyst. Each of these
+FossXO's makes extensive use of the features provided by Amethyst. Each of these
 are described in detail in the following sections.
 
 ..  rubric:: Footnotes

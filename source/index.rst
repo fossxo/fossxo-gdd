@@ -1,14 +1,14 @@
 ..  only:: builder_html and (not singlehtml)
 
-    ##########################
-    FoxXO Game Design Document
-    ##########################
+    ###########################
+    FossXO Game Design Document
+    ###########################
 
-    Welcome to FoxXO game design document. FoxXO is a free and open-source
+    Welcome to FossXO game design document. FossXO is a free and open-source
     example of tic-tac-toe created using the Rust programming language. This
     document describes in detail the design considerations of the game.
 
-    The FoxXO game design document is also available in these other formats:
+    The FossXO game design document is also available in these other formats:
 
     * |pdf_download|
     * `Single HTML page <singlepage.html>`__
@@ -16,11 +16,11 @@
     ==================
     Overview Documents
     ==================
-    These short overview documents introduce the FoxXO game and provide the
+    These short overview documents introduce the FossXO game and provide the
     scope of the project.
 
-    * `Handout <foxxo-overview-handout.pdf>`__ - start here
-    * `Slides <foxxo-overview-slides.pdf>`__ - a short presentation about the game
+    * `Handout <fossxo-overview-handout.pdf>`__ - start here
+    * `Slides <fossxo-overview-slides.pdf>`__ - a short presentation about the game
 
     ================
     Useful Resources
@@ -48,9 +48,9 @@
 ..  Include top level heading for the single page design document.
 ..  only:: singlehtml
 
-    ##########################
-    FoxXO Game Design Document
-    ##########################
+    ###########################
+    FossXO Game Design Document
+    ###########################
 
 
 ..  toctree::

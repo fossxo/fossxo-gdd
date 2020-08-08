@@ -55,7 +55,7 @@ instructions documented in the README file. [#cratessizelimit]_
 ============
 Monetization
 ============
-There is no intention to generate revenue from FoxXO. The is released
+There is no intention to generate revenue from FossXO. The is released
 free of charge. There are no advertisements, microtransactions, or data
 stealing spyware that is found in other *free* games.
 
@@ -65,7 +65,7 @@ stealing spyware that is found in other *free* games.
 ==============================
 Third Party License Compliance
 ==============================
-FoxXO makes extensive use of third party software libraries and game
+FossXO makes extensive use of third party software libraries and game
 assets to help reduce the development effort. To use these resources, the game
 must comply with their various licensing terms. Additionally, the game can only
 use any third party resources that have licenses that are compatible with the

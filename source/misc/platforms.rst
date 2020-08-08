@@ -1,13 +1,13 @@
 ################
 Target Platforms
 ################
-FoxXO runs on a variety of popular desktop operating systems including
+FossXO runs on a variety of popular desktop operating systems including
 Windows, macOS, and Linux. Being a casual game, it does not require a beefy
 video card or fast processor. :numref:`table-min-system-requirements` lists
 the minimum system requirements.
 
 ..  _table-min-system-requirements:
-..  table:: FoxXO minimum system requirements
+..  table:: FossXO minimum system requirements
 
     ==================  ===================================
     OS                  Windows 10, Linux [#linux]_, macOS
@@ -25,6 +25,6 @@ least 30 frames per second.
 
 ..  rubric:: Footnotes
 
-..  [#linux] FoxXO is tested on the latest releases of Debian and Fedora.
+..  [#linux] FossXO is tested on the latest releases of Debian and Fedora.
         It should work on other popular distributions including Ubuntu. However,
         testing on other distributions is outside the scope of this project.

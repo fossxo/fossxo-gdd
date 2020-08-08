@@ -149,7 +149,7 @@
          x="1049.5911 1069.7843 1088.9861 1107.3616 1129.4055 1164.3058 1190.0183 1208.3938 1237.7748 1265.338 1289.1997 1307.5752 1325.9507 1335.1384 1355.3317 1384.7126 1408.5743 1428.7676 1447.1431 1467.3363 1496.7173 1515.0928 1535.286"
          y="171.65329"
          sodipodi:role="line"
-         id="tspan16">FoxXOGameDesignDocument</tspan>
+         id="tspan16">FossXOGameDesignDocument</tspan>
     </text>
     <text
        y="208.84795"
@@ -185,7 +185,7 @@
          sodipodi:role="line"
          x="110.63049"
          y="157.04364"
-         id="tspan1100">FoxXO is a free and open-source example of tic-tac-toe created using the Rust programming language.</tspan>
+         id="tspan1100">FossXO is a free and open-source example of tic-tac-toe created using the Rust programming language.</tspan>
       <tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33333302px;font-family:'Nimbus Sans L';-inkscape-font-specification:'Nimbus Sans L';fill:#ffffff;fill-opacity:1;stroke-width:1.33333325"
          sodipodi:role="line"

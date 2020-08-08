@@ -13,7 +13,7 @@ User Manual Topics
 The list of topics included in user manual are:
 
 *   How to play tic-tac-toe and the :ref:`ref-gameplay-rules-of-tic-tac-toe`.
-*   The different :doc:`../gameplay` modes of FoxXO.
+*   The different :doc:`../gameplay` modes of FossXO.
 *   The :ref:`ref-ui-controls` and key bindings available.
 *   How to get support. [#githubissues]_ To help with support requests the
     manual includes information such as the game's version number. This cold

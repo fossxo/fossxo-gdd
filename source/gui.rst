@@ -2,7 +2,7 @@
 User Interface
 ##############
 
-This chapter describes the user interface of FoxXO. This includes the main
+This chapter describes the user interface of FossXO. This includes the main
 game board, controls, and all game menus.
 
 
@@ -314,7 +314,7 @@ and menus are connected.
 
 ..  _uml-screen-flowchart:
 ..  uml::
-    :caption: Connections between FoxXO's menus and screens.
+    :caption: Connections between FossXO's menus and screens.
     :height: 8in
 
     hide empty description
