@@ -2,14 +2,10 @@
 Game States
 ###########
 
-.. TODO: what is a state
-   How does this fit into the engine? e.g. list / link to the traits
-   Show state diagrma
-   List responsabilites of each state
-
 A game state is a general and global part of the game. The active state is
 updated every game loop, has access to the world's entities and resources, and
 can receive events. States can also request a transition to a different state.
+
 
 ===========
 State Trait
