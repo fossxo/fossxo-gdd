@@ -12,6 +12,13 @@ The debug environment shows the canonical location of the grid, marks, and hit
 boxes. This can can optionally be overlaid on the current environment allowing
 developers to ensure the positioning of their entities is correct. [#firstenv]_
 
+Features of the debug environment include:
+
+* Showing the grid.
+* Showing X and O marks.
+* Showing winning positions.
+* Highlighting the current position being hovered over by the mouse.
+
 
 ================================
 Building and Packaging Workflows

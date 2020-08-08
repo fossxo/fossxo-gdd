@@ -112,53 +112,6 @@ system logic.
 To prevent burning CPU cycles evaluating positions that will not be used the
 AI system skips players if it is not the player's turn.
 
--------------------
-Environments System
--------------------
-The environments system is responsible for managing the game's various
-environments. This includes telling environments when marks are placed and when
-to transition to a new environment.
-
-The environments system receives events from other systems or states shown in
-:numref:`uml-environment-data-enum`.
-
-..  _uml-environment-data-enum:
-..  uml::
-    :caption: Environment related events.
-
-    !include rust_types.uml
-    hide empty members
-
-    enum(EnvironmentEvent) {
-        Next
-        Destroy
-        PlaceMark(Position, Player)
-        ShowGameOver(OutcomeAffinity)
-    }
-
-    enum(OutcomeAffinity) {
-        Win
-        Loss
-        Neutral
-    }
-
-The environment events do the following:
-
-Next
-    Shows the next environment. All entities belonging to the current
-    environment are deleted, the next environment is selected using a random
-    shuffle algorithm, then its entities are create from the current game state.
-Destroy
-    Delete all entities from the current environment. Useful when switching to
-    the game menu.
-PlaceMark
-    Spawns a new mark in the environment at the indicated position.
-ShowGameOver
-    Indicates the game as been completed. The environment system gets the
-    winning positions from the game resource. The outcome affinity is useful for
-    single player games allowing environments to react to the player winning or
-    losing. Neutral is useful for multiplayer games.
-
 
 ========================
 Builtin Amethyst Systems
