@@ -106,6 +106,12 @@ spawn_mark
 spawn_game_over
     Spawns the game over related entities.
 
+..  warning::
+    Many environments highlight or provide a special graphic for an available
+    square the user is hovering over. This concept is not fully explored by the
+    design proposed here. The debug environment can be used to explore this
+    feature and reduce its risk.
+
 
 ===============
 Other Resources

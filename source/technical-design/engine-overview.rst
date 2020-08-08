@@ -39,6 +39,44 @@ and IO utilities.
 FossXO's makes extensive use of the features provided by Amethyst. Each of these
 are described in detail in the following sections.
 
+..  TODO: Read the Amethyst concepts book now.
+    List the Amethyst version number
+
+
+=======
+Modules
+=======
+An overview of the game's modules is shown in :numref:`uml-modules-overview`.
+
+..  _uml-modules-overview:
+..  uml::
+    :caption: FossXO's major modules and their relationships.
+
+    !include rust_types.uml
+    hide empty members
+
+    package "<fossxo crate>" { }
+    package states { }
+    package systems { }
+    package file_io { }
+    package events { }
+    package environments { }
+    package components { }
+    package resources { }
+
+    "<fossxo crate>" <-- states
+    "<fossxo crate>" <-- systems
+    states <-- file_io
+    states <-- environments
+    states <-- events
+    states <-- resources
+
+    systems <-- components
+    systems <-- resources
+    systems <-- events
+    environments <-- components
+
+
 ..  rubric:: Footnotes
 
 ..  [#otherengines] During the prototyping phase two other popular Rust game

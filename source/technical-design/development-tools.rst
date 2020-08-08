@@ -82,7 +82,7 @@ warn
 info
     Provides information about the system the application is running on and the
     games general flow. Examples include the application's version and
-    transitions of :doc:`game-states`.
+    transitions of :doc:`states`.
 
 debug
     Used to provide context when debugging potential issues. Examples include

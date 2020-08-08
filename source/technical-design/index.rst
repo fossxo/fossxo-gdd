@@ -8,7 +8,7 @@ The technical design of FossXO is described in this chapter.
     :caption: Technical design topics:
 
     engine-overview
-    game-states
+    states
     systems
     components-resources-entities
     file-formats
@@ -16,10 +16,9 @@ The technical design of FossXO is described in this chapter.
     packaging
     security
     development-tools
+    prototype
 
 ..  TODO:
-    Add modules? Perhaps this could go in the engine overview too? E.g. where does each thing live?
-    * states, systems, components / entities / resources, events, environments, utils, bundles, file io
     Prototype Lessions Learned
     * Compared ggez, piston, aymest (and their verions)
     * Table of features
