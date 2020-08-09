@@ -36,7 +36,8 @@ every time it is called. This is typically once per game loop.
 ============================
 System Design Considerations
 ============================
-The list below provides some items to consider when designing systems.
+The game contains additional systems that are not described in this document.
+However, all these systems are designed around the following considerations.
 
 *   Systems contain small pieces of functionality. For example in a Pong type
     game, one system would be responsible for moving the ball and a second
@@ -55,9 +56,9 @@ The list below provides some items to consider when designing systems.
 ..  note::
     Even though systems are implemented as structures, they should not store any
     state in as a local fields. If a system needs private data, store the data
-    in a resource object that has private fields.  [#amethystguide]_ In fact,
-    the next major version of Amethyst uses loose functions for systems and the
-    System trait is removed.
+    in a resource object that has private fields. In fact, the next major
+    version of Amethyst uses loose functions for systems and the System trait is
+    removed.
 
 
 ============
@@ -132,9 +133,3 @@ RenderingBundle
 See the Amethyst documentation for details on each of these bundles and the
 systems they provide.
 
-
-..  rubric:: Footnotes
-
-..  [#amethystguide] Readers might find this unofficial
-    `Amethyst Architectural Guidelines <https://github.com/bonsairobo/amethyst-architecture-guidelines>`_
-    useful, especially when designing game states, systems, components, and resources.

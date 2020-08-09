@@ -63,6 +63,9 @@ provides access to the core game mechanics.
 To avoid unnecessary files from accidentally being included in the game, the
 game emits a warning if unused files are found in the assets directory.
 
+
+.. _ref-game-configuration-file:
+
 =======================
 Game Configuration File
 =======================
@@ -92,12 +95,14 @@ mark
 If there is a problem parsing this file, default values are used.
 
 
+..  _ref-user-data-file:
+
 ==============
 User Data File
 ==============
 The user data file stores various pieces of user data including best speedrun
 times or unlocked achievements. This file is a SQLite database stored in the
-user's data directory. [#userdata]_
+user's data directory. [#userdata]_ The file is created if it does not exist.
 
 The ``speedruns`` table whose schema is shown in
 :numref:`code-user-data-speedruns-table`, stores the best speedrun times.
@@ -127,6 +132,10 @@ such as ``chrono::Duration`` and ``chrono::DateTime`` from the
 
 The SQLite ``user_version`` value is set to 1 allowing future versions of the
 game to load and migrate existing user data.
+
+If the file cannot be initially created, an existing file fails to load, or if
+the ``user_version`` value is greater than 1, the functionality provided is
+disabled. E.g. the best speedrun times are not displayed.
 
 
 ..  _ref-asset-license-info-files:

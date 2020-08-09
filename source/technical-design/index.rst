@@ -17,10 +17,3 @@ The technical design of FossXO is described in this chapter.
     security
     development-tools
     prototype
-
-..  TODO:
-    Prototype Lessions Learned
-    * Compared ggez, piston, aymest (and their verions)
-    * Table of features
-    * Note X11 issue?
-    Someplace mention that refactoring is OK?

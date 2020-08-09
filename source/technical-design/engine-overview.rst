@@ -13,12 +13,12 @@ existing Rust libraries.
 Amethyst
 ========
 FossXO uses `Amethyst v0.15.0 <https://github.com/amethyst/amethyst/tree/v0.15.0>`_
-as the game's engine. Amethyst is a data-driven and game engine written in
+as the game's engine. Amethyst is a data-driven game engine written in
 Rust. [#otherengines]_ Amethyst uses a entity component system
 (ECS) architecture where entity represents a single object in the game.
 Components store data about one aspect of the object. Systems contain logic that
-is executed on collections of components every loop. Amethyst additionally
-contains support for states, resources, and events.
+is executed on collections of components every loop. Amethyst also
+contains support for game states, resources, and events.
 
 In addition to the ECS architecture, Amethyst provides a rendering engine that
 supports various backends including Vulkan, a basic UI framework, audio support,
@@ -97,7 +97,8 @@ resources
 components
     Contains the game's components.
 events
-    All events sent by the game are contained in the ``events`` module.
+    All events sent by the game are contained in the ``events`` module. This
+    includes the ``EventData`` enum in :numref:`uml-event-data-enum`.
 file_io
     Holds functionality related to loading and saving the games custom files.
 

@@ -69,7 +69,7 @@ attack against the game. [#pngcheck]_
 ==============
 Direct Attacks
 ==============
-FoxXO does not connect to internet servers for any reason or even have local
+FossXO does not connect to internet servers for any reason or even have local
 network multiplayer. The game does not allow users to open arbitrary files.
 Finally, once installed, the game does not require any special or elevated
 permissions to run. Therefore, its direct attack surface should be minimal to

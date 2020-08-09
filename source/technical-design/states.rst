@@ -94,17 +94,16 @@ state transitions. [#screenflowchart]_
 Game State
 ==========
 The game state is used for :ref:`ref-gameplay-single-player-mode` and
-:ref:`ref-gameplay-two-player-mode` games.
-
-Responsibilities include:
+:ref:`ref-gameplay-two-player-mode` games. The responsibilities of this state
+are:
 
 *   Spawn the player and AI opponent entities for playing the game.
 *   Handle player events for when marks are placed.
 *   Manage the game resource.
-*   Show the game environment with the environment resource.
+*   Show the game environment with the :ref:`ref-environments-resource`.
 *   Show the :ref:`ref-ui-game-board` widgets including the menu button and
     status text.
-*   Navigate to the :ref:`ref-main-menu-state`.
+*   Navigate to the main menu state.
 
 When the game state is started, the options to use are provided. This includes
 if the game is single-player or multiplayer. For single-player, this is the
@@ -117,9 +116,7 @@ difficulty level and if the player is using X or O marks.
 Speedrun Game State
 ===================
 The speedrun game state is used for :ref:`ref-gameplay-speed-run-mode` games.
-[#speedrunstatedifference]_
-
-Responsibilities include:
+[#speedrunstatedifference]_ The responsibilities of this state are:
 
 *   Spawn the player and AI opponent entities for playing the game.
 *   Handle player events for when marks are placed.
@@ -127,26 +124,26 @@ Responsibilities include:
 *   Keep track of the total speedrun time and time for each game.
 *   Show the :ref:`ref-ui-speedrun-game-board` widgets including the menu
     button and status text.
-*   Navigate to the :ref:`ref-speedrun-best-time-menu-state` providing the
-    results of the speedrun. The results include a successful game along with
-    the run's time, a lost game, or an aborted game from the player opening
-    the menu.
+*   Navigate to the best time menu state providing the results of the speedrun.
+    The results include a successful game along with the run's time, a
+    lost game, or an aborted game from the player opening the menu.
 
 
 =============
 Loading State
 =============
-The loading state is the first state run when the game starts. It has the
-following responsibilities:
+The loading state is the first state run when the game starts. The
+responsibilities are:
 
 *   Show the :ref:`ref-ui-loading-screen` widgets.
 *   Queue the resources to load with asset loader.
 *   Monitor and optionally report the loading progress.
-*   Launch the :ref:`ref-game-state` when resource loading is complete. The
+*   Launch the game state when resource loading is complete. The
     single player game options last used are provided. [#firstgamesettings]_
 
-
-..  TODO: perhaps describe more detail how this is accomplished?
+The loading state asks the :ref:`ref-environments-resource` and any other
+resources to queue the assets that need loaded. It then monitors the loading
+progress and transitions to the game state when complete.
 
 
 ..  _ref-main-menu-state:
@@ -155,16 +152,15 @@ following responsibilities:
 Main Menu State
 ===============
 The main menu state allows uses to navigate to the other states.
-
 Responsibilities include:
 
 *   Show the :ref:`ref-ui-main-menu` widgets.
-*   Navigate to the :ref:`ref-single-player-menu-state`.
-*   Launch the :ref:`ref-game-state` with the multiplayer game flag.
-*   Navigate to the :ref:`ref-options-menu-state`.
-*   Navigate to the :ref:`ref-credits-menu-state`.
+*   Navigate to the single-player menu state.
+*   Launch the game state with the multiplayer game flag.
+*   Navigate to the options menu state.
+*   Navigate to the credits menu state.
 *   Open the game's user manual in an external browser.
-*   Go to the Quit state to exit the game.
+*   Go to the quit state to exit the game.
 
 
 .. _ref-single-player-menu-state:
@@ -172,7 +168,8 @@ Responsibilities include:
 ========================
 Single-player Menu State
 ========================
-The single player menu state has the following responsibilities:
+The single-player menu state shows the UI for configuring single-player games.
+The responsibilities are:
 
 *   Show the :ref:`ref-ui-single-player` menu widgets.
 *   Launch the :ref:`ref-game-state` providing the single-player options
@@ -186,18 +183,19 @@ The single player menu state has the following responsibilities:
 ===================
 Speedrun Menu State
 ===================
-The speedrun menu state is the entry point to speed run games.
+The speedrun menu state is the entry point to speed run games. The
+responsibilities are:
 
 *   Show the :ref:`ref-ui-speedrun` menu widgets.
-*   Query the best speed run times.
-*   Launch the :ref:`ref-speedrun-game-state` providing the player mark option.
-*   Go back to the :ref:`ref-single-player-menu-state`.
+*   Query best speed run times from the :ref:`ref-user-data-file`.
+*   Launch the speedrun game state using the the player mark option.
+*   Go to the best time menu state if the user got a best time. The user's time
+    and other speedrun information is provided.
+*   Go back to the single-player menu state.
 
 When the speedrun menu state is started, it is optionally provided the result of
 the speedrun game. It uses this information to know if it should show the
 instructional text, show the game results, or navigate to the best time menu.
-
-..  TODO: link to file formats?
 
 
 .. _ref-speedrun-best-time-menu-state:
@@ -205,11 +203,13 @@ instructional text, show the game results, or navigate to the best time menu.
 =============================
 Speedrun Best Time Menu State
 =============================
+The speedrun best time menu state allows users to view and record a best
+speedrun time. The responsibilities are:
 
 *  Show the speed run best time dialog widgets described in the
    :ref:`ref-ui-speedrun` menu.
-*  Save the best time information to the database.
-*  Navigate to the :ref:`ref-speedrun-menu-state`.
+*  Save the best time information to the :ref:`ref-user-data-file`.
+*  Navigate to the speedrun menu state.
 
 
 .. _ref-credits-menu-state:
@@ -217,14 +217,18 @@ Speedrun Best Time Menu State
 ==================
 Credits Menu State
 ==================
+The credits menu state shows the game's credits along with demoing the various
+games environments. The responsibilities are:
 
 *   Show the :ref:`ref-ui-credits` menu widgets.
 *   Open the game's licence compliance information contained in the user manual
     in an external browser.
-*   Use the environments to show different in progress games.
-*   Go back to the :ref:`ref-main-menu-state`.
+*   Show different in progress games.
+*   Go back to the main menu state.
 
-.. TODO: What env system to use?
+The credits menu demonstrates the various game environments. It does this by
+creating two AI players that battle while occasionally switching the current
+environment using the ref:`ref-environments-resource`.
 
 
 .. _ref-options-menu-state:
@@ -232,11 +236,14 @@ Credits Menu State
 ==================
 Options Menu State
 ==================
+The options menu state shows the various options related widgets and saves the
+games options. Its responsibilities are:
 
 *   Show the :ref:`ref-ui-options` menu widgets.
-*   Apply the user provided options and save the options to disk.
+*   Apply the user provided options and save the
+    :ref:`ref-game-configuration-file` to disk.
 *   Allow resetting options to default values.
-*   Go back to the :ref:`ref-main-menu-state`.
+*   Go back to the main menu state.
 
 
 ..  rubric:: Footnotes

@@ -22,7 +22,7 @@ entities are created for environment specific features as needed.
 =====================
 Environments Resource
 =====================
-A major feature of FoxXO is its many environments. Environments are responsible
+A major feature of FossXO is its many environments. Environments are responsible
 for managing required assets and spawning / destroying entities as the game
 progresses. This is similar responsibility as *maps* in other games.
 
