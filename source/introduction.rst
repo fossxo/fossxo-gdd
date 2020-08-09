@@ -89,6 +89,8 @@ FossXO is developed in Rust this makes an excellent time to launch a Rust
 based game. [#limitedscope]_
 
 
+..  _ref-objective-easily-expandable-and-modifiable:
+
 --------------------------------
 Easily Expandable and Modifiable
 --------------------------------

@@ -17,6 +17,8 @@ supporting types used in the game. Additional components, resources, and
 entities are created for environment specific features as needed.
 
 
+.. _ref-environments-resource:
+
 =====================
 Environments Resource
 =====================

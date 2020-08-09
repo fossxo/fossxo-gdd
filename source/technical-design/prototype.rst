@@ -1,23 +1,25 @@
-###################
-Throwaway Prototype
-###################
+###########################
+Throwaway Prototype Lessons
+###########################
 The throwaway prototype fulfills the
 :ref:`ref-objective-build-risk-reduction-prototype` objective. The development
 team is new to the Rust game development ecosystem; the prototype allows us to
 explore various techniques and come up with a design that fulfills the game
 requirements listed in this document.
 
-This section describes the lessons learned during the prototyping phase.
+The game's design is influenced by the knowledge learned during the prototyping
+phase. This section describes additional details about the prototyping phase
+including why Amethyst was chosen as the engine to base the game's design around.
 
 =================
 Rust Game Engines
 =================
 While doing research for the prototype three popular Rust game engines were
-considered: `Amethyst <https://github.com/amethyst/amethyst>`__,
-`ggez <https://github.com/ggez/ggez>`__, and
-`Piston <https://github.com/PistonDevelopers/piston>`__.
-:numref:`table-rust-engines-comparison` provides an overview of these engines
-with guards to how their features meet FossXO's requirements. [#enginedisclaimer]_
+considered: `Amethyst v0.15.0 <https://github.com/amethyst/amethyst/tree/v0.15.0>`__,
+`ggez v0.5.1 <https://github.com/ggez/ggez>`__, and
+`Piston v0.48.0 <https://github.com/PistonDevelopers/piston>`__. An overview of
+these engines with regards to how their features meet FossXO's requirements
+is provided in :numref:`table-rust-engines-comparison` . [#enginedisclaimer]_
 
 ..  tabularcolumns:: |l|L|L|L|
 ..  _table-rust-engines-comparison:
@@ -36,6 +38,10 @@ with guards to how their features meet FossXO's requirements. [#enginedisclaimer
         - 5.9k
         - 2.4k
         - 3.5k
+    *   - Tagged releases
+        - Yes
+        - No
+        - No
     *   - Usage Model
         - Complete engine for games large and small
         - Complete engine for basic games
@@ -73,7 +79,7 @@ with guards to how their features meet FossXO's requirements. [#enginedisclaimer
         - Yes
         - Unknown
     *   - Vector Drawing
-        - Limited (Debug lines)
+        - No (Debug lines only)
         - Yes
         - Yes
     *   - Audio / Sound FX
@@ -147,14 +153,17 @@ Amethyst is built around a entity component system which provides structure
 on where all the pieces of the game go. Amethyst has excellent getting started
 documentation and examples that demonstrate the engine. Additionally, Amethyst
 provides basic UI widgets which would otherwise take a fair amount of time to
-implement.
+implement. [#expandable]_
 
 Compared to ggez, Amethyst works at a higher level. This has a few down sides
 such as it being harder, or at least not as oblivious, on how to do some basic
 tasks such as drawing lines. However, its architecture allows different
 rendering systems to be used or swapped in and out.
 
-Therefore, of the engines considered, Amethyst made the best starting point and
+One more unique aspect about Amethyst compared to the other engines considered
+it is the only one to tag its releases per the Rust API Guidelines. [#rustapiguidelines]_
+
+Therefore, of the engines considered, Amethyst made the best starting point, and
 aligned best with FossXO's requirements.
 
 
@@ -198,3 +207,8 @@ For details see:
         specific requirements. The engines might support more features than
         described here and the feasibility findings might be different if
         evaluating the engines for a different application or game.
+..  [#expandable] Amethyst makes it easy to add new systems and features which
+        helps with the :ref:`ref-objective-easily-expandable-and-modifiable`
+        objective.
+..  [#rustapiguidelines] `Rust API Guidelines: Documentation
+        <https://rust-lang.github.io/api-guidelines/documentation.html>`_
