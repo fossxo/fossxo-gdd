@@ -80,6 +80,8 @@ these games by respecting players who choose to spend their valuable time
 playing the game.
 
 
+..  index:: RustConf
+
 ------------------------
 Release by RustConf 2020
 ------------------------
@@ -103,6 +105,7 @@ Finally, an easily modifiable code base allows quick turnaround of future
 releases of the game.
 
 
+.. index:: throwaway prototype
 .. _ref-objective-build-risk-reduction-prototype:
 
 ------------------------------

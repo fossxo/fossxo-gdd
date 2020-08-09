@@ -8,6 +8,7 @@ development effort, and avoid creating a game engine from the ground up, FossXO
 built on top of the Amethyst game engine and makes extensive use of other
 existing Rust libraries.
 
+.. index:: Amethyst game engine
 
 ========
 Amethyst
@@ -35,6 +36,8 @@ and IO utilities.
 The :doc:`states`, :doc:`systems`, and :doc:`components-resources-entities`
 sections describe the details of how the game is built on top of Amethyst.
 
+
+.. index:: open_ttt_lib
 
 ============
 open_ttt_lib

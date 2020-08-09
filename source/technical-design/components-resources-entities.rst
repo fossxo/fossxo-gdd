@@ -17,6 +17,7 @@ supporting types used in the game. Additional components, resources, and
 entities are created for environment specific features as needed.
 
 
+.. index:: environments resource
 .. _ref-environments-resource:
 
 =====================
@@ -75,8 +76,8 @@ spawn_game_over
     environments to react to the player winning or losing. The neutral affinity
     is used or multiplayer games or cat's games.
 
-The Environments resource requires each environment to implement the Environment
-trait shown in :numref:`uml-environment-trait`.
+The Environments resource requires each environment to implement the
+:index:`Environment trait` shown in :numref:`uml-environment-trait`.
 
 ..  _uml-environment-trait:
 ..  uml::
@@ -121,10 +122,10 @@ Other Resources
 In addition to environments, there are a other notable resources used by the
 game.
 
-The game resource provides access to the underlying tic-tac-toe game logic and
-the last time a move was done on the game. Helper methods are provided to make
-tasks such as seeing if it is a given player's turn. The game resource is
-shown in :numref:`uml-game-resource`.
+The :index:`game resource` provides access to the underlying tic-tac-toe game
+logic and the last time a move was done on the game. Helper methods are provided
+to make tasks such as seeing if it is a given player's turn. The game resource
+is shown in :numref:`uml-game-resource`.
 
 ..  _uml-game-resource:
 ..  uml::
@@ -139,8 +140,9 @@ shown in :numref:`uml-game-resource`.
         + is_players_move(player) -> bool
     }
 
-The grid resource, shown in :numref:`uml-grid-resource` provides access to the
-grid and methods to convert between screen coordinates and tic-tac-toe positions.
+The :index:`grid resource`, shown in :numref:`uml-grid-resource` provides access
+to the grid and methods to convert between screen coordinates and tic-tac-toe
+positions.
 
 ..  _uml-grid-resource:
 ..  uml::
@@ -159,6 +161,8 @@ grid and methods to convert between screen coordinates and tic-tac-toe positions
 
 Additional conversion methods are added as needed to the grid resource.
 
+
+.. index:: player component, ai component, mark component,
 
 ==================
 Notable Components

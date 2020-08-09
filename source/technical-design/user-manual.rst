@@ -7,6 +7,8 @@ gameplay modes, and contains content to fulfill the
 :ref:`ref-distribution-license-compliance` requirements.
 
 
+..  index:: user manual
+
 ==================
 User Manual Topics
 ==================
@@ -33,12 +35,18 @@ HTML Generation Suggestions
 As the :ref:`ref-ui-help` menu describes, local HTML files store the user
 manual. There are some tools worth considering for creating the user manual.
 
+
+..  index:: mdBook
+
 ------
 mdBook
 ------
 `mdBook <https://github.com/rust-lang/mdBook>`__ is a Rust based tool for
 generating HTML based books from Markdown files. This tool both popular in the
 Rust community and is used for other game manuals. [#openrabook]_
+
+
+..  index:: cargo-about
 
 -----------
 cargo-about

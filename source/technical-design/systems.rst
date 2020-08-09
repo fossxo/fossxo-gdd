@@ -10,6 +10,8 @@ This section describes how systems are constructed and provides details about
 core systems used by the game.
 
 
+.. index:: System trait
+
 ============
 System Trait
 ============
@@ -68,11 +70,15 @@ There are several notable systems the game uses to provide the game's core
 functionality. This includes getting player input and managing AI opponents.
 Additional systems for environment specific features are added as needed.
 
+
+.. index:: player system, keyboard, mouse
+
 -------------
 Player System
 -------------
-The player system is responsible for translating mouse clicks and button
-presses into player events that indicate where the player would like to move.
+The player system is responsible for translating mouse clicks and keyboard
+button presses into player events that indicate where the player would like to
+move.
 
 The pseudocode in :numref:`code-player-system-pseudocode` describes the player
 system logic.
@@ -90,6 +96,9 @@ system logic.
 The player system allows players to request moves even when it is not their turn ---
 it delegates filtering invalid moves to other systems. Checking the keyboard
 bindings takes prescience over the mouse.
+
+
+.. index:: ai system
 
 ---------
 AI System

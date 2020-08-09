@@ -43,6 +43,7 @@ List of Environments
 
 {% for env in environments %}
 
+.. index:: {{ env.name }} environment
 ..  _ref-environment-{{ env.name | lower | replace(' ', '-') }}:
 
 {{ '-' * env.name | length }}

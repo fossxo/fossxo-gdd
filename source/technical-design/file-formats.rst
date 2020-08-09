@@ -7,6 +7,8 @@ details of the data format and considerations such as what happens if the file
 cannot be loaded.
 
 
+.. index:: asset file
+
 ================
 Game Asset Files
 ================
@@ -64,6 +66,7 @@ To avoid unnecessary files from accidentally being included in the game, the
 game emits a warning if unused files are found in the assets directory.
 
 
+.. index:: game configuration file
 .. _ref-game-configuration-file:
 
 =======================
@@ -95,6 +98,7 @@ mark
 If there is a problem parsing this file, default values are used.
 
 
+.. index:: user data file
 ..  _ref-user-data-file:
 
 ==============
@@ -137,7 +141,7 @@ If the file cannot be initially created, an existing file fails to load, or if
 the ``user_version`` value is greater than 1, the functionality provided is
 disabled. E.g. the best speedrun times are not displayed.
 
-
+.. index:: asset license info file
 ..  _ref-asset-license-info-files:
 
 ========================

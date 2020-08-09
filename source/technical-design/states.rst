@@ -6,6 +6,7 @@ A game state is a general and global part of the game. The active state is
 updated every game loop, has access to the world's entities and resources, and
 can receive events. States can also request a transition to a different state.
 
+.. index:: State trait
 
 ===========
 State Trait
@@ -88,6 +89,7 @@ state transitions. [#screenflowchart]_
     SpeedrunBestTimeMenu --> SpeedrunMenu
 
 
+.. index:: game state
 .. _ref-game-state:
 
 ==========
@@ -110,6 +112,7 @@ if the game is single-player or multiplayer. For single-player, this is the
 difficulty level and if the player is using X or O marks.
 
 
+.. index:: speedrun game state
 .. _ref-speedrun-game-state:
 
 ===================
@@ -129,6 +132,8 @@ The speedrun game state is used for :ref:`ref-gameplay-speed-run-mode` games.
     lost game, or an aborted game from the player opening the menu.
 
 
+.. index:: loading state
+
 =============
 Loading State
 =============
@@ -146,6 +151,7 @@ resources to queue the assets that need loaded. It then monitors the loading
 progress and transitions to the game state when complete.
 
 
+.. index:: main menu state
 ..  _ref-main-menu-state:
 
 ===============
@@ -163,6 +169,7 @@ Responsibilities include:
 *   Go to the quit state to exit the game.
 
 
+.. index:: single-player menu state
 .. _ref-single-player-menu-state:
 
 ========================
@@ -178,6 +185,7 @@ The responsibilities are:
 *   Go back to the :ref:`ref-main-menu-state`.
 
 
+.. index:: speedrun menu state
 .. _ref-speedrun-menu-state:
 
 ===================
@@ -198,6 +206,7 @@ the speedrun game. It uses this information to know if it should show the
 instructional text, show the game results, or navigate to the best time menu.
 
 
+.. index:: speedrun best time menu state
 .. _ref-speedrun-best-time-menu-state:
 
 =============================
@@ -212,6 +221,7 @@ speedrun time. The responsibilities are:
 *  Navigate to the speedrun menu state.
 
 
+.. index:: credits menu state
 .. _ref-credits-menu-state:
 
 ==================
@@ -231,6 +241,7 @@ creating two AI players that battle while occasionally switching the current
 environment using the ref:`ref-environments-resource`.
 
 
+.. index:: options menu state
 .. _ref-options-menu-state:
 
 ==================

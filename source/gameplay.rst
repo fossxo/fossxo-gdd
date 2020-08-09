@@ -69,7 +69,7 @@ At hard difficulty the computer plays almost perfect games. The player must
 capitalize on rare mistakes made by the computer to win. This is the recommended
 difficulty for experienced tic-tac-toe players.
 
-
+.. index:: two player mode
 .. _ref-gameplay-two-player-mode:
 
 ===============

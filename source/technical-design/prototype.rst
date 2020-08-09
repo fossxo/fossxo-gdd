@@ -1,3 +1,5 @@
+.. index:: throwaway prototype
+
 ###########################
 Throwaway Prototype Lessons
 ###########################
@@ -10,6 +12,8 @@ requirements listed in this document.
 The game's design is influenced by the knowledge learned during the prototyping
 phase. This section describes additional details about the prototyping phase
 including why Amethyst was chosen as the engine to base the game's design around.
+
+.. index:: Piston game engine, ggez game engine, Amethyst game engine
 
 =================
 Rust Game Engines
@@ -177,6 +181,8 @@ This greatly simplified the game's design.
 Therefore, considering using a ECS architecture for future games even if not
 using the Amethyst engine.
 
+
+.. index:: Wayland
 
 =============
 Wayland Issue

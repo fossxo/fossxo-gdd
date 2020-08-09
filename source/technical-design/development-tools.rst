@@ -4,6 +4,7 @@ Development Tools
 This section describes the tools used to help with the development of the game,
 and to ensure future maintainability.
 
+..  index:: Debug environment
 
 =================
 Debug Environment
@@ -19,6 +20,8 @@ Features of the debug environment include:
 * Showing winning positions.
 * Highlighting the current position being hovered over by the mouse.
 
+
+..  index:: cargo-make
 
 ================================
 Building and Packaging Workflows
@@ -50,6 +53,8 @@ allowing potential problems to be found as soon as possible. This allows
 developers to work right on the ``development`` branch and have confidence their
 changes are not breaking existing functionality.
 
+
+..  index:: cargo-deny
 
 ========================
 Automated License Checks

@@ -21,6 +21,8 @@ put at risk.
 To mitigate this risk several steps are taken including generating a software
 bill of materials and using tools to automate package auditing.
 
+..  index:: software bill of materials
+
 --------------------------
 Software Bill of Materials
 --------------------------
@@ -30,6 +32,9 @@ The software BOM is specific for each release of the game. [#offlinebom]_
 The software BOM ensures developers and users alike know exactly what version of
 each library is being used. The list can be audited for libraries that have
 known vulnerabilities or other issues.
+
+
+..  index:: RustSec advisory database, cargo-deny
 
 -------------------------
 RustSec Advisory Database
@@ -50,6 +55,9 @@ code reviews, it is possible to sneak in alternate versions of libraries. [#trus
 cargo-deny can also be used to detect when packages are pulled in from sources
 other than crates.io.
 
+
+..  index:: asset file
+
 -----------
 Game Assets
 -----------
@@ -65,6 +73,8 @@ identifying bugs in the asset loading libraries. Furthermore, assets provided
 in an untrusted pull request are carefully scrutinized to prevent a targeted
 attack against the game. [#pngcheck]_
 
+
+..  index:: SQL injection attack
 
 ==============
 Direct Attacks

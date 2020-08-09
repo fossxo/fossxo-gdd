@@ -4,6 +4,9 @@ Packages and Source Builds
 The game is :ref:`distributed <ref-distribution>` as either a precompiled
 package for their platform or users can build the game from source.
 
+
+..  index:: Inno Setup, installer
+
 ============================
 Inno Setup Windows Installer
 ============================
@@ -25,6 +28,9 @@ Installer has typical behavior for Windows setup programs:
 The game might require some additional Windows specific resources to run, such
 as the Microsoft Visual C++ redistributable. These items are included in the
 installer or listed as prerequisites on a case by case basis.
+
+
+..  index:: AppImage
 
 ======================
 AppImage Linux Package
