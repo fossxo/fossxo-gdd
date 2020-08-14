@@ -263,7 +263,7 @@ The credits screen contains the following items:
 
 1.  List of developers and other people directly involved in the creation
     of the game.
-2.  The open source community is thanked and links are provided to all of the
+2.  The open-source community is thanked and links are provided to all of the
     third party libraries and assets used in the game. Selecting one of these
     links opens corresponding page in the game's :ref:`ref-ui-help`.
 3.  :guilabel:`Back` returns to the :ref:`ref-ui-main-menu`.

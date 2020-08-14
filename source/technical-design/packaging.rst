@@ -19,11 +19,11 @@ Installer has typical behavior for Windows setup programs:
 *   The executable and game assets are stored in the user's program files
     directory. [#autoconstants]_
 *   The game's configuration and user data is stored in the user's games directory.
-*   Optionally, shortcuts are placed on the desktop and in the start menu.
+*   Shortcuts are placed in the start menu and optionally on the desktop.
 *   The game is listed in the Programs & Features control panel so it can easily
     be uninstalled.
 *   The version number listed in the installer and control panel match that of
-    the game.
+    the game. [#getenv]_
 
 The game might require some additional Windows specific resources to run, such
 as the Microsoft Visual C++ redistributable. These items are included in the
@@ -48,11 +48,11 @@ Therefore, this makes its use ideal for this project.
 =================
 Build from Source
 =================
-The game is open source thus users can build the game themselves. Several steps
+The game is open-source thus users can build the game themselves. Several steps
 are taken to help users build the game with minimal friction.
 
 *   The repository's default branch is the ``release`` branch. Code on this
-    branch has been tested and tagged and is ready for release. Development
+    branch has been tested, tagged, and is ready for release. Development
     occurs on a different branch. This allows users to clone and build the
     repository without having to remember to check out a specific tag or branch.
 *   The README file contains clear instructions on how to build the game
@@ -68,4 +68,7 @@ are taken to help users build the game with minimal friction.
 
 ..  [#autoconstants] See Inno Setup's *Auto Constants* feature for automatically
         selecting the correct directories to place files.
+..  [#getenv] Inno Setup's ``GetEnv`` preprocessor can get environmental
+        variables --- this is likely a useful way of passing data to Inno
+        including the applications version number.
 ..  [#openra] OpenRA is an example of a game that uses AppImage.

@@ -3,11 +3,11 @@ Systems
 #######
 
 Systems contain small pieces of the game's logic that is applied to collections
-of components or resources. The systems can be grouped be grouped into bundles
-that provide a specific game feature.
+of components or resources. The systems can be grouped into bundles that provide
+a specific game feature.
 
 This section describes how systems are constructed and provides details about
-core systems used by the game.
+the core systems used by the game.
 
 
 .. index:: System trait
@@ -30,7 +30,7 @@ A summary of the System trait is shown in :numref:`uml-system-trait`.
         +run(SystemData)
     }
 
-The ``SystemData`` field specifies what types of components and resources the
+The ``SystemData`` type specifies what types of components and resources the
 system operates on. The ``run()`` method is provided the specified system data
 every time it is called. This is typically once per game loop.
 
@@ -39,7 +39,7 @@ every time it is called. This is typically once per game loop.
 System Design Considerations
 ============================
 The game contains additional systems that are not described in this document.
-However, all these systems are designed around the following considerations.
+However, these systems are designed around the following considerations.
 
 *   Systems contain small pieces of functionality. For example in a Pong type
     game, one system would be responsible for moving the ball and a second
@@ -57,7 +57,7 @@ However, all these systems are designed around the following considerations.
 
 ..  note::
     Even though systems are implemented as structures, they should not store any
-    state in as a local fields. If a system needs private data, store the data
+    data in local fields. If a system needs private data, store the data
     in a resource object that has private fields. In fact, the next major
     version of Amethyst uses loose functions for systems and the System trait is
     removed.
@@ -73,44 +73,44 @@ Additional systems for environment specific features are added as needed.
 
 .. index:: player system, keyboard, mouse
 
--------------
-Player System
--------------
-The player system is responsible for translating mouse clicks and keyboard
+-------------------
+Local Player System
+-------------------
+The local player system is responsible for translating mouse clicks and keyboard
 button presses into player events that indicate where the player would like to
 move.
 
-The pseudocode in :numref:`code-player-system-pseudocode` describes the player
-system logic.
+The pseudocode in :numref:`code-local-player-system-pseudocode` describes the
+local player system logic.
 
-..  _code-player-system-pseudocode:
+..  _code-local-player-system-pseudocode:
 ..  code-block:: text
-    :caption: Player system pseudocode.
+    :caption: Local player system pseudocode.
 
-    For each non-AI player:
+    For each local player:
         Get the any active button presses from the input bindings.
         For keyboard buttons, extract the direct mappings to the board position.
         For mouse buttons, translate the coordinates to the board position.
         Send the request move player event with the indicated position.
 
-The player system allows players to request moves even when it is not their turn ---
-it delegates filtering invalid moves to other systems. Checking the keyboard
-bindings takes prescience over the mouse.
+The local player system allows players to request moves even when it is not
+their turn --- it delegates filtering invalid moves to other systems. Checking
+the keyboard bindings takes prescience over the mouse.
 
 
 .. index:: ai system
 
----------
-AI System
----------
-The AI system generates player events for the AI opponents.
+----------------
+AI Player System
+----------------
+The AI player system generates player events for the AI opponents.
 
-:numref:`code-ai-system-pseudocode` shows the pseudocode that describes the AI
-system logic.
+:numref:`code-ai-player-system-pseudocode` shows the pseudocode that describes
+the AI player system logic.
 
-..  _code-ai-system-pseudocode:
+..  _code-ai-player-system-pseudocode:
 ..  code-block:: text
-    :caption: AI system pseudocode.
+    :caption: AI player system pseudocode.
 
     For each AI player:
         Check to see if is the player's turn, if not skip the player.

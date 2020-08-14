@@ -77,6 +77,7 @@ environments. Some environments to consider are listed below.
 * OXO oscilloscope throwback theme.
 * Metal or glass forge with lots of glowing hot liquids.
 * Clone of James' 2004 Tic Tac Toe.
+* Outer space theme with stars, nebulas, and planets.
 
 
 ..  rubric:: Footnotes

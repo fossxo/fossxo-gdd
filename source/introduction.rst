@@ -27,7 +27,7 @@ Each environment tells part of the story of tic-tac-toe from the past, present,
 and future. Each environment has a strong visual theme and complementary
 soundtrack.
 
-FossXO is free, open source, and no contains no annoying advertisements. It
+FossXO is free, open-source, and no contains no annoying advertisements. It
 runs on Windows, Mac, and Linux. The game launches Summer 2020.
 
 =========================
@@ -67,10 +67,10 @@ using Rust and is a showcase for ``open_ttt_lib``.
 ..  _ref-objective-free-of-charge:
 
 -------------------------------------------------------
-Provide Free of Charge and Under an Open Source License
+Provide Free of Charge and Under an Open-Source License
 -------------------------------------------------------
-FossXO is and will always be free, open source, and contain no advertisements or
-trackers. The game is released under a permissive open source license and its
+FossXO is and will always be free, open-source, and contain no advertisements or
+trackers. The game is released under a permissive open-source license and its
 code is available from a public repository such as `<https://github.com/>`__.
 
 Many of today's games casual games are released for free, but include

@@ -1,7 +1,7 @@
 #################
 Development Tools
 #################
-This section describes the tools used to help with the development of the game,
+This section describes the tools used to help with the development of the game
 and to ensure future maintainability.
 
 ..  index:: Debug environment
@@ -29,7 +29,7 @@ Building and Packaging Workflows
 There are several step to building and packing the game. This includes, but is
 not limited to compiling the application, running tests, rendering the user
 manual, and running the packaging process. Additionally, the details of some of
-these steps are different depending on current platform.
+these steps are different depending the target platform.
 
 `cargo-make <https://crates.io/crates/cargo-make>`_ is a tool that allows build
 steps and workflow to be managed. Workflows can include:
@@ -42,7 +42,7 @@ steps and workflow to be managed. Workflows can include:
 *   Do a development build. This includes running the lint checks, formatting
     checks, and unit tests.
 *   Run the full test suite, including slow tests.
-*   Package the game for the current platform.
+*   Package the game for the target platform.
 
 
 ======================
@@ -123,7 +123,7 @@ in different configurations without having to recompile.
     would be playing a complete game on each environment while monitoring the
     logs for warning or error messages. [#selftest]_
 
-..  option:: --environment ENVIRONMENT
+..  option:: --environment <ENVIRONMENT>
 
     Forces the game to use a specific environment instead of selecting
     environments at random. This is useful when creating new environments.
@@ -137,8 +137,13 @@ in different configurations without having to recompile.
 
 ..  option:: --version
 
-    Prints the application's version number, license, and copyright information.
+    Prints the application's version number, license, and copyright information. [#cargoenv]_
 
+The :option:`--help` and :option:`--version` options are handled before the game
+attempts to load files or show windows allowing them to work from systems
+without a display server or supported graphics drivers allowing their
+information to be obtained from scripts or users trying to troubleshoot a
+crashing game.
 
 
 ..  rubric:: Footnotes
@@ -150,3 +155,9 @@ in different configurations without having to recompile.
         cannot be exercise by unit tests such as loading game assets. This can
         also be incorporated in a larger functional test suite. Finally, users
         might consider running a self-test when troubleshooting game issues.
+..  [#cargoenv] Cargo provides several
+        `Environment Variables <https://doc.rust-lang.org/cargo/reference/environment-variables.html>`_
+        that can be accessed using the ``std::env`` macro. This is likely to be
+        useful for keeping the various places that use version numbers
+        synchronized.
+

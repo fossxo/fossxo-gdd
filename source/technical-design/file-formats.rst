@@ -31,8 +31,8 @@ The supported types of asset files are listed in
     Music          ``.ogg``                 Mono or stereo Ogg Vorbis at
                                             44.1 kHz or 48 kHz.
     Font           ``.ttf``                 TrueType font.
-    UI Prefab      ``.ron``                 UI entity definitions in Rusty
-                                            Object Notation.
+    Prefab         ``.ron``                 Entity definitions in Rusty Object
+                                            Notation.
     =============  =======================  ====================================
 
 The asset files are located in the ``assets/`` directory that is next to the
@@ -46,6 +46,7 @@ game's executable. Each type of asset is organized in subdirectories as shown in
     assets/
     ├── fonts
     ├── music
+    ├── prefab
     ├── shaders
     ├── sound_fx
     ├── textures
@@ -95,7 +96,8 @@ difficulty
 mark
     The player's mark, X or O. Default is X.
 
-If there is a problem parsing this file, default values are used.
+If the file does not exist, the game creates a new file using the default values.
+If there is a problem reading or parsing this file, default values are used.
 
 
 .. index:: user data file
@@ -191,4 +193,5 @@ developer or artist adding the resource to update the license info files.
         environments, an alternate approach is taken of organizing resources by
         asset type.
 ..  [#userdata] The user data directory is ``~/.local/share/fossxo/`` on Linux
-        and ``Documents/My Games/FossXO`` on Windows.
+        and ``Documents/My Games/FossXO`` on Windows. The game needs read and
+        write access to this directory.

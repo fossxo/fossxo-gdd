@@ -21,17 +21,19 @@ Glossary
         Term used when a game of tic-tac-toe ends in a draw where there is no winner.
 
     component
-        A component contains the data for one aspect of a game object. Component
-        examples include color, position, or mark type.
+        In an :term:`entity component system` architecture, a component contains
+        the data for one aspect of a game object. Component examples include
+        color, position, or mark type.
 
     ECS
         Acronym for :term:`entity component system`.
 
     entity
-        An entity represents a single object in the game. Entities by themselves
-        do not store data, instead they identify the collection of
-        :term:`components <component>` belonging to the object. Entity examples
-        include the marks on the board or an AI player.
+        In an :term:`entity component system` architecture, an entity represents
+        a single object in the game. Entities by themselves do not store data,
+        instead they identify the collection of :term:`components <component>`
+        belonging to the object. Entity examples include the marks on the board
+        or an AI player.
 
     entity component system
         An architecture pattern often used in game engines where
@@ -43,11 +45,14 @@ Glossary
         An environment is a unique setting or location where tic-tac-toe is
         played.
 
+    FOSS
+        Acronym for Free and :term:`open-source software`.
+
     hand drawn
         Hand drawn is a style of line that is wavy and imprecise.
 
-    open source software
-        Open source software is software whose source code is available for others
+    open-source software
+        Open-source software is software whose source code is available for others
         to study, modify, and redistribute.
 
     Rust programming language
@@ -62,8 +67,9 @@ Glossary
         the game as fast as possible.
 
     system
-        Systems contain the game's logic. Each system is executed every game
-        loop over a collection of :term:`components <component>`.
+        In an :term:`entity component system` architecture, systems contain the
+        game's logic. Each system is executed every game loop over a collection
+        of :term:`components <component>`.
 
     throwaway prototype
         A prototype is a version of software that is created to demonstrate core

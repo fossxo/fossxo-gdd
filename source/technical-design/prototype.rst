@@ -1,17 +1,17 @@
 .. index:: throwaway prototype
 
-###########################
-Throwaway Prototype Lessons
-###########################
-The throwaway prototype fulfills the
-:ref:`ref-objective-build-risk-reduction-prototype` objective. The development
-team is new to the Rust game development ecosystem; the prototype allows us to
-explore various techniques and come up with a design that fulfills the game
+#########################
+Prototype Lessons Learned
+#########################
+The development team is new to the Rust game development ecosystem; the
+:ref:`ref-objective-build-risk-reduction-prototype` objective allowed the team
+to explore various techniques and come up with a design that fulfills the game
 requirements listed in this document.
 
 The game's design is influenced by the knowledge learned during the prototyping
-phase. This section describes additional details about the prototyping phase
-including why Amethyst was chosen as the engine to base the game's design around.
+phase. This section describes the knowledge gathered during the prototyping
+phase including why Amethyst was chosen as the engine to base the game's design
+around.
 
 .. index:: Piston game engine, ggez game engine, Amethyst game engine
 
@@ -111,10 +111,10 @@ is provided in :numref:`table-rust-engines-comparison` . [#enginedisclaimer]_
         - Basic loading of resources
         - Unknown
 
-Amethyst, ggez, and Piston are all built on a similar collection of core Rust
-libraries that handel things such as graphics, keyboard and mouse support, and
-audio. However, the engines different in the API and abstractions created around
-these libraries.
+Amethyst, ggez, and Piston are all built on top of a similar collection of
+underlying Rust libraries that handel things such as graphics, keyboard and
+mouse support, and audio. However, the engines different in the API and
+abstractions created around these libraries.
 
 ------
 Piston
@@ -123,8 +123,10 @@ Piston was the first engine considered for FossXO and is one of the most
 downloaded game engines from crates.io. However, its documentation and design
 as a loose collection of libraries made it hard to use as a new Rust programmer.
 
-This was especially true when looking at Piston's examples. The examples would
-do basic tasks like create a window in vastly different ways.
+This was especially true when looking at Piston's examples. Different examples
+would do basic tasks like create a window in vastly different ways leading to
+confusion on why these tasks needed to be done differently or if one way was
+preferred over another.
 
 Because of Piston's complexity it was ruled out for use in FossXO.
 
@@ -137,7 +139,7 @@ Additionally, ggez's core set of features work well for FossXO's requirements.
 E.g. the easy of use of rendering lines, textures, and allowing multiple texture
 buffers to be composed for creating special FX.
 
-There were a few minor flaws such as the some programmer needing to know about
+There were a few rough spots such as the programmer needing to know about
 details of the underlying libraries used. ggez is also very opinionated about
 where user data is saved. Additionally, ggez does not provide any UI widgets so
 those would have to be created. However, overall ggez was a strong contender for
@@ -167,8 +169,8 @@ rendering systems to be used or swapped in and out.
 One more unique aspect about Amethyst compared to the other engines considered
 it is the only one to tag its releases per the Rust API Guidelines. [#rustapiguidelines]_
 
-Therefore, of the engines considered, Amethyst made the best starting point, and
-aligned best with FossXO's requirements.
+Therefore, of the engines considered Amethyst aligned best with FossXO's
+requirements and made the foundation for the team to build upon.
 
 
 =======================
@@ -197,7 +199,7 @@ in code.
 ..  code-block:: rust
     :caption: Example of setting the WINIT_UNIX_BACKEND environmental variable.
 
-    // Workaroudn for crash on Wayland.
+    // Workaround for crash on Wayland.
     env::set_var("WINIT_UNIX_BACKEND", "x11");
 
 For details see:

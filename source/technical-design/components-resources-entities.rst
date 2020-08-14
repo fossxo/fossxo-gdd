@@ -48,7 +48,7 @@ Environments resource.
         + spawn_game_over(winning_positions, outcome_affinity)
     }
 
-The methods of the of the Environments resource are described below.
+The methods of the Environments resource are described below.
 
 new
     Creates the Environments resource.
@@ -182,6 +182,8 @@ There are several main components used by the game. These are shown in
         + O
     }
 
+    struct(LocalPlayer)
+
     struct(Ai) {
         + ai_opponent
         + move_delay
@@ -194,6 +196,9 @@ There are several main components used by the game. These are shown in
 
 Player
     The Player component stores if the player is playing as X or as O.
+LocalPlayer
+    Tag component that indicates the player is local, e.g. using the keyboard
+    and mouse to make mark selections.
 Mark
     The Mark component indicates the owner of a given position on the board.
 Ai

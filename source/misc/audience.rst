@@ -23,7 +23,7 @@ keep players entertained for at least a little while.
 ===================================
 Computer Science Students / Modders
 ===================================
-FossXO is open source and is developed so that others can add their own
+FossXO is open-source and is developed so that others can add their own
 environments or extend the game. FossXO is a simple, but non-trivial
 application where people learning to program might find it an interesting
 code base to examine.

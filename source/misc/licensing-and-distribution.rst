@@ -47,7 +47,7 @@ best effort basis.
 -----------------
 Build from Source
 -----------------
-Because the game is open source anyone can build the game from source. This
+Because the game is open-source anyone can build the game from source. This
 involves cloning the game's source code repository and following the build
 instructions documented in the README file. [#cratessizelimit]_
 

@@ -12,11 +12,11 @@ systems and the steps taken to minimize those risks.
 ===================
 Supply Chain Attack
 ===================
-A supply chain attack is where cyber-attacker compromises part of the supply
-chain to attack downstream systems. The game makes extensive use of third party
-libraries, thus at an elevated risk for this type of attack. It only takes
-one of the dependent libraries being compromised for the user's system to be
-put at risk.
+A supply chain attack is where cyber-attacker compromises libraries or other
+dependencies of an application to attack systems that use the application.
+The game makes extensive use of third party libraries, thus at an elevated risk
+for this type of attack. It only takes one of the dependent libraries being
+compromised for the user's system to be put at risk.
 
 To mitigate this risk several steps are taken including generating a software
 bill of materials and using tools to automate package auditing.
@@ -48,12 +48,11 @@ crate. Ideally, this check is part of the game's build process.
 ---------------
 Package Sources
 ---------------
-FossXO and its dependent libraries are open source: anyone can send a pull
+FossXO and its dependent libraries are open-source: anyone can send a pull
 request to modify the codes functionality. Unfortunately, even with a careful
 code reviews, it is possible to sneak in alternate versions of libraries. [#trustedsource]_
-
-cargo-deny can also be used to detect when packages are pulled in from sources
-other than crates.io.
+The cargo-deny tool can also be used to detect when packages are pulled in from
+sources other than crates.io.
 
 
 ..  index:: asset file
@@ -62,11 +61,11 @@ other than crates.io.
 Game Assets
 -----------
 It is possible a cyber-attacker create a special crafted game asset file that
-FossXOises a bug in one of the asset loading libraries used by the game. This
-type of attack is less probable than attacking a package source as an attacker
-would have to create an asset where the vulnerable library successfully loads
-its main content yet provides the attacker some benefit such as running
-arbitrary code contained in the asset. [#assetattack]_
+when loaded by FossXO triggers a bug in one of the asset loading libraries used
+by the game. This type of attack is less probable than attacking a package
+source as an attacker would have to create an asset where the vulnerable library
+successfully loads its main content yet provides the attacker some benefit such
+as running arbitrary code contained in the asset. [#assetattack]_
 
 Usage of the RustSec Advisory Database should help mitigate this attack by
 identifying bugs in the asset loading libraries. Furthermore, assets provided
@@ -81,9 +80,8 @@ Direct Attacks
 ==============
 FossXO does not connect to internet servers for any reason or even have local
 network multiplayer. The game does not allow users to open arbitrary files.
-Finally, once installed, the game does not require any special or elevated
-permissions to run. Therefore, its direct attack surface should be minimal to
-would be attackers.
+Finally, the game does not require any special or elevated permissions to run. [#install]_
+Therefore, its direct attack surface should be minimal to would be attackers.
 
 Regardless, the following steps are taken to help reduce the risk of compromise
 to a user's system.
@@ -121,5 +119,7 @@ to a user's system.
         to still be included in a game. E.g. if the brick texture fails to show
         up a different brick texture will be used in place of the broken one.
 ..  [#pngcheck] Tools such as ``PNGcheck`` can help detect corrupted asset files.
+..  [#install] Ideally, the application does not require elevated permissions to
+        install.
 ..  [#codecomplete] McConnell (2004) *Code Complete: A Practical Handbook of Software Construction, Second Edition*
         provides a detailed guide to software best practices.

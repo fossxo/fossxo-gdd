@@ -8,14 +8,14 @@ development effort, and avoid creating a game engine from the ground up, FossXO
 built on top of the Amethyst game engine and makes extensive use of other
 existing Rust libraries.
 
-.. index:: Amethyst game engine
+.. index:: Amethyst game engine, ECS, entity component system
 
 ========
 Amethyst
 ========
 FossXO uses `Amethyst v0.15.0 <https://github.com/amethyst/amethyst/tree/v0.15.0>`_
-as the game's engine. Amethyst is a data-driven game engine written in
-Rust. [#otherengines]_ Amethyst uses a entity component system
+as the game's engine. [#otherengines]_  Amethyst is a data-driven game engine
+written in Rust. Amethyst uses a entity component system
 (ECS) architecture where entity represents a single object in the game.
 Components store data about one aspect of the object. Systems contain logic that
 is executed on collections of components every loop. Amethyst also
@@ -29,7 +29,7 @@ and IO utilities.
     FossXO makes extensive use of the features provided by Amethyst. It is
     highly recommended to read the
     `Concepts behind Amethyst <https://book.amethyst.rs/stable/concepts/intro.html>`_
-    chapter of The Amethyst Engine book ([Amethyst-book]_). This chapter
+    chapter of The Amethyst Engine book ([Amethyst-book]_) that
     introduces the fundamental concepts in Amethyst that this game is built
     around. [#amethystguide]_
 
@@ -49,7 +49,7 @@ algorithms per the :ref:`ref-objective-create-ttt-game-with-rust` objective.
 =======
 Modules
 =======
-Rust applications and libraries use modules to organize the functionality.
+Rust applications and libraries use modules to organize their functionality.
 An overview of the game's modules is shown in :numref:`uml-modules-overview`.
 
 ..  _uml-modules-overview:
@@ -84,8 +84,8 @@ A brief description of each module follows:
 
 <fossxo crate>
     Contains the entry point of the application. This initializes the engine,
-    loads any required data to start the game, starts the game's systems,
-    and finally sets the first game state to run.
+    parses command line arguments, loads any required data to start the game,
+    starts the game's systems, and finally sets the first game state to run.
 states
     Contains the game's states that are described in the :doc:`states` section.
 systems
