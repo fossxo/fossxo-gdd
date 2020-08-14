@@ -65,7 +65,7 @@ html_theme_options = {
     'sidebar_collapse': True,
     'code_font_size': "0.8em",
     'extra_nav_links': {
-        "GitHub Source": "https://github.com/j-richey/fossxo-gdd",
+        "GitHub Source": "https://github.com/fossxo/fossxo-gdd",
     },
 }
 
