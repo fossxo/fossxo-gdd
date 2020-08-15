@@ -6,6 +6,7 @@ Software security is an important consideration of any application, including
 games. This section lists potential security risks the game poses to users'
 systems and the steps taken to minimize those risks.
 
+..  TODO: Data / PII security -> no storing initials or machine name in logs.
 
 ..  index:: supply chain attack
 

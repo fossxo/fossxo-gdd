@@ -77,8 +77,10 @@ Software Libraries
 Rust libraries that have the following licenses can be used by the game:
 
 * MIT
+* BSD-2-Clause, BSD-3-Clause, and similar (FTL, ISC, Zlib)
 * Apache-2.0
-* The Unlicense
+* MPL-2.0 [#mpl2license]_
+* CC0 and The Unlicense
 
 Additionally, the game can dynamically link to libraries with the above licenses
 plus libraries that are licensed under the LGPL.
@@ -139,6 +141,9 @@ localizations, the game is designed with internationalization support.
 ..  [#cratessizelimit] Cargo, the Rust package manager, can download and build
         applications hosted on crates.io. However, crates.io has a 10MB size
         limit that is too small to host this game.
+..  [#mpl2license] `Choose an open source license - Mozilla Public License 2.0 <https://choosealicense.com/licenses/mpl-2.0/>`_
+        summary indicates it is OK to distribute programs that use unmodified
+        MPL-2.0 libraries under different terms.
 ..  [#ccbysa] The CC-BY-SA is incompatible with the the game's licensing terms.
         It is this author's understanding that a game is considered a derivative
         work and thus must also be licensed under CC-BY-SA if it were to use
