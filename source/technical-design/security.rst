@@ -1,12 +1,10 @@
-###############
-System Security
-###############
+########################
+System and Data Security
+########################
 
 Software security is an important consideration of any application, including
 games. This section lists potential security risks the game poses to users'
 systems and the steps taken to minimize those risks.
-
-..  TODO: Data / PII security -> no storing initials or machine name in logs.
 
 ..  index:: supply chain attack
 
@@ -104,6 +102,34 @@ to a user's system.
     XKCD's `Exploits of a Mom <https://xkcd.com/327/>`_ is a famous example of
     an SQL injection attack.
     `Comic copyright xkcd.com under the CC BY-NC 2.5 license <https://xkcd.com/license.html>`_.
+
+
+=============
+Personal Data
+=============
+The game uses the user's initials when displaying the :ref:`ref-ui-speedrun`
+best times. This data is stored in the :ref:`ref-user-data-file`. The game does
+not use or store any other personal data.
+
+No personal data leave's the users system. This includes ensuring personal data
+is not included in the game's :ref:`log file <ref-dev-tools-logging>` as users
+may attach log files to bug reports.
+
+Examples of data that is excluded from log files includes:
+
+* User's initials
+* User's computer account name
+* The computer name
+* WiFi access point names
+* Names of applications installed on the system
+
+
+Non personal data that can be included in the logs files:
+
+* FossXO version
+* Operating system version
+* Graphics driver provider and version
+* Game settings
 
 
 ..  rubric:: Footnotes

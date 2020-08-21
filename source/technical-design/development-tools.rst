@@ -69,6 +69,8 @@ These tools are part of the development, test, and continuous integration
 workflows.
 
 
+.. _ref-dev-tools-logging:
+
 =======
 Logging
 =======
