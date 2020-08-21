@@ -6,7 +6,7 @@ open-source example of tic-tac-toe. The game design document describes in detail
 the design considerations of the game.
 
 The latest version of the game design document is hosted here:
-[FossXO Game Design Document](https://j-richey.github.io/project-documentation/fossxo-gdd/)
+[FossXO Game Design Document](https://fossxo.github.io/gdd/)
 
 
 ## Building
