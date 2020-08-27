@@ -153,13 +153,17 @@ positions.
 
     struct(Grid) {
         + origin: Point
-        + size: Point
+        + size: f32
         + center_points() -> vec<Point>
-        + to_position(Point) -> Optional<Position>
-        + cell(Position) -> (origin, size)
+        + point_to_position(Point) -> Position
+        + lines() -> [Line; 4]
+        + wining_line(winning_positions) -> Option<Line>
+        + bounds() -> Rectangle
+        + position_to_square(Position) -> Square
     }
 
-Additional conversion methods are added as needed to the grid resource.
+Additional conversion methods between :ref:`ref-world-coordinates` and
+:ref:`ref-ttt-board-position` are added as needed to the grid resource.
 
 
 .. index:: player component, ai component, mark component,

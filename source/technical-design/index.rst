@@ -11,9 +11,11 @@ The technical design of FossXO is described in this chapter.
     states
     systems
     components-resources-entities
+    coordinate-systems
     file-formats
     user-manual
     packaging
     security
     development-tools
     prototype
+
