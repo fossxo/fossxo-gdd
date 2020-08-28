@@ -1,3 +1,5 @@
+.. index:: camera
+
 ##################
 Coordinate Systems
 ##################
@@ -15,6 +17,8 @@ particular importance when handling mouse input provided by the operating system
 as the mouse's screen coordinates need converted to a tic-tac-toe board position
 to know where the user would like to place their mark.
 
+
+.. index:: coordinates; screen, coordinates; normalized device, screen point
 
 ==================
 Screen Coordinates
@@ -51,6 +55,7 @@ When the user clicks on part of the window, the OS reports the mouse position
 in terms of screen coordinates. The mouse raycast system converts the position
 to world coordinates and a corresponding tic-tac-toe board position.
 
+.. index:: coordinates; world, world point
 .. _ref-world-coordinates:
 
 =================
@@ -73,6 +78,7 @@ The game uses the nalgebra ``Point3`` type to represent world points in terms of
 X, Y, and Z position.
 
 
+.. index:: coordinates; board position
 .. _ref-ttt-board-position:
 
 ===========================

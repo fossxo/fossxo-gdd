@@ -122,19 +122,19 @@ Other Resources
 In addition to environments, there are a other notable resources used by the
 game.
 
-The :index:`game resource` provides access to the underlying tic-tac-toe game
+The :index:`game logic resource` provides access to the underlying tic-tac-toe game
 logic and the last time a move was done on the game. Helper methods are provided
-to make tasks such as seeing if it is a given player's turn. The game resource
-is shown in :numref:`uml-game-resource`.
+to make tasks such as seeing if it is a given player's turn. The game logic resource
+is shown in :numref:`uml-game-logic-resource`.
 
-..  _uml-game-resource:
+..  _uml-game-logic-resource:
 ..  uml::
-    :caption: Game resource.
+    :caption: Game logic resource.
 
     !include rust_types.uml
     hide empty members
 
-    struct(Game) {
+    struct(GameLogic) {
         + game: ttt::Game
         + last_move_time
         + is_players_move(player) -> bool
@@ -166,7 +166,7 @@ Additional conversion methods between :ref:`ref-world-coordinates` and
 :ref:`ref-ttt-board-position` are added as needed to the grid resource.
 
 
-.. index:: player component, ai component, mark component,
+.. index:: player component, local player component, ai component, mark component,
 
 ==================
 Notable Components

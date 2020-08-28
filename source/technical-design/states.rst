@@ -103,7 +103,7 @@ are:
 
 *   Spawn the player and AI opponent entities for playing the game.
 *   Handle player events for when marks are placed.
-*   Manage the game resource.
+*   Manage the game logic resource.
 *   Show the game environment with the :ref:`ref-environments-resource`.
 *   Show the :ref:`ref-ui-game-board` widgets including the menu button and
     status text.
@@ -125,7 +125,7 @@ The speedrun game state is used for :ref:`ref-gameplay-speed-run-mode` games.
 
 *   Spawn the player and AI opponent entities for playing the game.
 *   Handle player events for when marks are placed.
-*   Manage the game resource.
+*   Manage the game logic resource.
 *   Keep track of the total speedrun time and time for each game.
 *   Show the :ref:`ref-ui-speedrun-game-board` widgets including the menu
     button and status text.
