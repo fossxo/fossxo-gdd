@@ -167,7 +167,7 @@ Responsibilities include:
 *   Launch the game state with the multiplayer game flag.
 *   Navigate to the options menu state.
 *   Navigate to the credits menu state.
-*   Open the game's user manual in an external browser.
+*   Open the game's player manual in an external browser.
 *   Go to the quit state to exit the game.
 
 
@@ -233,7 +233,7 @@ The credits menu state shows the game's credits along with demoing the various
 games environments. The responsibilities are:
 
 *   Show the :ref:`ref-ui-credits` menu widgets.
-*   Open the game's licence compliance information contained in the user manual
+*   Open the game's licence compliance information contained in the player manual
     in an external browser.
 *   Demonstrate different in progress games.
 *   Go back to the main menu state.

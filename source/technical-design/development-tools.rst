@@ -134,7 +134,7 @@ in different configurations without having to recompile.
 
     Shows the command line help. This provides a brief description of the
     application and lists the available command line options. This also lets
-    users know how to find the user manual in case the user is searching for
+    users know how to find the player manual in case the user is searching for
     information on how to play the game.
 
 ..  option:: --version

@@ -13,7 +13,7 @@ The technical design of FossXO is described in this chapter.
     components-resources-entities
     coordinate-systems
     file-formats
-    user-manual
+    player-manual
     packaging
     security
     development-tools

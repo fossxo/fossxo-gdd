@@ -25,7 +25,7 @@ bill of materials and using tools to automate package auditing.
 --------------------------
 Software Bill of Materials
 --------------------------
-The :doc:`user-manual` contains a listing of every library used by the game.
+The :doc:`player-manual` contains a listing of every library used by the game.
 The software BOM is specific for each release of the game. [#offlinebom]_
 
 The software BOM ensures developers and users alike know exactly what version of
