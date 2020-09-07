@@ -107,6 +107,8 @@ The :kbd:`arrow`, :kbd:`ESC`, :kbd:`Enter`, and :kbd:`Space` keys
 allow users to navigate the game's menus.
 
 
+.. _ref_ui-menus:
+
 =====
 Menus
 =====

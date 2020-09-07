@@ -104,6 +104,8 @@ events
     includes the ``EventData`` enum in :numref:`uml-event-data-enum`.
 file_io
     Holds functionality related to loading and saving the games custom files.
+ui
+    Provides support for creating and managing UI widgets.
 
 Developers are encouraged to add additional modules if needed to help with the
 maintainability of the project. [#utilsmodule]_

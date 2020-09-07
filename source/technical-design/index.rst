@@ -12,10 +12,10 @@ The technical design of FossXO is described in this chapter.
     systems
     components-resources-entities
     coordinate-systems
+    ui
     file-formats
     player-manual
     packaging
     security
     development-tools
     prototype
-

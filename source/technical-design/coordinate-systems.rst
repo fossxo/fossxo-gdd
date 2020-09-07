@@ -55,7 +55,7 @@ When the user clicks on part of the window, the OS reports the mouse position
 in terms of screen coordinates. The mouse raycast system converts the position
 to world coordinates and a corresponding tic-tac-toe board position.
 
-.. index:: coordinates; world, world point
+.. index:: coordinates; world, world point, projection matrix
 .. _ref-world-coordinates:
 
 =================
