@@ -2,16 +2,6 @@
 UI Widgets, Layout, and Styles
 ##############################
 
-..  TODO: talk about the user interface widgets layout and styles and how
-    there are supporting code to help with this
-    * Sections
-      * Intro / what things Amethyst provides and what it is lacking
-        * Our system provides a single interface
-        * Is specific for our application
-      * Low level tools
-        * Creates the Amethyst transforms and widgets using the provided styles
-
-
 In addition to showing the game board, FossXO's :doc:`../gui` allows players to
 select different game modes, configure options, and view speed run best times.
 Amethyst provides a UI module, but it is intended to be used as building blocks
@@ -21,6 +11,7 @@ Therefore, FossXO provides a ``ui`` module that provides a high level interface
 around the low level Amethyst functionality. This section describes how high
 level UI widgets are constructed from the Amethyst building blocks, including
 how the UI is styled, laid out, and incorporated into the rest of the game.
+
 
 ====================
 Amethyst UI Overview
@@ -49,127 +40,169 @@ the higher level functionality around. This ensures we have visibility into the
 exact set of entities and components being created. Additionally, our high level
 API hides the verbosity of creating widgets using this method.
 
+
 ==============
 High Level API
 ==============
 FossXO's ``ui`` module provides a high level API to construct game menus and the
-in game controls. [#apiusecase]_ The ``Menu`` structure holds the entities for
-the game :ref:`ref_ui-menus` and provides UI event handling logic.
-The ``MenuBuilder`` allows users to easily create a new menu. These types are
-shown in :numref:`uml-ui-menu-types`,
+in game controls. [#apiusecase]_ The ``Menu`` structure allows creating
+:ref:`ref_ui-menus` related widgets, provides UI event handling logic, and holds
+the underlying entities. The ``Menu`` structure and supporting types are
+shown in :numref:`uml-ui-menu-types`.
 
 ..  _uml-ui-menu-types:
 ..  uml::
-    :caption: Menu and menu builder types.
+    :caption: Menu and and supporting types.
 
     !include rust_types.uml
     hide empty members
 
     struct(Menu) {
         - ui_entities
-        - click_event_dispatcher
-        - value_changed_event_dispatcher
-        + handle_ui_event(ui_event)
+        - observers
+        + new()
+        + layout(world)
         + delete(world)
+        + handle_ui_event(world, ui_event)  -> Option<fn>
+        + set_title(world, text)
+        + set_close_button(world, text, on_close)
+        + add_button(world, text, on_press)
+        + add_link_button(world, text, on_press)
+        + add_separator(world)
+        + add_paragraph(world, text, num_lines)
+        + add_player_selector(world, initial_player) -> PlayerSelector
+        + add_text_box(world, label, initial_text) -> TextBox
+        + add_check_box(world, label, is_checked) -> CheckBox
     }
 
-    struct(MenuBuilder) {
-        + new()
-        + build(world) -> Menu
-        + set_title(text)
-        + set_close_button(text, on_close)
-        + with_paragraph(text, height)
-        + with_button(text, on_press)
-        + with_link_button(text, on_press)
-        + with_separator()
-        + with_player_selector(initial_player, on_changed(player))
-        + with_text_box(label, initial_text, on_changed(text))
-        + with_custom(entities, height)
+    struct(PlayerSelector) {
+        + selected_player(world) -> Player
+    }
+
+    struct(TextBox) {
+        + text(world) -> String
+    }
+
+    struct(CheckBox) {
+        + is_checked(world) -> bool
     }
 
 The ``GameControls`` structure holds the controls shown during an in progress
 game. This includes the hamburger menu button, status text, and next game button.
-The ``GameControlsBuilder`` constructs new ``GameControls`` instances.
-:numref:`uml-ui-game-controls-types` shows these types.
+:numref:`uml-ui-game-controls-types` shows the ``GameControls`` structure and
+related types.
 
 ..  _uml-ui-game-controls-types:
 ..  uml::
-    :caption: Game controls and game controls builder types.
+    :caption: Game controls and related types.
 
     !include rust_types.uml
     hide empty members
 
     struct(GameControls) {
         - ui_entities
-        - click_event_dispatcher
-        + handle_ui_event(ui_event)
-        + delete(world)
-        + show_game_over_button(button_text)
-        + hide_game_over_button()
-        + next_speed_run_game_started(final_game_split)
-    }
-
-     struct(GameControlsBuilder) {
-        - ui_entities
-        - click_event_dispatcher
+        - observers
         + new()
-        + build(world) -> GameControls
-        + set_show_menu_handler(on_press)
-        + set_game_over_button_handler(on_press)
-        + with_status_text(text)
-        + show_speed_run_time()
+        + handle_ui_event(ui_event) -> Option<fn>
+        + layout(world)
+        + delete(world)
+        + set_menu_button(world, on_press)
+        + set_game_over_button(world, on_press) -> GameOverButton
+        + set_extra_information(world, text)
+        + enable_speed_run_display(world)
     }
 
-The builders hide the details of constructing widgets with Amethyst from the
-rest of the game. They also ensure the widgets are constructed with a consistent
-style and layout as discussed in the :ref:`ref-ui-styling` section.
+    struct(GameOverButton) {
+        + set_text(world, text)
+        + show(world)
+        + hide(world)
+    }
 
-The builders ensure the necessary components are created so the game's
-:doc:`systems` can take care of automatically updating the UI. Therefore, once
-constructed there are not many *update* type methods. For example, the game's
-status text is automatically updated by the game state display system, thus
-there is no need to have a status text update method in ``GameControls``.
+The types provided by the high level API are specific for FossXO. For example
+instead of providing a generic toggle switch, the menu builder provides the
+``PlayerSelector`` widget to hold the :ref:`ref-ui-single-player` menu
+:guilabel:`Play as` selector. This allows us to focus on creating the controls
+needed for the game without having to handle potentially many different use
+cases of generic controls.
+
+
+--------------------------
+Building Menus and Widgets
+--------------------------
+The ``Menu`` and ``GameControls`` structures hide the details of constructing
+widgets with Amethyst from the rest of the game. They also ensure the widgets
+are constructed with a consistent style and layout as discussed in the
+:ref:`ref-ui-styling` and :ref:`ref-ui-layout` sections.
+
+The structures ensure the necessary components are created so the game's
+:doc:`systems` can take care of automatically updating the UI. For example,
+the game's status text is automatically updated by the game state display system,
+thus there is no need to have a way to explicitly update the status text in
+the ``GameControls``. Therefore, the ``Menu`` and ``GameControls`` structures
+hide most of the underlying widgets.
 
 Some additional items of interest are:
 
-*   Builder's ``with_*`` methods add new elements to UI. The order
-    in which the  ``with_*`` methods are called determines the order the
-    elements appear in the UI.
-*   Builder's ``set_*`` methods add or overwrite a specific UI element. For
-    example, menus have at most one title element that is provided via the
-    builder's ``set_title()`` method.
-*   Calling the builder's  ``build()`` method takes care of fetching the style
-    resource from the world, creating all UI and support entities, and creating
-    event dispatchers so the provided callbacks are invoked at the correct times.
-*   Builders can be reused. This is allows a state to specify the UI once then
-    quickly recreate it when ``on_start()`` is called.
-*   The types are specific for FossXO. For example instead of providing a
-    generic toggle switch, the menu builder provides the
-    ``with_player_selector()`` method to create the :ref:`ref-ui-single-player`
-    menu :guilabel:`Play as` selector. This allows us to focus on creating the
-    controls needed for the game without having to handle potentially many
-    different use cases of generic controls.
+*   The ``add_*`` methods add new elements to UI. The order in which the
+    ``add_*`` methods are called determines the order the elements appear in the UI.
+*   The ``set_*`` methods add or overwrite a specific UI element. For example,
+    menus have at most one title element that is provided via the
+    ``set_title()`` method.
+*   The ``layout()`` method should be called once all items have been added
+    to the UI to perform the automatic :ref:`ref-ui-layout` process.
+*   Use ``delete()`` to delete all widgets and their entities. Once this is
+    called the menu or any widgets created from it should not be used.
 
-The ``EventDispatcher`` structure, shown in :numref:`uml-ui-event-dispatcher`,
-maps UI events to callbacks registered during the building process. This makes
-it easy for other code to react to the UI events without long ``if`` / ``else if``
-chains.
 
-..  _uml-ui-event-dispatcher:
+-----------------
+Accessing UI Data
+-----------------
+When a state might need access data contained in a particular widget, the `
+`Menu`` and ``GameControls`` structures return an instance of the widget when
+constructed. For example, ``add_player_selector()`` returns a ``PlayerSelector``
+that can later be used by the state to see which selection has been made.
+
+However, in most cases, the game's systems take care of managing and updating
+UI related data so the state's don't have to micro-manage the UI.
+
+
+-----------------------------------------
+Handling UI Events with Slots and Signals
+-----------------------------------------
+The UI buttons use a basic slots and signals concept to handle button presses.
+When a button is created, the a ``on_press`` callback is provided.
+The ``handle_ui_event()`` method returns the previously registered callback
+that is associated with given UI event. [#callbackborrowchecker]_
+The state can then use this to invoke the logic for the specific button preventing
+states from having to implement long and bug prone ``if`` / ``else if`` chains.
+
+:numref:`code-ui-on-press-handler` shows the typical signature of the callback.
+
+..  _code-ui-on-press-handler:
+..  code-block:: rust
+    :caption: Typical signature of button ``on_press`` callback.
+
+    fn on_my_button_press(&mut self, world: &mut World) {
+        // Handle the press event here
+    }
+
+The ``ui`` module uses the private ``EntityObservers`` structure, shown in
+:numref:`uml-ui-event-observers`, to help with mapping UI events to callbacks
+registered during the building process.
+
+..  _uml-ui-event-observers:
 ..  uml::
-    :caption: Event dispatcher struct.
+    :caption: Event observers struct maps entities to observer callbacks.
 
     !include rust_types.uml
     hide empty members
 
-    struct(EventDispatcher) {
-        - handlers: Map<entity, FnMut>
-        + add_handler(entity, callback)
-        + dispatch(entity)
+    struct(EntityObservers) {
+        - observers: Map<entity, fn>
+        + add_observer(entity, observer: fn)
+        + observer(entity) -> Option<fn>
     }
 
-The necessary event dispatchers are created during the UI build phase and are
-manged by the corresponding menu or game controls types.
 
 .. _ref-ui-styling:
 
@@ -234,6 +267,7 @@ these resources are available when the game board or menus are displayed.
 
 
 .. index:: projection matrix
+.. _ref-ui-layout:
 
 ======
 Layout
@@ -258,21 +292,52 @@ The origin of each component is selectable via the ``Anchor`` enum, shown in
 
     The anchor point sets the origin of the widget.
 
+The ``ui`` module takes a few different approaches to layout depending on the
+type of widget.
 
 
+-------------
+Fixed Content
+-------------
+Many widgets have fixed locations. For example a menu's title, close button, and
+the hamburger button are all placed in fixed specific locations. The layout
+logic for these items is fairly straight forward, but it must still account for
+any style properties that affect the positioning.
 
 
+----------------
+Content Stacking
+----------------
+The main content of menus is stacked and centered on the screen. Using the
+``Anchor::Middle`` variant allows Amethyst to take care of the majority of the
+work. This will both horizontally and vertically center each component.
+However, to prevent all the widgets from overlapping, the layout system must
+take into account the total height of the content, the height of each
+widget and margin between widgets then adjust their Y offset accordingly.
 
+The pseudocode in :numref:`code-ui-layout-stacked-content` shows one way this
+can be done by first calculating retaliative Y location of each widget then
+shifting the entire group to be centered.
 
-.. TODO: Layout?
-..  TODO:
-      * Layout / style overview
-        * Goal: want consistency and the ability to eaisly change things.
-        * Uses world coordinates (but can be at a different scale than the environments)
-      * Show graphic of border thickness, margin, how titles live at the top etc.
-      * describe the with_seperator method.
-      * Buttons and main content is centered?
+..  _code-ui-layout-stacked-content:
+..  code-block:: text
+    :caption: Pseudocode for centering stacked content.
 
+    Set widget offsets:
+        calculate the widget's center point Y using its height,
+            margin, and center point of the previous widget:
+        center point Y = previous center point Y - (widget.height / 2 + margin)
+
+    Vertically center widgets:
+        Calculate the total height of the widgets.
+        Calculate current center point Y value from the total height.
+        Calculate the offset from the expected Y value. Since
+            widgets are anchored at the middle, the expected
+            Y value is 0.0.
+        Add the offset to each widget Y value thus vertically
+            centering the group of widgets.
+
+There are likely other ways to stack the content.
 
 
 ..  rubric:: Footnotes
@@ -287,3 +352,11 @@ The origin of each component is selectable via the ``Anchor`` enum, shown in
 ..  [#apiusecase] FossXO's UI APIs are designed specifically around FossXO's
         interface requirements. They are no intended to construct general
         purpose user interfaces.
+..  [#callbackborrowchecker] A reference to the observer callback to invoke is
+        returned from ``handle_ui_event()`` instead of being directly invoked
+        due to Rust's reference borrowing rules. The borrow checker prevents
+        using closures to capture a reference to the struct when the callback is
+        created like one might do in JavaScript. Additionally, while prototyping
+        it was found the Rust compiler was unhappy with passing ``&mut self``
+        to ``handle_ui_event()`` as ``self`` was also being used to access the
+        ``Menu`` struct.
