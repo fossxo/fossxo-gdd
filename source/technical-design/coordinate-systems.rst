@@ -112,35 +112,31 @@ describing the board including lines and rectangles.
     }
 
     struct(Square) {
-        + center_point() -> Point3
+        + new(center, size)
         + size() -> f32
+        + center() -> Point3
         + top_left() -> Point3
         + top_right() -> Point3
         + bottom_left() -> Point3
         + bottom_right() -> Point3
-        + horizontal() -> Line
-        + vertical() -> Line
+        + top_center() -> Point3
+        + bottom_center() -> Point3
+        + center_left() -> Point3
+        + center_right() -> Point3
     }
 
 A line can be used to describe the board's grid or the line drawn through
 winning positions.
 
 An axis aligned rectangle is useful for describing one of the grid's cells.
-Several helper methods provide access to the corners, center point, and lines
-going through the center point. :numref:`fig-grid-square-points` visually shows
-these points.
+Several helper methods provide access to the corners, center point, and midpoints.
+:numref:`fig-grid-square-points` visually shows these points.
 
 ..  _fig-grid-square-points:
 ..  figure:: ../img/grid-square-points.*
 
-    Points of interest in the rectangle structure.
-
-1.  The square's center point.
-2.  The bottom left of the square.
-3.  The vertical line's starting point is always defined at the bottom of the
-    square.
-4.  The horizontal line's starting point always defined at the left side of the
-    square.
+    Points of interest in the rectangle structure. 1: center point,
+    2: bottom left, 3: bottom center, and 4: top right.
 
 
 ..  rubric:: Footnotes
@@ -148,4 +144,3 @@ these points.
 ..  [#cameratransforms] The Amethyst ``Camera::screen_to_world_point()`` and
       ``Camera::world_to_screen()`` functions are useful when converting between
       screen and world positions.
-
