@@ -27,10 +27,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="842.37234"
-     inkscape:cy="521.73251"
+     inkscape:cx="752.37023"
+     inkscape:cy="558.36276"
      inkscape:document-units="in"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer1"
      showgrid="false"
      units="in"
      inkscape:window-width="2560"
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -71,111 +71,89 @@
      transform="translate(0,-11.249989)">
     <image
        xlink:href="../source/img/concept-art/computer.png"
-       y="549.13574"
-       x="1046.6727"
-       id="image956"
-       preserveAspectRatio="none"
-       height="182.39999"
-       width="182.39999" />
-    <image
-       xlink:href="../source/img/concept-art/paper.jpg"
        width="182.39999"
        height="182.39999"
        preserveAspectRatio="none"
-       id="image956-3"
-       x="851.42865"
+       id="image956"
+       x="1046.6727"
        y="549.13574" />
+    <image
+       sodipodi:absref="/home/james/Code/fossxo-gdd/media/../source/img/concept-art/paper.jpg"
+       xlink:href="../source/img/concept-art/paper.jpg"
+       y="549.13574"
+       x="851.42865"
+       id="image956-3"
+       preserveAspectRatio="none"
+       height="182.39999"
+       width="182.39999" />
     <image
        xlink:href="../source/img/concept-art/neon.jpg"
-       width="182.39999"
-       height="182.39999"
-       preserveAspectRatio="none"
-       id="image956-2"
+       y="549.13574"
        x="1437.1608"
-       y="549.13574" />
+       id="image956-2"
+       preserveAspectRatio="none"
+       height="182.39999"
+       width="182.39999" />
     <image
        xlink:href="../source/img/concept-art/chalkboard.jpg"
-       width="182.39999"
-       height="182.39999"
-       preserveAspectRatio="none"
-       id="image956-9"
+       y="549.13574"
        x="1241.9167"
-       y="549.13574" />
+       id="image956-9"
+       preserveAspectRatio="none"
+       height="182.39999"
+       width="182.39999" />
     <image
        xlink:href="../source/img/concept-art/led-grid.jpg"
+       y="549.13574"
+       x="231.17802"
+       id="image956-1"
+       preserveAspectRatio="none"
+       height="182.39999"
+       width="182.39999" />
+    <image
+       xlink:href="../source/img/concept-art/blueprint.svg"
        width="182.39999"
        height="182.39999"
        preserveAspectRatio="none"
-       id="image956-1"
-       x="231.17802"
+       id="image956-3-2"
+       x="35.933945"
        y="549.13574" />
     <image
-       xlink:href="../source/img/concept-art/blueprint.svg"
-       y="549.13574"
-       x="35.933945"
-       id="image956-3-2"
-       preserveAspectRatio="none"
-       height="182.39999"
-       width="182.39999" />
-    <image
        xlink:href="../source/img/concept-art/electroluminescence.png"
-       y="549.13574"
-       x="621.66614"
-       id="image956-2-7"
-       preserveAspectRatio="none"
+       width="182.39999"
        height="182.39999"
-       width="182.39999" />
+       preserveAspectRatio="none"
+       id="image956-2-7"
+       x="621.66614"
+       y="549.13574" />
     <image
        xlink:href="../source/img/concept-art/sidewalk.jpg"
-       y="549.13574"
-       x="426.42203"
-       id="image956-9-0"
-       preserveAspectRatio="none"
+       width="182.39999"
        height="182.39999"
-       width="182.39999" />
+       preserveAspectRatio="none"
+       id="image956-9-0"
+       x="426.42203"
+       y="549.13574" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Text"
      style="display:inline">
-    <text
-       y="171.65329"
-       x="1049.5911"
-       style="font-variant:normal;font-weight:bold;font-size:33.04946518px;font-family:'Nimbus Sans L';-inkscape-font-specification:NimbusSanL-Bold;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
-       id="text18">
-      <tspan
-         style="fill:#ffffff;fill-opacity:1;stroke-width:1.33333325"
-         x="1049.5911 1069.7843 1088.9861 1107.3616 1129.4055 1164.3058 1190.0183 1208.3938 1237.7748 1265.338 1289.1997 1307.5752 1325.9507 1335.1384 1355.3317 1384.7126 1408.5743 1428.7676 1447.1431 1467.3363 1496.7173 1515.0928 1535.286"
-         y="171.65329"
-         sodipodi:role="line"
-         id="tspan16">FossXOGameDesignDocument</tspan>
-    </text>
-    <text
-       y="208.84795"
-       x="1474.9032"
-       style="font-variant:normal;font-weight:bold;font-size:22.95386696px;font-family:'Nimbus Sans L';-inkscape-font-specification:NimbusSanL-BoldItal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
-       id="text22">
-      <tspan
-         style="fill:#ffffff;fill-opacity:1;stroke-width:1.33333325"
-         x="1474.9032 1491.4758 1503.8939 1514.8199 1529.0973"
-         y="208.84795"
-         sodipodi:role="line"
-         id="tspan20">Rev.A</tspan>
-    </text>
-    <text
-       y="416.84531"
-       x="1393.759"
-       style="font-variant:normal;font-weight:bold;font-size:22.95386696px;font-family:'Nimbus Sans L';-inkscape-font-specification:NimbusSanL-Bold;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
-       id="text26">
-      <tspan
-         style="fill:#ffffff;fill-opacity:1;stroke-width:1.33333325"
-         x="1393.759 1406.5214 1419.2838 1439.6897 1452.4521 1471.5956 1488.1683 1494.5494 1507.0823 1521.1071 1533.5251"
-         y="416.84531"
-         sodipodi:role="line"
-         id="tspan24">JamesRichey</tspan>
-    </text>
-    <text
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot856"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Nimbus Sans L';-inkscape-font-specification:'Nimbus Sans L, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
+       transform="translate(-96.482816,-97.190344)"><flowRegion
+         id="flowRegion858"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'Nimbus Sans L';-inkscape-font-specification:'Nimbus Sans L, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff"><rect
+           id="rect860"
+           width="698.01538"
+           height="61.619308"
+           x="1019.2439"
+           y="238.54292"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'Nimbus Sans L';-inkscape-font-specification:'Nimbus Sans L, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff" /></flowRegion><flowPara
+         id="flowPara862">FossXO Game Design Document</flowPara></flowRoot>    <text
        y="157.04364"
        x="110.63049"
        style="font-variant:normal;font-weight:bold;font-size:15.94026661px;font-family:'Nimbus Sans L';-inkscape-font-specification:NimbusSanL-Bold;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
@@ -233,35 +211,49 @@
        d="M 734.85711,107.22796 H 110.85715"
        id="path1031-9"
        inkscape:connector-curvature="0" />
-    <text
-       y="787.4386"
-       x="1463.5667"
-       style="font-variant:normal;font-weight:bold;font-size:15.94026661px;font-family:'Nimbus Sans L';-inkscape-font-specification:NimbusSanL-Bold;writing-mode:lr-tb;display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
-       id="text30-3">
-      <tspan
-         style="fill:#ffffff;fill-opacity:1;stroke-width:1.33333325"
-         x="1463.5667 1476.8448 1485.7076 1496.3398 1505.2026 1514.0654 1522.9281 1531.7909 1540.6537 1549.5165"
-         y="787.4386"
-         sodipodi:role="line"
-         id="tspan28-6">Apr19,2020</tspan>
-    </text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot1133"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:21.33333333px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+       style="font-style:normal;font-weight:normal;font-size:21.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
          id="flowRegion1135"><rect
            id="rect1137"
            width="143.44167"
            height="56.568542"
            x="110.10663"
            y="155.71042" /></flowRegion><flowPara
-         id="flowPara1139" /></flowRoot>  </g>
+         id="flowPara1139" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot856-3"
+       style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;line-height:1.25;font-family:'Nimbus Sans L';-inkscape-font-specification:'Nimbus Sans L, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none"
+       transform="translate(451.37856,-45.412358)"><flowRegion
+         id="flowRegion858-5"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:'Nimbus Sans L';-inkscape-font-specification:'Nimbus Sans L, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff"><rect
+           id="rect860-4"
+           width="698.01538"
+           height="61.619308"
+           x="1019.2439"
+           y="238.54292"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:'Nimbus Sans L';-inkscape-font-specification:'Nimbus Sans L, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff" /></flowRegion><flowPara
+         id="flowPara888">Rev. B</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot856-3-4"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;line-height:1.25;font-family:'Nimbus Sans L';-inkscape-font-specification:'Nimbus Sans L, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none"
+       transform="translate(367.31706,767.18611)"><flowRegion
+         id="flowRegion858-5-9"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:'Nimbus Sans L';-inkscape-font-specification:'Nimbus Sans L, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff"><rect
+           id="rect860-4-0"
+           width="698.01538"
+           height="61.619308"
+           x="1019.2439"
+           y="238.54292"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:'Nimbus Sans L';-inkscape-font-specification:'Nimbus Sans L, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff" /></flowRegion><flowPara
+         id="flowPara940">James Richey</flowPara></flowRoot>  </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Guides"
-     sodipodi:insensitive="true"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <rect
        style="opacity:1;fill:#00b5ff;fill-opacity:1;stroke:none;stroke-width:2.00000024;stroke-miterlimit:1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect839"
