@@ -9,7 +9,7 @@ copyright = '2020, James Richey'
 author = 'James Richey'
 
 # The full version, including alpha/beta/rc tags
-release = 'B'
+release = 'C'
 
 # Base name (with out the extension) of the PDF file.
 _pdf_base_name = "{project} Rev {release}".format(
