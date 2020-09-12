@@ -11,7 +11,7 @@ systems and the steps taken to minimize those risks.
 ===================
 Supply Chain Attack
 ===================
-A supply chain attack is where cyber-attacker compromises libraries or other
+A supply chain attack is where a cyber-attacker compromises libraries or other
 dependencies of an application to attack systems that use the application.
 The game makes extensive use of third party libraries, thus at an elevated risk
 for this type of attack. It only takes one of the dependent libraries being
