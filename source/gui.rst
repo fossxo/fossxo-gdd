@@ -5,7 +5,7 @@ User Interface
 This chapter describes the user interface of FossXO. This includes the main
 game board, controls, and all game menus.
 
-
+.. index:: game board, hamburger button, status text
 ..  _ref-ui-game-board:
 
 ==========
@@ -39,6 +39,7 @@ environments that control how the marks, grid, and background look. Thus, a
 minimalist approach is used for the game board view. The only UI widgets are a
 menu button and some status text.
 
+..  index:: speedrun; status display
 ..  _ref-ui-speedrun-game-board:
 
 --------

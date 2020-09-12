@@ -1,3 +1,5 @@
+.. index:: widget, ui module
+
 ##############################
 UI Widgets, Layout, and Styles
 ##############################
@@ -12,6 +14,7 @@ around the low level Amethyst functionality. This section describes how high
 level UI widgets are constructed from the Amethyst building blocks, including
 how the UI is styled, laid out, and incorporated into the rest of the game.
 
+.. index:: UI components
 
 ====================
 Amethyst UI Overview
@@ -40,6 +43,8 @@ the higher level functionality around. This ensures we have visibility into the
 exact set of entities and components being created. Additionally, our high level
 API hides the verbosity of creating widgets using this method.
 
+
+.. index:: Menu struct, GameControls struct
 
 ==============
 High Level API
@@ -166,6 +171,8 @@ However, in most cases, the game's systems take care of managing and updating
 UI related data so the state's don't have to micro-manage the UI.
 
 
+.. index:: EntityObservers struct
+
 -----------------------------------------
 Handling UI Events with Slots and Signals
 -----------------------------------------
@@ -204,6 +211,7 @@ registered during the building process.
     }
 
 
+.. index:: UiStyle struct
 .. _ref-ui-styling:
 
 =======
@@ -266,7 +274,7 @@ required by the style such as fonts, icons, and background images. This ensures
 these resources are available when the game board or menus are displayed.
 
 
-.. index:: projection matrix
+.. index:: UI layout, coordinates; world, projection matrix
 .. _ref-ui-layout:
 
 ======
@@ -336,8 +344,6 @@ shifting the entire group to be centered.
             Y value is 0.0.
         Add the offset to each widget Y value thus vertically
             centering the group of widgets.
-
-There are likely other ways to stack the content.
 
 
 ..  rubric:: Footnotes

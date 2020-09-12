@@ -1,3 +1,5 @@
+..  index:: component, resource, entity
+
 ###################################
 Components, Resources, and Entities
 ###################################
@@ -166,7 +168,7 @@ Additional conversion methods between :ref:`ref-world-coordinates` and
 :ref:`ref-ttt-board-position` are added as needed to the grid resource.
 
 
-.. index:: player component, local player component, ai component, mark component,
+.. index:: player component, local player component, ai component, mark component
 
 ==================
 Notable Components
@@ -210,6 +212,7 @@ Ai
     positions. Additionally, a delay can be specified to prevent the AI from
     instantly selecting a position.
 
+.. index:: camera component, transform component
 
 ============================
 Amethyst Provided Components

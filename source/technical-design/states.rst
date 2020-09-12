@@ -30,6 +30,8 @@ A summary of the State trait is shown in :numref:`uml-state-trait`.
         +update(StateData) -> Trans
     }
 
+..  index:: EventData enum
+
 Each method is provided a ``StateData`` structure that provide's access to the
 world's entities and resources. Additionally, ``handle_event()`` is provided an
 ``EventData`` enum, shown in :numref:`uml-event-data-enum`, that aggregates the

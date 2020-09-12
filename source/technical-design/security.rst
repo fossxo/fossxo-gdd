@@ -72,7 +72,7 @@ in an untrusted pull request are carefully scrutinized to prevent a targeted
 attack against the game. [#pngcheck]_
 
 
-..  index:: SQL injection attack
+..  index:: SQL injection attack, network
 
 ==============
 Direct Attacks
@@ -103,6 +103,8 @@ to a user's system.
     an SQL injection attack.
     `Comic copyright xkcd.com under the CC BY-NC 2.5 license <https://xkcd.com/license.html>`_.
 
+
+..  index:: user data, personal data
 
 =============
 Personal Data

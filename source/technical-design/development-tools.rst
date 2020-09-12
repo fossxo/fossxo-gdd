@@ -45,6 +45,8 @@ steps and workflow to be managed. Workflows can include:
 *   Package the game for the target platform.
 
 
+..  index:: continuous integration
+
 ======================
 Continuous Integration
 ======================
@@ -69,6 +71,7 @@ These tools are part of the development, test, and continuous integration
 workflows.
 
 
+..  index:: logging
 .. _ref-dev-tools-logging:
 
 =======

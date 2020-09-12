@@ -123,6 +123,8 @@ To prevent burning CPU cycles evaluating positions that will not be used the
 AI system skips players if it is not the player's turn.
 
 
+.. index:: mouse raycast system
+
 --------------------
 Mouse Raycast System
 --------------------
@@ -144,6 +146,8 @@ mouse raycast system logic for converting the mouse position to the different
         to tic-tac-toe grid position.
     Store all results in the mouse position resource.
 
+
+.. index:: Amethyst system bundle
 
 ========================
 Builtin Amethyst Systems

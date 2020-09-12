@@ -46,6 +46,10 @@ FossXO uses the ``open_ttt_lib`` library to manage the game rules and AI
 algorithms per the :ref:`ref-objective-create-ttt-game-with-rust` objective.
 
 
+..  index::
+    fossxo crate, states module, systems module, environments module
+    resources module, components module, events module, file_io module, ui module
+
 =======
 Modules
 =======
@@ -67,6 +71,7 @@ An overview of the game's modules is shown in :numref:`uml-modules-overview`.
     package environments { }
     package components { }
     package resources { }
+    package ui { }
 
     "<fossxo crate>" <-- states
     "<fossxo crate>" <-- systems
@@ -74,6 +79,7 @@ An overview of the game's modules is shown in :numref:`uml-modules-overview`.
     states <-- environments
     states <-- events
     states <-- resources
+    states <-- ui
 
     systems <-- components
     systems <-- resources
